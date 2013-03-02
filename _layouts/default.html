@@ -12,21 +12,29 @@
         <meta name="viewport" content="width=device-width">
 
         {% stylesheet application %}
+        {% javascript application %}
 
     </head>
     
     <body>
-        <div class="nav-container">
-            <ul class="nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#lavender">Lavender</a></li>
-                <li><a href="#gift-shop">Gift Shop & Nursery</a></li>
-                <li><a href="#home">Events</a></li>
-                <li><a href="#home">Products</a></li>
-                <li><a href="#home">Contact Us</a></li>
-            </ul>
-        </div>
+
 		{{ content }}
 	</body>
+	
+	<script>
+    	$(document).ready(function() {
+            var h = $(document).width() * 0.62;
+            $(".page").each( function() {
+                 $(this).height(h);
+             });
+        });
+
+        // for the window resize
+        $(window).resize(function() {
+            var h = $(document).width() * 0.62;
+            $(".page").each( function() {
+                 $(this).height(h);
+            });
+        });
+	</script>
 </html>
