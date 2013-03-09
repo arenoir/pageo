@@ -113,31 +113,31 @@ a:hover {
     margin: 30px auto; }
 
 #home {
-  background: url("../img/bg/bg_home.jpg") no-repeat;
+  background: url("/pageo/img/bg/bg_home.jpg") no-repeat;
   background-size: 100%; }
 
 #contact {
-  background: url("../img/bg/bg_contact.jpg") no-repeat;
+  background: url("/pageo/img/bg/bg_contact.jpg") no-repeat;
   background-size: 100%; }
 
 #events {
-  background: url("../img/bg/bg_events.jpg") no-repeat;
+  background: url("/pageo/img/bg/bg_events.jpg") no-repeat;
   background-size: 100%; }
 
 #gallery {
-  background: url("../img/bg/bg_gallery.jpg") no-repeat;
+  background: url("/pageo/bg/bg_gallery.jpg") no-repeat;
   background-size: 100%; }
 
 #lavender {
-  background: url("../img/bg/bg_lavender.jpg") no-repeat;
+  background: url("/pageo/bg/bg_lavender.jpg") no-repeat;
   background-size: 100%; }
 
 #products {
-  background: url("../img/bg/bg_products.jpg") no-repeat;
+  background: url("/pageo/bg/bg_products.jpg") no-repeat;
   background-size: 100%; }
 
 #giftshop {
-  background: url("../img/bg/bg_giftshop.jpg") no-repeat;
+  background: url("/pageo/img/bg/bg_giftshop.jpg") no-repeat;
   background-size: 100%; }
 .nav-container {
   position: fixed;
