@@ -12,7 +12,7 @@ license: your license of choice
 #source: ./_src
 #plugins:     ./_src/_plugins
 #destination: ./site
-#baseurl:    /site
+baseurl:    /pageo
 
 #assets:
 #  baseurl: ../site/assets
