@@ -1,0 +1,49 @@
+@import "application/common"
+.footer
+	background: #eee4ce
+	overflow: hidden
+	text-align: center
+	
+	.content
+		width: $contentWidth
+		margin: 0 auto
+		text-align: left
+		color: #444444
+		font-size: 14px
+		.inner
+			
+			margin: 30px 0 30px 30px
+			
+			overflow: hidden
+			.widget
+				float: left
+				width: 420px
+				font-family: $fontSecondaryFamily
+				overflow: hidden
+				h3	
+					font-size: 17px
+					font-weight: normal
+					text-transform: uppercase
+					padding-bottom: 25px
+					border-bottom: 1px solid #d0cabd
+
+				input
+					width: 156px
+					&.email
+						width: 250px
+
+				.address
+					float: left
+					width: 230px
+					font-size: 14px
+					line-height: 25px
+				.map
+					float: left
+					display: block
+					width: 160px
+					height: 160px
+					background: url('../img/map-small.png') no-repeat
+					text-indent: -9999px
+
+				&.widget-left
+					margin-right: 60px

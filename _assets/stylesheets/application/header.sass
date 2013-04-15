@@ -1,0 +1,47 @@
+@import "application/common"
+
+.header
+  padding: 20px 0 0 0
+  margin: 0
+  float: left
+  width: 100%
+  overflow: hidden
+  position: relative
+  background: $headerBgColor
+  
+  ul.nav 
+    clear: left
+    float: left
+    position: relative
+    left: 50% 
+    text-align: center 
+    border: none
+    padding: 0
+    margin: 0
+    font-size: 0
+    
+    li 
+      display: block
+      float: left
+      margin: 0 20px
+      padding: 0
+      border-bottom: 4px solid $headerBgColor
+      position: relative
+      right: 50%
+
+      a
+        display: block
+        line-height: 40px
+        font-size: 18px
+        font-family: $fontSecondaryFamily
+
+@each $section in 'home', 'gallery', 'lavender', 'gift-shop', 'events', 'products', 'contacts' 
+  body.#{$section} ul.nav li.#{$section}
+    border-bottom: 4px solid #9e0b0f
+
+.logo
+
+  width: 178px
+  height: 168px
+  margin: 40px auto
+  background: url('../img/logo-black.png') no-repeat

@@ -2,4 +2,10 @@
 //= require vendor/modernizer
 
 //= require vendor/jquery
+//= require vendor/underscore
+//= require vendor/backbone
 
+//= require vendor/plugins/jquery.fancybox
+
+
+//= require application/init

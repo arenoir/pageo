@@ -3,54 +3,37 @@
 #= require_tree ./models
 #= require_tree ./collections
 #= require_tree ./views
-#= require_tree ./routers
 #= require_tree ./templates
 
-@Eb =
+@Pageo =
   Models: {}
   Collections: {}
   Views: {}
   Routers: {}
+  flickrApiKey: '8eb075620268500e7336b334d442bdf1'
   
-  startSlideShow: (slides) =>
-    slides.auto = window.setInterval( () ->
-        slides.next()
-        return
-      10000
-    )
+  # startSlideShow: (slides) =>
+  #   slides.auto = window.setInterval( () ->
+  #       slides.next()
+  #       return
+  #     10000
+  #   )
 
-  stopSlideShow: (slides) =>
-    if slides.auto
-      window.clearInterval( slides.auto )    
+  # stopSlideShow: (slides) =>
+  #   if slides.auto
+  #     window.clearInterval( slides.auto )    
 
 
-  init: () ->
+  gallery: (el, photosetId) ->
 
-    t = $.makeArray($('#slides li')).map( (t, i) -> { id: i } )
-    slides =   JSON.parse(JSON.stringify(t))
-    
-    @slides = new Eb.Collections.Slides(slides)
-    @slides.selected = @slides.first()
-    view = new Eb.Views.SlideShow( collection: @slides )
-    view.render()
+    photosetId ||= '72157633247984014'
 
-    Eb.startSlideShow(@slides)
+    collection = new Pageo.Collections.FlickrImages( photosetId: photosetId )
+    collection.fetch()
 
-    # @auto = setInterval( () =>
-    #     @slides.next()
-    #     return
-    #   10000
-    # )
+    gallery = new Pageo.Views.Gallery( collection: collection)
 
-    # stop: () ->
-    #   if @auto
-    #     window.clearInterval( @auto )
+    $(el).html( gallery.render().el )
 
-    
-
-    
-    # if !Backbone.history.started
-    #    Backbone.history.start(pushState: false, root: '/')
-    #    Backbone.history.started = true
 
     return

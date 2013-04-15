@@ -1,53 +1,50 @@
 ---
-layout: default
+layout: home
 title: "Pageo Lavender Farm"
 description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, baskets and other unique items."
+bodyClass: home
 ---
 
-<div class="nav-container">
-    <ul class="nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#lavender">Lavender</a></li>
-        <li><a href="#giftshop">Gift Shop & Nursery</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-    </ul>
+<ul class="slide-show">
+	<li id="home-image"></li> 
+</ul>
+
+
+<div class="content">
+	<div class="inner">
+		<h3>Spring and Summer Schedule:</h3>
+		<p>
+			Enjoy the summer with a Picnic at Pageo. Bring your picnic to our farm with a blanket and lunch or order one of our great boxed lunches. If you bring your own picnic there is no reservation needed, for box lunches, please place your order at least 24 hours in advance. 
+		</p>
+		<p>
+			Pageo Lavender Farm will be open from April 28th thru the summer and box lunches will be served on Thursdays, Fridays and Saturdays.
+		</p>
+		<p>
+			Hours are: Thursday-Saturday from 9AM to 4PM (Beginning in August, Saturday hours will be 9AM to 1PM)
+		</p>
+		<p>
+			Stop by and visit our gift shop or just sit and relax in our beautiful park like setting.
+		</p>
+		<p>
+			Our Mothers Day luncheon was a great success this year. We thank everybody who was a part of the special day.
+		</p>
+
+	</div>
 </div>
 
-<div id="home" class="page">
-    
-    
-</div>
+<script>
+   $(document).ready(function() {
+        var h = $(document).width() * 0.62;
+        $(".slide-show li").each( function() {
+             $(this).height(h);
+         });
+    });
 
-
-<div id="gallery" class="page">
-    
-    
-</div>
-
-
-<div id="lavender" class="page">
-    
-    
-</div>
-
-
-<div id="giftshop" class="page">
-    
-    
-</div>
-
-
-<div id="events" class="page">
-    
-</div>
-
-<div id="products" class="page">
-    
-</div>
-
-<div id="contact" class="page">
-    
-</div>
+    // for the window resize
+    $(window).resize(function() {
+        var h = $(document).width() * 0.62;
+        $(".slide-show li").each( function() {
+             $(this).height(h);
+        });
+    });
+</script>
