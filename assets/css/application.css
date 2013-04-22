@@ -900,17 +900,18 @@ body.contacts ul.nav li.contacts {
   height: 168px;
   background: url("../img/logo-white.png") no-repeat; }
 
-ul.carousel {
+#carousel-container ul.carousel {
   width: 100%;
   padding: 0;
   margin: 0;
   overflow: hidden;
   white-space: nowrap; }
-  ul.carousel li {
-    width: 100%;
-    display: inline-block;
-    -webkit-box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4); }
+  #carousel-container ul.carousel li {
+    display: inline; }
+    #carousel-container ul.carousel li img {
+      width: 100%;
+      -webkit-box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4); }
 
 .shadow {
   clear: both;

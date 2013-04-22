@@ -39,9 +39,12 @@ bodyClass: home
 
     // for the window resize
     $(window).resize(function() {
-        var h = $(document).width() * 0.62;
+    	var w = $(document).width();
+        var h = w * 0.62;
         $("#carousel-container li").each( function() {
              $(this).height(h);
+             $(this).width(w);
+
         });
     });
 </script>

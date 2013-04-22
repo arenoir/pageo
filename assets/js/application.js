@@ -15428,7 +15428,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   })(Backbone.View);
 
 }).call(this);
-(function() { this.JST || (this.JST = {}); this.JST["application/templates/carousel/item"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li class="carousel-item">\n  <img src="../img/bg/bg_',  model.get('id'),'.jpg"/>\n</li>\n');}return __p.join('');};
+(function() { this.JST || (this.JST = {}); this.JST["application/templates/carousel/item"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li class="carousel-item">\n  <img src="../pageo/assets/img/bg/bg_',  model.get('id'),'.jpg"/>\n</li>\n');}return __p.join('');};
 }).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/gallery_thumbnail"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a class="fancybox" rel="gallery1" href="', model.imageUrl('b'),'" title="', model.get('title'),'">\n  <img src="', model.imageUrl(),'" alt="" />\n</a>\n');}return __p.join('');};
 }).call(this);
