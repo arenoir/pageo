@@ -37,3 +37,27 @@
 
 
     return
+
+
+  startCarousel: (slides) =>
+    slides.auto = window.setInterval( () ->
+        slides.next()
+        return
+      10000
+    )
+
+  stopCarousel: (slides) =>
+    if slides.auto
+      window.clearInterval( slides.auto )    
+
+
+  carouselInit: (slides, container ) ->
+    
+    @slides = new Pageo.Collections.Slides(slides)
+    @slides.selected = @slides.first()
+
+    carrosel = new Pageo.Views.Carousel( collection: @slides )
+    #slideIndicator = new Pageo.Views.SlideIndicators( collection: @slides )
+    $(container).html( carrosel.render().el )
+    Pageo.startCarousel(@slides)
+    return

@@ -7,7 +7,6 @@ class Pageo.Views.Gallery extends Backbone.View
     return
 
   render: ->
-    console.log @collection
     @$el.html('loading........')
     @
 

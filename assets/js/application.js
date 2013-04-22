@@ -15097,6 +15097,8 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
 }(window, document, jQuery));
 (function() {
+  var _this = this;
+
   this.Pageo = {
     Models: {},
     Collections: {},
@@ -15115,6 +15117,27 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
         collection: collection
       });
       $(el).html(gallery.render().el);
+    },
+    startCarousel: function(slides) {
+      return slides.auto = window.setInterval(function() {
+        slides.next();
+      }, 10000);
+    },
+    stopCarousel: function(slides) {
+      if (slides.auto) {
+        return window.clearInterval(slides.auto);
+      }
+    },
+    carouselInit: function(slides, container) {
+      var carrosel;
+
+      this.slides = new Pageo.Collections.Slides(slides);
+      this.slides.selected = this.slides.first();
+      carrosel = new Pageo.Views.Carousel({
+        collection: this.slides
+      });
+      $(container).html(carrosel.render().el);
+      Pageo.startCarousel(this.slides);
     }
   };
 
@@ -15184,6 +15207,24 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
+  Pageo.Models.Slide = (function(_super) {
+    __extends(Slide, _super);
+
+    function Slide() {
+      _ref = Slide.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    return Slide;
+
+  })(Backbone.Model);
+
+}).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
   Pageo.Collections.FlickrImages = (function(_super) {
     __extends(FlickrImages, _super);
 
@@ -15216,6 +15257,107 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
+  Pageo.Collections.Slides = (function(_super) {
+    __extends(Slides, _super);
+
+    function Slides() {
+      _ref = Slides.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    Slides.prototype.model = Pageo.Models.Slide;
+
+    Slides.prototype.setSelected = function(slide) {
+      this.selected = slide;
+      return this.trigger('selected', slide);
+    };
+
+    Slides.prototype.next = function() {
+      var index, m, t;
+
+      if (m = this.selected) {
+        index = this.indexOf(m) + 1;
+        t = this.at(index) || this.first();
+        return this.setSelected(t);
+      }
+    };
+
+    Slides.prototype.previous = function() {
+      var index, m, t;
+
+      if (m = this.selected) {
+        index = this.indexOf(m) - 1;
+        t = this.at(index) || this.last();
+        return this.setSelected(t);
+      }
+    };
+
+    return Slides;
+
+  })(Backbone.Collection);
+
+}).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+  Pageo.Views.Carousel = (function(_super) {
+    __extends(Carousel, _super);
+
+    function Carousel() {
+      _ref = Carousel.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    Carousel.prototype.tagName = 'ul';
+
+    Carousel.prototype.className = 'carousel';
+
+    Carousel.prototype.initialize = function(options) {
+      return this.collection.on('selected', this.slideIn, this);
+    };
+
+    Carousel.prototype.remove = $(window).unbind("resize.app");
+
+    Carousel.prototype.render = function() {
+      var _this = this;
+
+      this.collection.each(function(slide) {
+        return _this.$el.append(JST['application/templates/carousel/item']({
+          model: slide
+        }));
+      });
+      return this;
+    };
+
+    Carousel.prototype.slideIn = function(slide) {
+      return this.$el.animate({
+        marginLeft: this.slideOffset(slide)
+      }, 300);
+    };
+
+    Carousel.prototype.slideOffset = function(slide) {
+      var index, offset;
+
+      index = this.collection.indexOf(slide);
+      return offset = -1.0 * index * this.imageWidth();
+    };
+
+    Carousel.prototype.imageWidth = function() {
+      return $(document).width();
+    };
+
+    return Carousel;
+
+  })(Backbone.View);
+
+}).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
   Pageo.Views.Gallery = (function(_super) {
     __extends(Gallery, _super);
 
@@ -15233,7 +15375,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     };
 
     Gallery.prototype.render = function() {
-      console.log(this.collection);
       this.$el.html('loading........');
       return this;
     };
@@ -15286,6 +15427,8 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
   })(Backbone.View);
 
+}).call(this);
+(function() { this.JST || (this.JST = {}); this.JST["application/templates/carousel/item"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li class="carousel-item">\n  <img src="../img/bg/bg_',  model.get('id'),'.jpg"/>\n</li>\n');}return __p.join('');};
 }).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/gallery_thumbnail"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a class="fancybox" rel="gallery1" href="', model.imageUrl('b'),'" title="', model.get('title'),'">\n  <img src="', model.imageUrl(),'" alt="" />\n</a>\n');}return __p.join('');};
 }).call(this);

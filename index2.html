@@ -5,9 +5,8 @@ description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, 
 bodyClass: home
 ---
 
-<ul class="slide-show">
-	<li id="home-image"></li> 
-</ul>
+<div id="carousel-container"></div>
+
 
 
 <div class="content">
@@ -34,16 +33,14 @@ bodyClass: home
 
 <script>
    $(document).ready(function() {
-        var h = $(document).width() * 0.62;
-        $(".slide-show li").each( function() {
-             $(this).height(h);
-         });
+   		var slides = [{id: 'home'}, {id: 'lavender'}, {id: 'products'}]
+   		Pageo.carouselInit( slides, "#carousel-container" )
     });
 
     // for the window resize
     $(window).resize(function() {
         var h = $(document).width() * 0.62;
-        $(".slide-show li").each( function() {
+        $("#carousel-container li").each( function() {
              $(this).height(h);
         });
     });

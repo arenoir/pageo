@@ -900,13 +900,13 @@ body.contacts ul.nav li.contacts {
   height: 168px;
   background: url("../img/logo-white.png") no-repeat; }
 
-.slide-show {
+ul.carousel {
   width: 100%;
   padding: 0;
   margin: 0;
   overflow: hidden;
   white-space: nowrap; }
-  .slide-show li {
+  ul.carousel li {
     width: 100%;
     display: inline-block;
     -webkit-box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4);
@@ -966,6 +966,22 @@ body.contacts ul.nav li.contacts {
     margin: 0 20px 20px 0;
     border: 1px solid #cccccc;
     background-position: center center; }
+.lavender .content.with-background-image {
+  background: white url("../img/pages/lavender-background.jpg") no-repeat center bottom;
+  background-size: 100%;
+  padding-bottom: 450px; }
+.lavender .lavender-varieties {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 14px; }
+  .lavender .lavender-varieties ul.lavender-variety {
+    width: 240px;
+    float: left; }
+    .lavender .lavender-varieties ul.lavender-variety li.variety-name {
+      margin-left: -40px;
+      list-style: none; }
+
 
 
 
