@@ -15118,7 +15118,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
       });
       $(el).html(gallery.render().el);
     },
-    InitUpcomingEvents: function(el) {
+    initUpcomingEvents: function(el) {
       var collection, view;
 
       collection = new Pageo.Collections.GoogleEvents();
@@ -15126,7 +15126,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
       view = new Pageo.Views.UpcomingEvents({
         collection: collection
       });
-      return $(el).html(view.render().el);
+      $(el).html(view.render().el);
     },
     startCarousel: function(slides) {
       return slides.auto = window.setInterval(function() {
@@ -15512,9 +15512,9 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     UpcomingEvents.prototype.render = function() {
       var _this = this;
 
-      this.collection.each(function(event) {
+      this.collection.each(function(item) {
         return _this.$el.append(JST['application/templates/upcoming_events/item']({
-          model: event
+          model: item
         }));
       });
       return this;
@@ -15529,8 +15529,8 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 }).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/gallery_thumbnail"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a class="fancybox" rel="gallery1" href="', model.imageUrl('b'),'" title="', model.get('title'),'">\n  <img src="', model.imageUrl(),'" alt="" />\n</a>\n');}return __p.join('');};
 }).call(this);
-(function() { this.JST || (this.JST = {}); this.JST["application/templates/upcoming_events/event"] = <li>
-    <%=event.startDate()%>
+(function() { this.JST || (this.JST = {}); this.JST["application/templates/upcoming_events/item"] = <li>
+    <%=item.startDate()%>
   </li>;
 }).call(this);
 

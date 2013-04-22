@@ -38,13 +38,15 @@
 
     return
 
-  InitUpcomingEvents: (el) ->
+  initUpcomingEvents: (el) ->
     collection = new Pageo.Collections.GoogleEvents()
     collection.fetch()
 
     view = new Pageo.Views.UpcomingEvents( collection: collection)
 
     $(el).html( view.render().el )
+    
+    return
 
 
   startCarousel: (slides) =>

@@ -3,6 +3,6 @@ class Pageo.Views.UpcomingEvents extends Backbone.View
   className: 'upcoming-events'
 
   render: ->
-    @collection.each (event) =>
-      @$el.append( JST['application/templates/upcoming_events/item'](model: event) )
+    @collection.each (item) =>
+      @$el.append( JST['application/templates/upcoming_events/item'](model: item) )
     @
