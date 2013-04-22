@@ -50,8 +50,7 @@
 
     <h1 class="logo-home"></h1>
 
-    <div id="carousel-container"></div>
-
+    <div class="static-carousel" id="home-image"></div>
 
 
 <div class="content">
@@ -78,19 +77,18 @@
 
 <script>
    $(document).ready(function() {
-   		var slides = [{id: 'home'}, {id: 'lavender'}, {id: 'products'}]
-   		Pageo.carouselInit( slides, "#carousel-container" )
+   		//var slides = [{id: 'home'}, {id: 'lavender'}, {id: 'products'}]
+   		//Pageo.carouselInit( slides, "#carousel-container" )
+   		var w = $(document).width();
+        var h = w * 0.62;
+   		$('#home-image').height(h);
     });
 
     // for the window resize
     $(window).resize(function() {
     	var w = $(document).width();
         var h = w * 0.62;
-        $("#carousel-container li").each( function() {
-             $(this).height(h);
-             $(this).width(w);
-
-        });
+   		$('#home-image').height(h);
     });
 </script>
 

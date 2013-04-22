@@ -15118,6 +15118,16 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
       });
       $(el).html(gallery.render().el);
     },
+    InitUpcomingEvents: function(el) {
+      var collection, view;
+
+      collection = new Pageo.Collections.GoogleEvents();
+      collection.fetch();
+      view = new Pageo.Views.UpcomingEvents({
+        collection: collection
+      });
+      return $(el).html(view.render().el);
+    },
     startCarousel: function(slides) {
       return slides.auto = window.setInterval(function() {
         slides.next();
@@ -15165,6 +15175,32 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     };
 
     return FlickrImage;
+
+  })(Backbone.Model);
+
+}).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+  Pageo.Models.GoogleEvent = (function(_super) {
+    __extends(GoogleEvent, _super);
+
+    function GoogleEvent() {
+      _ref = GoogleEvent.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    GoogleEvent.prototype.startDate = function() {
+      var d;
+
+      if (d = this.get('start.date')) {
+        return d;
+      }
+    };
+
+    return GoogleEvent;
 
   })(Backbone.Model);
 
@@ -15248,6 +15284,34 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     FlickrImages.prototype.model = Pageo.Models.FlickrImage;
 
     return FlickrImages;
+
+  })(Backbone.Collection);
+
+}).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+  Pageo.Collections.GoogleEvents = (function(_super) {
+    __extends(GoogleEvents, _super);
+
+    function GoogleEvents() {
+      _ref = GoogleEvents.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    GoogleEvents.prototype.model = Pageo.Models.GoogleEvent;
+
+    GoogleEvents.prototype.url = function() {
+      return 'https://www.googleapis.com/calendar/v3/calendars/3b42dtpn8l55iabmau44u23k1c@group.calendar.google.com/events?key=AIzaSyCpHBzzdz_WNdFZ-_4V-7ZjoBCgwrukSxo';
+    };
+
+    GoogleEvents.prototype.parse = function(resp, xhr) {
+      return resp.items;
+    };
+
+    return GoogleEvents;
 
   })(Backbone.Collection);
 
@@ -15428,9 +15492,46 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   })(Backbone.View);
 
 }).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+  Pageo.Views.UpcomingEvents = (function(_super) {
+    __extends(UpcomingEvents, _super);
+
+    function UpcomingEvents() {
+      _ref = UpcomingEvents.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    UpcomingEvents.prototype.tagName = 'ul';
+
+    UpcomingEvents.prototype.className = 'upcoming-events';
+
+    UpcomingEvents.prototype.render = function() {
+      var _this = this;
+
+      this.collection.each(function(event) {
+        return _this.$el.append(JST['application/templates/upcoming_events/item']({
+          model: event
+        }));
+      });
+      return this;
+    };
+
+    return UpcomingEvents;
+
+  })(Backbone.View);
+
+}).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/carousel/item"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li class="carousel-item">\n  <img src="../pageo/assets/img/bg/bg_',  model.get('id'),'.jpg"/>\n</li>\n');}return __p.join('');};
 }).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/gallery_thumbnail"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a class="fancybox" rel="gallery1" href="', model.imageUrl('b'),'" title="', model.get('title'),'">\n  <img src="', model.imageUrl(),'" alt="" />\n</a>\n');}return __p.join('');};
+}).call(this);
+(function() { this.JST || (this.JST = {}); this.JST["application/templates/upcoming_events/event"] = <li>
+    <%=event.startDate()%>
+  </li>;
 }).call(this);
 
 

@@ -907,7 +907,7 @@ body.contacts ul.nav li.contacts {
   overflow: hidden;
   white-space: nowrap; }
   #carousel-container ul.carousel li {
-    display: inline; }
+    display: inline-block; }
     #carousel-container ul.carousel li img {
       width: 100%;
       -webkit-box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4);
@@ -923,6 +923,15 @@ body.contacts ul.nav li.contacts {
   background: -ms-linear-gradient(top, rgba(67, 36, 0, 0.23) 0%, rgba(67, 36, 0, 0) 100%);
   background: linear-gradient(to bottom, rgba(67, 36, 0, 0.23) 0%, rgba(67, 36, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b432400', endColorstr='#00432400',GradientType=0 ); }
+
+.static-carousel {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4); }
 
 .splash {
   text-align: center; }
@@ -982,6 +991,11 @@ body.contacts ul.nav li.contacts {
     .lavender .lavender-varieties ul.lavender-variety li.variety-name {
       margin-left: -40px;
       list-style: none; }
+.events .content.with-background-image {
+  background: white url("../img/pages/lavender-background.jpg") no-repeat center bottom;
+  background-size: 100%;
+  padding-bottom: 450px; }
+
 
 
 
