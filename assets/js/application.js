@@ -16679,6 +16679,14 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
       }
     };
 
+    GoogleEvent.prototype.locationString = function() {
+      var l;
+
+      if (l = this.get('location')) {
+        return "@" + l;
+      }
+    };
+
     return GoogleEvent;
 
   })(Backbone.Model);
@@ -17018,7 +17026,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 }).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/gallery_thumbnail"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a class="fancybox" rel="gallery1" href="', model.imageUrl('b'),'" title="', model.get('title'),'">\n  <img src="', model.imageUrl(),'" alt="" />\n</a>\n');}return __p.join('');};
 }).call(this);
-(function() { this.JST || (this.JST = {}); this.JST["application/templates/upcoming_events/item"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li>\n ', model.displayString(),'\n\n |\n\n ', model.get('summary') ,'\n\n </li>\n\t\n');}return __p.join('');};
+(function() { this.JST || (this.JST = {}); this.JST["application/templates/upcoming_events/item"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li>\n ', model.displayString(),'\n\n |\n\n  <a href="', model.get('htmlLink'),'" target=\'_blank\'>\n    ', model.get('summary') ,'\n  </a>\n\n ', model.locationString(),'\n\n </li>\n\t\n');}return __p.join('');};
 }).call(this);
 
 

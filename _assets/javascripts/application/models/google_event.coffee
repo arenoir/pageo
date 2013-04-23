@@ -1,7 +1,5 @@
 class Pageo.Models.GoogleEvent extends Backbone.Model
   
-
-
   startDate: ->
     if d = @get('start')
       if dd = d.date
@@ -53,3 +51,7 @@ class Pageo.Models.GoogleEvent extends Backbone.Model
   timeString: ->
     if time = @startTime()
       _.compact([time, @stopTime()]).join(' to ')
+
+  locationString: ->
+    if l = @get('location')
+      "@" + l
