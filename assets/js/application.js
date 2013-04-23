@@ -15195,7 +15195,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     GoogleEvent.prototype.startDate = function() {
       var d;
 
-      if (d = this.get('start.date')) {
+      if (d = this.get('start').date) {
         return d;
       }
     };
@@ -15509,9 +15509,19 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
     UpcomingEvents.prototype.className = 'upcoming-events';
 
+    UpcomingEvents.prototype.initialize = function(options) {
+      this.collection.on("reset", this.reRender, this);
+    };
+
     UpcomingEvents.prototype.render = function() {
+      this.$el.html('loading........');
+      return this;
+    };
+
+    UpcomingEvents.prototype.reRender = function() {
       var _this = this;
 
+      this.$el.empty();
       this.collection.each(function(item) {
         return _this.$el.append(JST['application/templates/upcoming_events/item']({
           model: item
@@ -15529,9 +15539,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 }).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/gallery_thumbnail"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a class="fancybox" rel="gallery1" href="', model.imageUrl('b'),'" title="', model.get('title'),'">\n  <img src="', model.imageUrl(),'" alt="" />\n</a>\n');}return __p.join('');};
 }).call(this);
-(function() { this.JST || (this.JST = {}); this.JST["application/templates/upcoming_events/item"] = <li>
-    <%=model.startDate()%>
-  </li>;
+(function() { this.JST || (this.JST = {}); this.JST["application/templates/upcoming_events/item"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li>\n ', model.startDate(),'\n |\n\n ', model.get('summary') ,'\n\n </li>\n\t\n');}return __p.join('');};
 }).call(this);
 
 

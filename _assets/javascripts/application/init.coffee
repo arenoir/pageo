@@ -44,6 +44,7 @@
 
     view = new Pageo.Views.UpcomingEvents( collection: collection)
 
+
     $(el).html( view.render().el )
     
     return

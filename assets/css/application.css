@@ -771,6 +771,10 @@ a:hover {
 
 .clearfix {
   *zoom: 1; }
+
+p.highlight {
+  padding: 20px;
+  background: #dbf3f5; }
 .body {
   position: relative;
   clear: both; }
