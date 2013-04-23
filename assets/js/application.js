@@ -15530,7 +15530,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/gallery_thumbnail"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a class="fancybox" rel="gallery1" href="', model.imageUrl('b'),'" title="', model.get('title'),'">\n  <img src="', model.imageUrl(),'" alt="" />\n</a>\n');}return __p.join('');};
 }).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/upcoming_events/item"] = <li>
-    <%=item.startDate()%>
+    <%=model.startDate()%>
   </li>;
 }).call(this);
 
