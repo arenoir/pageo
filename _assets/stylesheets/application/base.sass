@@ -26,7 +26,8 @@ hr
     border-top: 1px solid #1c1f23
     border-bottom: 1px solid #32373d
 
-a.btn 
+
+.btn
     display: inline-block
     padding: 4px 12px
     margin-bottom: 0
@@ -45,8 +46,13 @@ a.btn
     &:focus 
         color: #eee4ce 
         text-decoration: none
-  
-input[type="text"]
+
+input[type="submit"]
+    width: auto
+    
+
+input[type="text"],
+input[type="email"]
     line-height: 20px
     display: inline-block
     height: $baseLineHeight
@@ -54,7 +60,7 @@ input[type="text"]
     margin-bottom: $baseLineHeight / 2
     font-size: $fontBaseSize
     line-height: $baseLineHeight
-    color: #ccc
+    color: #333
     vertical-align: middle
     margin-right: 20px
 

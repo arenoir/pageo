@@ -6,20 +6,7 @@
                 <h3>Mailing List Sign-Up</h3>
                 <span id="response">
 
-                <form id="signup" action="<?=$_SERVER['PHP_SELF']; ?>" method="get">
-                    <label for="firstname">Name</label>
-                    <div class="row">
-                        <input type="text" name="firstname" id="firstname" />
-                        <input type="text" name="lastname" id="lastname" />
-                    </div>
-
-                    <label for="email" id="address-label">Email Address</label>
-                    <div class="row">
-                        <input type="text" name="email" class="email" />
-                        <a class="btn" id="sign-up">Sign Up</a>
-                    </div>
-
-                </form>              
+                {% include mailing_list_signup.html %}     
             
           </fieldset>
         </form>      

@@ -1,4 +1,5 @@
 @import "application/common"
+
 .footer
 	background: #eee4ce
 	overflow: hidden
@@ -26,11 +27,13 @@
 					text-transform: uppercase
 					padding-bottom: 25px
 					border-bottom: 1px solid #d0cabd
-
-				input
+					
+				input[type="text"]
 					width: 156px
-					&.email
-						width: 250px
+				input[type="email"]
+					width: 250px
+				input[type="submit"]
+					width: auto
 
 				.address
 					float: left

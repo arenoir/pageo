@@ -670,7 +670,7 @@ hr {
   border-top: 1px solid #1c1f23;
   border-bottom: 1px solid #32373d; }
 
-a.btn {
+.btn {
   display: inline-block;
   padding: 4px 12px;
   margin-bottom: 0;
@@ -684,11 +684,15 @@ a.btn {
   font-weight: bold;
   font-size: 13px;
   margin-bottom: 10px; }
-  a.btn:hover, a.btn:focus {
+  .btn:hover, .btn:focus {
     color: #eee4ce;
     text-decoration: none; }
 
-input[type="text"] {
+input[type="submit"] {
+  width: auto; }
+
+input[type="text"],
+input[type="email"] {
   line-height: 20px;
   display: inline-block;
   height: 20px;
@@ -696,7 +700,7 @@ input[type="text"] {
   margin-bottom: 10px;
   font-size: 13px;
   line-height: 20px;
-  color: #cccccc;
+  color: #333333;
   vertical-align: middle;
   margin-right: 20px; }
 
@@ -785,10 +789,14 @@ a:hover {
     border: 1px solid #d1c6ac;
     width: 965px;
     margin: 60px auto;
-    font-size: 18px;
+    font-size: 17px;
     color: #222222;
     line-height: 2;
     position: relative; }
+    .body .content .emphasize {
+      font-family: "Josefin Slab", serif;
+      font-weight: 600;
+      font-size: 20px; }
     .body .content .inner {
       padding: 50px; }
       .body .content .inner h3 {
@@ -797,6 +805,21 @@ a:hover {
         margin-bottom: 1em; }
   .body .secondary {
     font-size: 14px; }
+
+body.lavender .content.with-background-image {
+  background: white url("../img/pages/lavender-background.jpg") no-repeat center bottom;
+  background-size: 100%;
+  padding-bottom: 500px; }
+
+body.gift-shop-and-nursery .content.with-background-image {
+  background: white url("../img/pages/gift-shop-and-nursery-background.jpg") no-repeat center bottom;
+  background-size: 100%;
+  padding-bottom: 500px; }
+
+body.events .content.with-background-image {
+  background: white url("../img/pages/events-background.jpg") no-repeat center bottom;
+  background-size: 100%;
+  padding-bottom: 500px; }
 .header {
   padding: 20px 0 0 0;
   margin: 0;
@@ -838,7 +861,7 @@ body.gallery ul.nav li.gallery {
 body.lavender ul.nav li.lavender {
   border-bottom: 4px solid #9e0b0f; }
 
-body.gift-shop ul.nav li.gift-shop {
+body.gift-shop-and-nursery ul.nav li.gift-shop-and-nursery {
   border-bottom: 4px solid #9e0b0f; }
 
 body.events ul.nav li.events {
@@ -847,7 +870,7 @@ body.events ul.nav li.events {
 body.products ul.nav li.products {
   border-bottom: 4px solid #9e0b0f; }
 
-body.contacts ul.nav li.contacts {
+body.contact ul.nav li.contact {
   border-bottom: 4px solid #9e0b0f; }
 
 .logo {
@@ -879,10 +902,12 @@ body.contacts ul.nav li.contacts {
           text-transform: uppercase;
           padding-bottom: 25px;
           border-bottom: 1px solid #d0cabd; }
-        .footer .content .inner .widget input {
+        .footer .content .inner .widget input[type="text"] {
           width: 156px; }
-          .footer .content .inner .widget input.email {
-            width: 250px; }
+        .footer .content .inner .widget input[type="email"] {
+          width: 250px; }
+        .footer .content .inner .widget input[type="submit"] {
+          width: auto; }
         .footer .content .inner .widget .address {
           float: left;
           width: 230px;
@@ -983,10 +1008,6 @@ body.contacts ul.nav li.contacts {
     margin: 0 20px 20px 0;
     border: 1px solid #cccccc;
     background-position: center center; }
-.lavender .content.with-background-image {
-  background: white url("../img/pages/lavender-background.jpg") no-repeat center bottom;
-  background-size: 100%;
-  padding-bottom: 450px; }
 .lavender .lavender-varieties {
   margin: 0;
   padding: 0;
@@ -998,13 +1019,10 @@ body.contacts ul.nav li.contacts {
     .lavender .lavender-varieties ul.lavender-variety li.variety-name {
       margin-left: -40px;
       list-style: none; }
-.events .content.with-background-image {
-  background: white url("../img/pages/events-background.jpg") no-repeat center bottom;
-  background-size: 100%;
-  padding-bottom: 500px; }
 .events .upcoming-events {
   list-style: none;
   padding: 0; }
+
 
 
 
