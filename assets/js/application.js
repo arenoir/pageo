@@ -16505,6 +16505,16 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     Views: {},
     Routers: {},
     flickrApiKey: '8eb075620268500e7336b334d442bdf1',
+    initProducts: function(el) {
+      var collection, view;
+
+      collection = new Pageo.Collections.Products();
+      collection.fetch();
+      view = new Pageo.Views.Products({
+        collection: collection
+      });
+      $(el).html(view.render().el);
+    },
     gallery: function(el, photosetId) {
       var collection, gallery;
 
@@ -16730,6 +16740,40 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
+  Pageo.Models.Product = (function(_super) {
+    var baseUrl;
+
+    __extends(Product, _super);
+
+    function Product() {
+      _ref = Product.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    baseUrl = 'http://pageo.myshopify.com/products/';
+
+    Product.prototype.buyUrl = function() {
+      var h;
+
+      if (h = this.get('handle')) {
+        return baseUrl + h;
+      }
+    };
+
+    Product.prototype.imageUrl = function() {
+      return this.get('images').first();
+    };
+
+    return Product;
+
+  })(Backbone.Model);
+
+}).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
   Pageo.Models.Slide = (function(_super) {
     __extends(Slide, _super);
 
@@ -16799,6 +16843,34 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     };
 
     return GoogleEvents;
+
+  })(Backbone.Collection);
+
+}).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+  Pageo.Collections.Products = (function(_super) {
+    __extends(Products, _super);
+
+    function Products() {
+      _ref = Products.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    Products.prototype.model = Pageo.Models.Product;
+
+    Products.prototype.url = function() {
+      return 'http://pageo.myshopify.com/collections/frontpage/products.json?limit=40&callback=?';
+    };
+
+    Products.prototype.parse = function(resp, xhr) {
+      return resp.products;
+    };
+
+    return Products;
 
   })(Backbone.Collection);
 
@@ -16984,6 +17056,80 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
+  Pageo.Views.Product = (function(_super) {
+    __extends(Product, _super);
+
+    function Product() {
+      _ref = Product.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    Product.prototype.tagName = 'li';
+
+    Product.prototype.render = function() {
+      this.$el.html(JST['application/templates/products/product']({
+        model: this.model
+      }));
+      return this;
+    };
+
+    return Product;
+
+  })(Backbone.View);
+
+}).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+  Pageo.Views.Products = (function(_super) {
+    __extends(Products, _super);
+
+    function Products() {
+      _ref = Products.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    Products.prototype.tagName = 'ul';
+
+    Products.prototype.className = 'products';
+
+    Products.prototype.initialize = function(options) {
+      this.collection.on("reset", this.reRender, this);
+    };
+
+    Products.prototype.render = function() {
+      this.$el.html('loading........');
+      return this;
+    };
+
+    Products.prototype.reRender = function() {
+      var _this = this;
+
+      this.$el.empty();
+      this.collection.forEach(function(product) {
+        var view;
+
+        view = new Pageo.Views.Product({
+          model: product,
+          collection: _this.collection
+        });
+        _this.$el.append(view.render().el);
+      });
+      return this;
+    };
+
+    return Products;
+
+  })(Backbone.View);
+
+}).call(this);
+(function() {
+  var _ref,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
   Pageo.Views.UpcomingEvents = (function(_super) {
     __extends(UpcomingEvents, _super);
 
@@ -17025,6 +17171,8 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/carousel/item"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li class="carousel-item">\n  <img src="../pageo/assets/img/bg/bg_',  model.get('id'),'.jpg"/>\n</li>\n');}return __p.join('');};
 }).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/gallery_thumbnail"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a class="fancybox" rel="gallery1" href="', model.imageUrl('b'),'" title="', model.get('title'),'">\n  <img src="', model.imageUrl(),'" alt="" />\n</a>\n');}return __p.join('');};
+}).call(this);
+(function() { this.JST || (this.JST = {}); this.JST["application/templates/products/product"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<a href="', model.buyUrl(),'" target="_blank">\n  ', model.get('title'),'\n</a>\n');}return __p.join('');};
 }).call(this);
 (function() { this.JST || (this.JST = {}); this.JST["application/templates/upcoming_events/item"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li>\n ', model.displayString(),'\n\n |\n\n  <a href="', model.get('htmlLink'),'" target=\'_blank\'>\n    ', model.get('summary') ,'\n  </a>\n\n ', model.locationString(),'\n\n </li>\n\t\n');}return __p.join('');};
 }).call(this);

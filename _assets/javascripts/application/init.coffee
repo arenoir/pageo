@@ -23,6 +23,18 @@
   #   if slides.auto
   #     window.clearInterval( slides.auto )    
 
+  initProducts: (el) ->
+    #url = 'http://pageo.myshopify.com/collections/frontpage/products.json?callback=?'
+    collection = new Pageo.Collections.Products()
+    collection.fetch()
+    view = new Pageo.Views.Products( collection: collection )
+    #$.getJSON url, (json) ->
+    #  console.log json
+    #  collection.reset(json)
+    
+    $(el).html( view.render().el )
+    return
+
 
   gallery: (el, photosetId) ->
 
