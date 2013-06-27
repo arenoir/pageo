@@ -933,7 +933,10 @@ body.contact ul.nav li.contact {
           font-size: 14px;
           line-height: 25px; }
           .footer .content .inner .widget .address a {
-            display: block; }
+            display: block;
+            color: #444444; }
+            .footer .content .inner .widget .address a:hover {
+              color: #444444; }
         .footer .content .inner .widget .map {
           float: left;
           display: block;
