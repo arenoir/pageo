@@ -780,6 +780,26 @@ a:hover {
 .highlight {
   padding: 20px;
   background: #dbf3f5; }
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: text-top;
+  background-image: url("../img/icons.png");
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+  margin-top: 1px; }
+
+.icon-email {
+  background-position: 0 -5px; }
+
+.icon-phone {
+  background-position: 0 -23px; }
+
+.icon-fax {
+  background-position: 0 -40px; }
 .body {
   position: relative;
   clear: both; }
@@ -913,6 +933,8 @@ body.contact ul.nav li.contact {
           width: 230px;
           font-size: 14px;
           line-height: 25px; }
+          .footer .content .inner .widget .address a {
+            display: block; }
         .footer .content .inner .widget .map {
           float: left;
           display: block;
@@ -1022,6 +1044,7 @@ body.contact ul.nav li.contact {
 .events .upcoming-events {
   list-style: none;
   padding: 0; }
+
 
 
 
