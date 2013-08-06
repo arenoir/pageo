@@ -808,9 +808,9 @@ a:hover {
     border: 1px solid #d1c6ac;
     width: 965px;
     margin: 60px auto;
-    font-size: 17px;
+    font-size: 16px;
     color: #222222;
-    line-height: 2;
+    line-height: 1.7;
     position: relative; }
     .body .content .emphasize {
       font-family: "Josefin Slab", serif;
