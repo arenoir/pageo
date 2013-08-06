@@ -817,6 +817,11 @@ a:hover {
       font-weight: 600;
       font-size: 26px;
       line-height: 1.5; }
+    .body .content .first {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.4; }
     .body .content .inner {
       padding: 50px; }
       .body .content .inner h3 {
