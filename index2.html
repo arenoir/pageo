@@ -1,0 +1,50 @@
+---
+layout: home
+title: "Pageo Lavender Farm"
+description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, baskets and other unique items."
+bodyClass: home
+---
+
+<div class="static-carousel" id="home-image"></div>
+
+
+<div class="content">
+<img width="965" src="https://dl.dropboxusercontent.com/u/47974942/pageo2.jpg">
+<p>
+	<div class="inner">
+		<h3>Winter & Fall Schedule:</h3>
+		<p>
+			Enjoy the summer with a Picnic at Pageo. Bring your picnic to our farm with a blanket and lunch or order one of our great boxed lunches. If you bring your own picnic there is no reservation needed, for box lunches, please place your order at least 24 hours in advance. 
+		</p>
+		<p>
+			Pageo Lavender Farm will be open from April 28th thru the summer and box lunches will be served on Thursdays, Fridays and Saturdays.
+		</p>
+		<p>
+			Hours are: Thursday-Saturday from 9AM to 4PM (Beginning in August, Saturday hours will be 9AM to 1PM)
+		</p>
+		<p>
+			Stop by and visit our gift shop or just sit and relax in our beautiful park like setting.
+		</p>
+		<p>
+			Our Mothers Day luncheon was a great success this year. We thank everybody who was a part of the special day.
+		</p>
+
+	</div>
+</div>
+
+<script>
+   $(document).ready(function() {
+   		//var slides = [{id: 'home'}, {id: 'lavender'}, {id: 'products'}]
+   		//Pageo.carouselInit( slides, "#carousel-container" )
+   		var w = $(document).width();
+        var h = w * 0.62;
+   		$('#home-image').height(h);
+    });
+
+    // for the window resize
+    $(window).resize(function() {
+    	var w = $(document).width();
+        var h = w * 0.62;
+   		$('#home-image').height(h);
+    });
+</script>
