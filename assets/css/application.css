@@ -1027,14 +1027,14 @@ body.contact ul.nav li.contact {
   background-size: 100%; }
 .gallery ul.images {
   list-style: none;
-  margin: 35px 0 0 0;
+  margin: 25px 0 0 0;
   padding: 0; }
   .gallery ul.images li {
     display: inline-block;
     width: 150px;
     height: 150px;
-    margin: 0 20px 20px 0;
-    border: 1px solid #cccccc;
+    margin: 0 0px 0px 0;
+    border: 16px solid #cccccc;
     background-position: center center; }
 .lavender .lavender-varieties {
   margin: 0;
