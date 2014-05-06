@@ -674,7 +674,7 @@ hr {
   display: inline-block;
   padding: 4px 12px;
   margin-bottom: 0;
-  line-height: 20px;
+  line-height: 26px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -697,7 +697,7 @@ input[type="email"] {
   display: inline-block;
   height: 20px;
   padding: 4px 6px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 13px;
   line-height: 20px;
   color: #333333;
