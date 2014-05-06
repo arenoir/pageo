@@ -6,7 +6,6 @@
 
 /**
  * Correct `block` display not defined in IE 8/9.
- */
 
 
 article,
@@ -672,11 +671,11 @@ hr {
 
 .btn {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   line-height: 26px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
   cursor: pointer;
   border: 1px solid #444444;
   background: #413f3b;
