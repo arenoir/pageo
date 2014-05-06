@@ -671,18 +671,18 @@ hr {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 6px 10px;
   margin-bottom: 0;
-  line-height: 26px;
+  line-height: 22px;
   text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
   cursor: pointer;
   border: 1px solid #444444;
   background: #413f3b;
   color: #eee4ce;
   font-weight: bold;
-  font-size: 13px;
-  margin-bottom: 10px; }
+  font-size: 14px;
+  margin-bottom: 20px; }
   .btn:hover, .btn:focus {
     color: #eee4ce;
     text-decoration: none; }
