@@ -953,13 +953,13 @@ body.contact ul.nav li.contact {
           margin-right: 60px; }
 .home .logo-home {
   position: absolute;
-  top: 60px;
+  top: 100px;
   left: 50%;
-  margin-left: -89px;
+  margin-left: -115px;
   z-index: 200;
-  width: 178px;
-  height: 168px;
-  background: url("../img/logo-white.png") no-repeat; }
+  width: 230px;
+  height: 218px;
+  background: url("../img/logo-white_2.png") no-repeat; }
 
 #carousel-container ul.carousel {
   width: 100%;
@@ -991,8 +991,8 @@ body.contact ul.nav li.contact {
   margin: 0;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.4); }
+  -webkit-box-shadow: inset 0px 0px 24px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 24px 0px rgba(0, 0, 0, 0.4); }
 
 .splash {
   text-align: center; }
@@ -1000,7 +1000,7 @@ body.contact ul.nav li.contact {
     margin: 30px auto; }
 
 #home-image {
-  background: url("../img/bg/bg_home.jpg") no-repeat;
+  background: url("../img/bg/bg_home4.jpg") no-repeat;
   background-size: 100%; }
 
 #contact-image {
