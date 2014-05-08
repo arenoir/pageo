@@ -954,10 +954,10 @@ body.contact ul.nav li.contact {
   position: absolute;
   top: 130px;
   left: 50%;
-  margin-left: -115px;
+  margin-left: -127px;
   z-index: 200;
-  width: 230px;
-  height: 218px;
+  width: 254px;
+  height: 246px;
   background: url("../img/logo-white_2.png") no-repeat; }
 
 #carousel-container ul.carousel {
