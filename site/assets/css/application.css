@@ -720,16 +720,12 @@ textarea {
 
 a,
 a:visited {
-  color: #93959b; 
+  color: #93959b;
   text-decoration: none; }
 
 a:hover {
-  color: #9e0b0f;
-  text-decoration: none; }
-
-a:inline {
-  color: #9e0b0f;
-  text-decoration: none; }
+  color: #1661b6;
+  text-decoration: underline; }
 
 .ir {
   background-color: transparent;
@@ -781,8 +777,7 @@ a:inline {
   *zoom: 1; }
 
 .highlight {
-  padding: 30px;
-  padding-bottom: 15px;
+  padding: 20px;
   background: #dbf3f5; }
 [class^="icon-"],
 [class*=" icon-"] {
@@ -818,9 +813,9 @@ a:inline {
     position: relative; }
     .body .content .emphasize {
       font-family: "Josefin Slab", serif;
-      font-weight: 400;
+      font-weight: 600;
       font-size: 26px;
-      line-height: 1.3; }
+      line-height: 1.5; }
     .body .content .first {
       font-family: Georgia, "Times New Roman", Times, serif;
       font-size: 17px;
@@ -871,36 +866,35 @@ body.events .content.with-background-image {
       float: left;
       margin: 0 20px;
       padding: 0;
-      border-bottom: 5px solid white;
+      border-bottom: 4px solid white;
       position: relative;
       right: 50%; }
       .header ul.nav li a {
         display: block;
-        line-height: 50px;
+        line-height: 40px;
         font-size: 18px;
         font-family: "Josefin Slab", serif; }
-  
 
 body.home ul.nav li.home {
-  border-bottom: 5px solid #9e0b0f; }
+  border-bottom: 4px solid #9e0b0f; }
 
 body.gallery ul.nav li.gallery {
-  border-bottom: 5px solid #9e0b0f; }
+  border-bottom: 4px solid #9e0b0f; }
 
 body.lavender ul.nav li.lavender {
-  border-bottom: 5px solid #9e0b0f; }
+  border-bottom: 4px solid #9e0b0f; }
 
 body.gift-shop-and-nursery ul.nav li.gift-shop-and-nursery {
-  border-bottom: 5px solid #9e0b0f; }
+  border-bottom: 4px solid #9e0b0f; }
 
 body.events ul.nav li.events {
-  border-bottom: 5px solid #9e0b0f; }
+  border-bottom: 4px solid #9e0b0f; }
 
 body.products ul.nav li.products {
-  border-bottom: 5px solid #9e0b0f; }
+  border-bottom: 4px solid #9e0b0f; }
 
 body.contact ul.nav li.contact {
-  border-bottom: 5px solid #9e0b0f; }
+  border-bottom: 4px solid #9e0b0f; }
 
 .logo {
   width: 178px;
@@ -981,7 +975,7 @@ body.contact ul.nav li.contact {
 
 .shadow {
   clear: both;
-  height: 30px;
+  height: 40px;
   background: -moz-linear-gradient(top, rgba(67, 36, 0, 0.23) 0%, rgba(67, 36, 0, 0) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(67, 36, 0, 0.23)), color-stop(100%, rgba(67, 36, 0, 0)));
   background: -webkit-linear-gradient(top, rgba(67, 36, 0, 0.23) 0%, rgba(67, 36, 0, 0) 100%);
