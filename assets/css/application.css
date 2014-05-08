@@ -781,7 +781,8 @@ a:inline {
   *zoom: 1; }
 
 .highlight {
-  padding: 20px;
+  padding: 30px;
+  padding-bottom: 15px;
   background: #dbf3f5; }
 [class^="icon-"],
 [class*=" icon-"] {
