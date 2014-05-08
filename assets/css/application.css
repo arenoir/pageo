@@ -727,6 +727,10 @@ a:hover {
   color: #9e0b0f;
   text-decoration: none; }
 
+a:link {
+  color: #9e0b0f;
+  text-decoration: none; }
+
 .ir {
   background-color: transparent;
   border: 0;
