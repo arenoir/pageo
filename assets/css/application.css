@@ -975,7 +975,7 @@ body.contact ul.nav li.contact {
 
 .shadow {
   clear: both;
-  height: 40px;
+  height: 30px;
   background: -moz-linear-gradient(top, rgba(67, 36, 0, 0.23) 0%, rgba(67, 36, 0, 0) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(67, 36, 0, 0.23)), color-stop(100%, rgba(67, 36, 0, 0)));
   background: -webkit-linear-gradient(top, rgba(67, 36, 0, 0.23) 0%, rgba(67, 36, 0, 0) 100%);
