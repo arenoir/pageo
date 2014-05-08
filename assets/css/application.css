@@ -878,8 +878,9 @@ body.events .content.with-background-image {
         display: block;
         line-height: 50px;
         font-size: 18px;
-        color: #9e0b0f;
+        color: #93959b;
         font-family: "Josefin Slab", serif; }
+  
 
 body.home ul.nav li.home {
   border-bottom: 5px solid #9e0b0f; }
