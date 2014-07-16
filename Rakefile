@@ -27,8 +27,8 @@ namespace :assets do
 
   def sprockets
     environment = Sprockets::Environment.new
-    environment.append_path File.join('_assets', 'stylesheets')
-    environment.append_path File.join('_assets', 'javascripts')
+    environment.append_path File.join('assets', 'css')
+    environment.append_path File.join('assets', 'js')
     environment
   end
 
@@ -38,6 +38,7 @@ namespace :assets do
  
   desc 'compile javascript assets'
   task :compile_js do
+    puts sprockets
     asset     = sprockets['application.js']
     outpath   = File.join('assets', 'js')
     outfile   = Pathname.new(outpath).join('application.js') # may want to use the digest in the future?

@@ -16577,7 +16577,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
     FlickrImage.prototype.imageUrl = function(size) {
       size || (size = 'q');
-      return 'http://farm' + this.get('farm') + '.staticflickr.com/' + this.get('server') + '/' + this.get('id') + '_' + this.get('secret') + '_' + size + '.jpg';
+      return 'https://farm' + this.get('farm') + '.staticflickr.com/' + this.get('server') + '/' + this.get('id') + '_' + this.get('secret') + '_' + size + '.jpg';
     };
 
     FlickrImage.prototype.imageBackgroundUrl = function(size) {
@@ -16716,7 +16716,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     }
 
     PhotoSet.prototype.url = function() {
-      return 'http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=' + Pageo.flickrApiKey + '&photoset_id=' + this.id + '&format=json&nojsoncallback=1';
+      return 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=' + Pageo.flickrApiKey + '&photoset_id=' + this.id + '&format=json&nojsoncallback=1';
     };
 
     PhotoSet.prototype.parse = function(resp, xhr) {
@@ -16805,7 +16805,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     };
 
     FlickrImages.prototype.url = function() {
-      return 'http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=' + Pageo.flickrApiKey + '&photoset_id=' + this.photosetId + '&format=json&nojsoncallback=1&extras=title';
+      return 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=' + Pageo.flickrApiKey + '&photoset_id=' + this.photosetId + '&format=json&nojsoncallback=1&extras=title';
     };
 
     FlickrImages.prototype.parse = function(resp, xhr) {
