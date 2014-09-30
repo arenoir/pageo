@@ -834,6 +834,17 @@ a:inline {
   .body .secondary {
     font-size: 14px; }
 
+  .body .content2 {
+    text-align: left;
+    background: white;
+    border: 1px solid #d1c6ac;
+    width: 965px;
+    margin: 60px auto;
+    font-size: 16px;
+    color: #222222;
+    line-height: 1.7;
+    position: relative; }
+
 body.lavender .content.with-background-image {
   background: white url("../img/pages/lavender-background.jpg") no-repeat center bottom;
   background-size: 100%;
