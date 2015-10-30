@@ -1,7 +1,12 @@
 ---
 ---
+
+$awards: {{site.data.awards|map: 'name'|join: ' '}};
+
 @import "variables";
 @import "mixins";
+
+@import "components/awards";
 
 @import "application/base";
 @import "application/icons";

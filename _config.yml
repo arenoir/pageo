@@ -9,6 +9,8 @@ owner-email: your email
 
 license: your license of choice
 
+test: "test"
+
 sass:
   sass_dir: _sass
   style: :compressed
