@@ -10,5 +10,5 @@ owner-email: your email
 license: your license of choice
 
 sass:
-  sass_dir: assets/css
+  sass_dir: _sass
   style: :compressed

@@ -27,13 +27,12 @@ namespace :assets do
 
   def sprockets
     environment = Sprockets::Environment.new
-    environment.append_path File.join('assets', 'css')
     environment.append_path File.join('assets', 'js')
     environment
   end
 
   desc 'compile assets'
-  task :compile => [:compile_js, :compile_css] do
+  task :compile => [:compile_js] do
   end
  
   desc 'compile javascript assets'
@@ -50,18 +49,5 @@ namespace :assets do
     puts "successfully compiled js assets"
   end
  
-  desc 'compile css assets'
-  task :compile_css do
-    #sprockets = Application.settings.sprockets
-    asset     = sprockets['application.css']
-    outpath   = File.join('assets', 'css')
-    outfile   = Pathname.new(outpath).join('application.css') # may want to use the digest in the future?
- 
-    FileUtils.mkdir_p outfile.dirname
- 
-    asset.write_to(outfile)
-    #asset.write_to("#{outfile}.gz")
-    puts "successfully compiled css assets"
-  end
   # todo: add :clean_all, :clean_css, :clean_js tasks, invoke before writing new file(s)
 end
