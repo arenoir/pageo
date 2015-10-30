@@ -1,0 +1,19 @@
+$awards: "best-of-209", "best-ever", "best-best";
+
+.awards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__award {
+    display: inline-block;
+    width: 140px;
+    height: 120px;
+
+    @each $name in $awards {
+      &--#{$name} {
+        background-image: '../img/components/awards/#{$name}.png'
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<ul class="awards">
+{% for award in site.data.awards %}
+  <li class="awards__award awards__award--{{ award.name }}">
+    {{award.caption}}
+  </li>
+{% endfor %}
+</ul>
