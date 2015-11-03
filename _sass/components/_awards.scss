@@ -13,7 +13,7 @@
     
     @each $name in $awards {
       &--#{$name} {
-        background-image: '../img/awards/#{$name}.png'
+        background-image: url('../img/awards/#{$name}.png');
       }
     }
 
