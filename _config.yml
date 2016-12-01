@@ -3,13 +3,14 @@ auto: true
 
 exclude: ["README.md", "LICENSE.md", "TODO.md", "build", "test"]
 
-owner-name: your name
-owner-page: your homepage
-owner-email: your email
+name: Pageo Lavender Farm
+homepage: http://pageolavenderfarm.com/
+email: info@pageolavenderfarm.com
+phone: 209.632.5052
+fax: 209.634.1379
 
 license: your license of choice
 
-test: "test"
 
 sass:
   sass_dir: _sass
