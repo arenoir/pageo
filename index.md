@@ -15,4 +15,4 @@ bodyClass: home
 
 # 209.632.5052
  
-### 11573 Golf Road, Turlock, Ca, 95380  |  PageoFarms@gmail.com
+### 11573 Golf Road, Turlock, Ca, 95380<br>PageoFarms@gmail.com
