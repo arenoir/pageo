@@ -11,9 +11,9 @@ bodyClass: home
 
 ### Monday through Saturday*: **10am to 4pm**
 
-### Sunday: **12am to 1pm**
+### Sunday: **12am to 4pm**
 
-(*Friday and Sunday hours subject to private events. Call to check availability!)
+(*Friday and Sunday hours subject to private events.<br>Call to check availability!)
 
 # 209.632.5052
  
