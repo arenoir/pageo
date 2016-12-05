@@ -9,9 +9,9 @@ bodyClass: home
 
 ## *Farm & Gift Shop Hours:*
 
-### Monday through Saturday*: **10am to 4pm**<br>Sunday: **12am to 4pm**
+### Monday through Saturday: **10am to 4pm**<br>Sunday: **12am to 4pm**
 
-*Friday through Sunday hours subject to private events.<br>Call to check availability.
+(Friday through Sunday hours subject to private events.<br>Call to check availability.)
 
 # 209.632.5052
  
