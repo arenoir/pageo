@@ -8,7 +8,8 @@ bodyClass: home
 ## Contact us now for event inquiries at our venue or to schedule a free consultation!
 
 ### *Farm & Gift Shop Hours:*
-### Monday through Saturday: **10am to 4pm**<br>Sunday: **12am to 4pm**
+<br>Monday through Saturday: **10am to 4pm**
+<br>Sunday: **12am to 4pm**
 
 (Friday through Sunday hours subject to private events.<br>Call to check availability.)
 
