@@ -1,11 +1,11 @@
 ---
-- name: 2015-best-of-weddings
-  caption: Best Unique Venue
+- name: featured-on-the-knot
+  caption: Featured on The Knot
 
-- name: 2015-best-of-weddings
+- name: 2016-best-of-weddings
   caption: Best Overall Venue
 
-- name: 2015-best-of-two-zero-nine
+- name: 2016-best-of-two-zero-nine
   caption: Best Wedding Venue
 
 - name: wedding-wire-rated
