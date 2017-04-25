@@ -4,7 +4,7 @@ title: "Pageo Lavender Farm"
 description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, baskets and other unique items."
 bodyClass: home
 ---
-<div class="content">
+<div class="inner">
 <img width="965" src="http://pageolavenderfarm.com/assets/img/mothersday_2017.png">
 </div>
 
