@@ -8,7 +8,7 @@ bodyClass: home
 ![Mothers Day 2017](http://pageolavenderfarm.com/assets/img/mothersday_2017.png)
 
 
-## Contact us now for event inquiries at our venue or to schedule a free consultation!
+## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 
 ### *Farm & Gift Shop Hours:*
 Wednesday through Saturday: **10am to 4pm**<br>
