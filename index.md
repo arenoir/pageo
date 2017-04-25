@@ -5,7 +5,7 @@ description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, 
 bodyClass: home
 ---
 
-[Mothers Day 2017(/assets/img/mothersday_2017.png)
+[Mothers Day 2017](/assets/img/mothersday_2017.png)
 
 
 ## Contact us now for event inquiries at our venue or to schedule a free consultation!
