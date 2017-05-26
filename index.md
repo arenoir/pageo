@@ -4,7 +4,6 @@ title: "Pageo Lavender Farm"
 description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, baskets and other unique items."
 bodyClass: home
 ---
-![Mothers Day 2017]()
 
 
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
