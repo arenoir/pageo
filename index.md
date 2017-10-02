@@ -11,6 +11,8 @@ bodyClass: home
 Pageo Lavender Farm is proud to announce our first ever Pageo Holiday Market! We are excited to offer our picturesque setting to feature our region’s most interesting art, crafts, food, and drinks from a variety of local purveyors. <a href="https://pageo.typeform.com/to/XPzLgg" style="color: #9e0b0f;" target="_blank">Interested vendors can apply here.</a>
 </p>
 
+<br>
+
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 
 ### *Farm & Gift Shop Hours:*
