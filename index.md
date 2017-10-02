@@ -9,6 +9,8 @@ bodyClass: home
 
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 
+<br>
+<img width="863" src="/assets/img/pageo_holiday_postcard.jpg">
 
 ### *Farm & Gift Shop Hours:*
 Wednesday through Friday: **10am to 4pm**, Saturdays: **10am to 1pm**<br>
