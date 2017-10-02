@@ -5,6 +5,9 @@ description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, 
 bodyClass: home
 ---
 
+<br>
+<img width="863" src="/assets/img/pageo_holiday_postcard.jpg">
+
 ## <br>
 
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
@@ -12,9 +15,6 @@ bodyClass: home
 ### *Farm & Gift Shop Hours:*
 Wednesday through Friday: **10am to 4pm**, Saturdays: **10am to 1pm**<br>
 (Wed-Fri subject to events, call to check availability.)<br>
-
-<br>
-<img width="863" src="/assets/img/pageo_holiday_postcard.jpg">
 
 # 209.632.5052
  
