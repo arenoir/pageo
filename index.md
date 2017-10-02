@@ -6,7 +6,7 @@ bodyClass: home
 ---
 
 <br>
-<img width="863" src="/assets/img/pageo_holiday_postcard.jpg">
+<img width="863" src="/assets/img/pageo_holiday_image.jpg">
 
 ## <br>
 
