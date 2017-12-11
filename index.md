@@ -8,7 +8,7 @@ bodyClass: home
 <img width="700" src="/assets/img/pageo_holiday_5.png">
 <br>
 <p style="padding-left: 60px; padding-right: 60px; text-align: center; font-size: 20px; line-height: 35px;">
-Pageo Lavender Farm is proud to announce our first ever Pageo Holiday Market! We are excited to offer our picturesque setting to feature our region’s most interesting art, crafts, food, and drinks from a variety of local purveyors. <a href="https://pageo.typeform.com/to/XPzLgg" style="color: #9e0b0f;" target="_blank">Interested vendors can apply here.</a>
+Thank you to all our vendors and everyone who came and visited us at the farm for the first annual Pageo Holiday Market, it was a HUGE success! We greatly appreciate everyone’s support!
 </p>
 
 <br>
