@@ -16,8 +16,8 @@ Thank you to all our vendors and everyone who came and visited us at the farm fo
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 
 ### *Farm & Gift Shop Hours:*
-December hours are: **10am to 4pm**, Christmas Eve: **10am to 2pm**<br>
-(Closed on Christmas Day, New Years Eve/Day)<br>
+Wednesday through Friday: **10am to 4pm**, Saturday: **10am to 1pm**<br>
+<br>
 
 # 209.632.5052
  
