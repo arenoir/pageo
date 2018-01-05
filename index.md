@@ -17,8 +17,8 @@ Thank you to all our vendors and everyone who came and visited us at the farm fo
 
 <br>
 ### Farm & Gift Shop Hours:
-*Wednesday through Friday: **10am to 4pm**, Saturday: **10am to 1pm**
-<br>
+Wednesday through Friday: **10am to 4pm**, Saturday: **10am to 1pm**
+<br><br>
 
 # 209.632.5052
  
