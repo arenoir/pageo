@@ -10,7 +10,7 @@ It's that time of year again! Click <a href="https://pageo.typeform.com/to/KLHNg
 </p>
 <br>
 <a href="https://pageo.typeform.com/to/KLHNgK" style="text-align: center;" target="_blank">
-<img width="863" src="assets/img/mday_001.jpg">
+<img width="863" src="assets/img/mday_002.jpg">
   </a>
 </div>
 
