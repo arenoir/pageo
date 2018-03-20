@@ -6,7 +6,7 @@ bodyClass: home
 ---
 <div class="inner">
 <p style="padding-left: 15px; padding-right: 15px;">
-It's that time of year again! Click <a href="https://pageo.typeform.com/to/KLHNgK" style="color: #9e0b0f;" target="_blank">here</a> to sign up for our 9th annual Mother’s Day Luncheon. 
+We're proud to announce our 9th Annual Mother's Day Luncheon! To sign up for tickets please click <a href="https://pageo.typeform.com/to/KLHNgK" style="color: #9e0b0f;" target="_blank">here</a>. 
 </p>
 <br>
 <a href="https://pageo.typeform.com/to/KLHNgK" style="text-align: center;" target="_blank">
