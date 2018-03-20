@@ -9,7 +9,7 @@ bodyClass: home
 It's that time of year again! Click <a href="https://pageo.typeform.com/to/KLHNgK" style="color: #9e0b0f;" target="_blank">here</a>to sign up for our 9th annual Mother’s Day Luncheon. 
 </p>
   <a href="https://pageo.typeform.com/to/KLHNgK" style="text-align: center;" target="_blank">
-<img src="assets/img/mday_001.jpg">" alt="Mother's Day Luncheon" style="width:863px; text-align: center;" target="_blank">
+<img width="863" src="assets/img/mday_001.jpg">" alt="Mother's Day Luncheon">
   </a>
 </div>
 
