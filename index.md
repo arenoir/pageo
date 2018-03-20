@@ -11,7 +11,7 @@ bodyClass: home
 			Click <a href="https://pageo.typeform.com/to/KLHNgK" style="color: #9e0b0f;" target="_blank">- here</a> to sign up for our 9th annual Mother’s Day Luncheon. 
 		</p>
 		<br>
-		<img width="863" src="pageo/assets/img/mday_001.jpg">
+		<img width="863" src="/assets/img/mday_001.jpg">
 	</div>
  
  
