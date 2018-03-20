@@ -6,16 +6,18 @@ bodyClass: home
 ---
 
 <br>
-<div class="inner">
-<p style="padding-left: 15px; padding-right: 15px;">
-It's that time of year again! Click <a href="https://pageo.typeform.com/to/KLHNgK" style="color: #9e0b0f;" target="_blank">- here</a> to sign up for our 9th annual Mother’s Day Luncheon. 
-</p>
-<br>
-<img width="863" src="/assets/img/mday_001.jpg">
-</div>
- 
  
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
+
+<div class="inner">
+<p style="padding-left: 15px; padding-right: 15px;">
+It's that time of year again! Click <a href="https://pageo.typeform.com/to/KLHNgK" style="color: #9e0b0f;" target="_blank">here</a> to sign up for our 9th annual Mother’s Day Luncheon. 
+</p>
+<br>
+  <a href="https://pageo.typeform.com/to/KLHNgK" style="text-align: center;" target="_blank">
+		<img src="assets/img/mday_001.jpg">" alt="Mother's Day Luncheon" style="width:863px; text-align: center;" target="_blank">
+  </a>
+</div>
 
 <br>
 ### Farm & Gift Shop Hours:
