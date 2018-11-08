@@ -5,8 +5,8 @@ description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, 
 bodyClass: home
 ---
 
-<br>
-### We're proud to announce the second annual...
+
+### <br>We're proud to announce the second annual...
 <p class="emphasize" style="text-align: center; line-height: 0;">	
 		<a href="https://www.pageoholiday.com" style="color: #9e0b0f; text-align: center;" target="_blank">
 		<img src="/assets/img/phm_website_image.jpg" alt="Pageo Holiday Market" style="width:750px; text-align: center;" 			target="_blank"></a>
