@@ -11,9 +11,8 @@ bodyClass: home
 		<a href="https://www.pageoholiday.com" style="color: #9e0b0f; text-align: center;" target="_blank">
 		<img src="/assets/img/phm_website_image.jpg" alt="Pageo Holiday Market" style="width:750px; text-align: center;" 			target="_blank"></a>
 		</p>
-		<p style="padding-left: 15px; padding-right: 15px; padding-top: 0px; padding-bottom: 20px; color: #444444; font-size: 			16px; line-height: 0px; text-align: center; font-family: Helvetica, Arial, sans-serif;">
-   		click on the image above to view a sample of our vendors
-		</p>
+		
+click on the image above to view a sample of our vendors
 <br>
  
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
