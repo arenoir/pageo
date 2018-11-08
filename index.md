@@ -6,7 +6,6 @@ bodyClass: home
 ---
 
 ### We're proud to announce the second annual...
-<br><br>
 
 <p class="emphasize" style="text-align: center; line-height: 0;">	
 		<a href="https://www.pageoholiday.com" style="color: #9e0b0f; text-align: center;" target="_blank">
