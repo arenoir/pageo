@@ -4,11 +4,14 @@ title: "Pageo Lavender Farm"
 description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, baskets and other unique items."
 bodyClass: home
 ---
+
+### We're proud to announce the second annual...
+<br><br>
+
 <p class="emphasize" style="text-align: center; line-height: 0;">	
 		<a href="https://www.pageoholiday.com" style="color: #9e0b0f; text-align: center;" target="_blank">
-		<img src="/assets/img/phm_website_image.jpg" alt="Pageo Holiday Market" style="width:750px; text-align: center;" target="_blank"></a>
-		</p>
-		<br>
+		<img src="/assets/img/phm_website_image.jpg" alt="Pageo Holiday Market" style="width:750px; text-align: center;" 			target="_blank"></a>
+</p>
   
  
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
