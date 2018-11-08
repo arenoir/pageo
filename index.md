@@ -11,7 +11,7 @@ bodyClass: home
 		<a href="https://www.pageoholiday.com" style="color: #9e0b0f; text-align: center;" target="_blank">
 		<img src="/assets/img/phm_website_image.jpg" alt="Pageo Holiday Market" style="width:750px; text-align: center;" 			target="_blank"></a>
 </p>
-  
+<br>
  
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 
