@@ -12,7 +12,6 @@ bodyClass: home
 		<img src="/assets/img/phm_banner.jpg" alt="Pageo Holiday Market" style="width:750px; text-align: center;" 			target="_blank"></a>
 		</p>
 <br>
- 
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 
 <br>
