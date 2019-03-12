@@ -10,8 +10,6 @@ bodyClass: home
 		<img src="/assets/img/mothersday_2019_web.jpg" alt="View Pageo Brochure" style="width:700px; text-align: center;" target="_blank"></a>
 </p>
 
-<br>
-
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 
 <br>
