@@ -5,6 +5,12 @@ description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, 
 bodyClass: home
 ---
 <br>
+<p class="emphasize" style="text-align: center; line-height: 0;">	
+  <a href="https://pageo.typeform.com/to/OI4aym" style="color: #9e0b0f; text-align: center;" target="_blank">
+		<img src="/assets/img/mothersday_2019_web.jpg" alt="View Pageo Brochure" style="width:700px; text-align: center;" target="_blank"></a>
+</p>
+
+<br>
 
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 
