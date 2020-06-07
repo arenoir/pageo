@@ -9,7 +9,7 @@ bodyClass: home
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 
 <br>
-### Farm & Gift Shop Hours:
+### New Farm & Gift Shop Hours:
 Wednesday through Saturday: **9am to 4pm**
 <br><br>
 
