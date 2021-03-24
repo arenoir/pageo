@@ -8,9 +8,9 @@ bodyClass: home
 
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 <br>
-### Gift Shop & Lunches:<br>209.632.5052<br>Wednesday through Saturday: **10am to 4pm**
+# Gift Shop & Lunches:<br>209.632.5052<br>Wednesday through Saturday: **10am to 4pm**
 <br>
-### Weddings & Events:<br>209.632.5052
+# Weddings & Events:<br>209.632.5052
  
 ### 11573 Golf Road, Turlock, Ca, 95380<br>PageoFarms@gmail.com
 
