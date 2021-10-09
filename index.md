@@ -5,6 +5,7 @@ description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, 
 bodyClass: home
 ---
 <br> 
+
 [![Wine Tasting & Lite Bites](assets/img/wine-tasting-2021-2.jpg)](https://pageo.typeform.com/to/kqzgeSyv)
 
 <br> 
