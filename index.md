@@ -9,7 +9,7 @@ bodyClass: home
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 <br>
 
-[![Wine Tasting & Lite Bites](assets/img/wine-tasting-2021.jpg)](https://pageo.typeform.com/to/kqzgeSyv)
+[![Wine Tasting & Lite Bites](assets/img/wine-tasting-2021-2.jpg)](https://pageo.typeform.com/to/kqzgeSyv)
     
     
 ### Gift Shop & Lunches:<br>209-262-0131
