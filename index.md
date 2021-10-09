@@ -8,11 +8,6 @@ bodyClass: home
 
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
 <br>
-
-	<p class="emphasize" style="text-align: center; line-height: 0;">	
-		<a href="https://goo.gl/maps/SwejNmQ87K72" style="color: #9e0b0f; text-align: center;" target="_blank">
-		<img src="/assets/img/google_tour_01b.jpg" alt="Google Virtual Tour" style="width:750px; text-align: center;" target="_blank"></a>
-		</p>
     
     
 ### Gift Shop & Lunches:<br>209-262-0131
