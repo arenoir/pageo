@@ -5,11 +5,11 @@ description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, 
 bodyClass: home
 ---
 <br>
+
 [![Wine Tasting & Lite Bites](assets/img/wine-tasting-2021-2.jpg)](https://pageo.typeform.com/to/kqzgeSyv)
 
 <br> 
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
-<br> 
     
 ### Gift Shop & Lunches:<br>209-262-0131
 
