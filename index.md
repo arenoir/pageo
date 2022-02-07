@@ -4,11 +4,7 @@ title: "Pageo Lavender Farm"
 description: "Handcrafted soaps, lotions, linen sprays, bath salts, gift boxes, baskets and other unique items."
 bodyClass: home
 ---
-<br> 
 
-[![Wine Tasting & Lite Bites](assets/img/wine-tasting-2021-2.jpg)](https://pageo.typeform.com/to/kqzgeSyv)
-
-<br> 
 ## Contact us now for event inquiries at<br>our venue or to schedule a free<br>consultation!
     
 ### Gift Shop & Lunches:<br>209-262-0131
