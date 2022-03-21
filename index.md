@@ -12,7 +12,8 @@ bodyClass: home
 ### Weddings & Events:<br>209.632.5052
 
 <br>
-#### Wednesday through Saturday: **10am to 4pm**
+#### Wednesday through Thursday: **10am to 4pm**
+#### Friday through Saturday: **10am to 2pm**
 #### 11573 Golf Road, Turlock, Ca, 95380<br>PageoFarms@gmail.com
 
 ## <br>
