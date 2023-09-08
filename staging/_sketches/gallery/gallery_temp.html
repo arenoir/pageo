@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 12.5%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal_content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallery_slides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.gallery_slide_number {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 0px 0px;
+	position: absolute;
+	bottom: 0;
+}
+
+.gallery_credit {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 0px 0px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption_container  {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.gallery  {
+  opacity: 0.6;
+}
+
+.active,
+.gallery :hover {
+  opacity: 1;
+}
+
+img.gallery_hover {
+  transition: 0.3s;
+}
+
+.gallery_hover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("gallery_slides");
+  var dots = document.getElementsByClassName("gallery ");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+
+<body>
+
+
+<div class="row">
+  <div class="column">
+    <img src="_thumbs/001.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="gallery_hover cursor">
+  </div>
+  <div class="column">
+    <img src="_thumbs/002.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="gallery_hover cursor">
+  </div>
+  <div class="column">
+    <img src="_thumbs/003.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="gallery_hover cursor">
+  </div>
+  <div class="column">
+    <img src="_thumbs/004.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="gallery_hover cursor">
+  </div>
+  <div class="column">
+    <img src="_thumbs/005.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="gallery_hover cursor">
+  </div>
+  <div class="column">
+    <img src="_thumbs/006.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="gallery_hover cursor">
+  </div>
+  <div class="column">
+    <img src="_thumbs/007.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="gallery_hover cursor">
+  </div>
+  <div class="column">
+    <img src="_thumbs/008.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="gallery_hover cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal_content">
+
+    <div class="gallery_slides">
+      <div class="gallery_slide_number">1 / 4</div>
+      <div class="gallery_credit">Briana Calderon Photography</div>
+      <img src="_large/gallery_large_001.jpg" style="width:100%">
+    </div>
+
+    <div class="gallery_slides">
+      <div class="gallery_slide_number">2 / 4</div>
+      <div class="gallery_credit">Briana Calderon Photography</div>
+      <img src="_large/gallery_large_002.jpg" style="width:100%">
+    </div>
+
+    <div class="gallery_slides">
+      <div class="gallery_slide_number">3 / 4</div>
+      <div class="gallery_credit">Briana Calderon Photography</div>
+      <img src="_large/gallery_large_003.jpg" style="width:100%">
+    </div>
+    
+    <div class="gallery_slides">
+      <div class="gallery_slide_number">4 / 4</div>
+      <div class="gallery_credit">Briana Calderon Photography</div>
+      <img src="_large/gallery_large_004.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption_container ">
+      <p id="caption"></p>
+    </div>
+
+
+  </div>
+</div>
+
+
+</body>
+</html>

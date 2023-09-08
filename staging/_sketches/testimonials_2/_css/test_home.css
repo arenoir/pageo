@@ -1,0 +1,34 @@
+
+
+
+.home_image_weddings {
+	display: flex;
+    width: 100%;
+    height: 1000px;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+	max-height: 700px;
+    background-position: center;
+    background-image: url('../images/home/home_image_weddings2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.home_image_tag {
+	background-color: white;
+	width: 300px;
+	position: absolute;
+	bottom: 40px;
+	height: auto;
+	padding: 20px;
+	margin: 0 auto;
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-size: 14pt;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	outline: 2px dotted #fff;
+	outline-offset: 8px;
+}
+

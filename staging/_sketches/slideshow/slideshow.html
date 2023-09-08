@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Pure CSS Fading Slideshow Example</title>
+
+
+<style>	
+	
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+
+
+.center {
+	width: 100%;
+	height: 100%;
+    background: #444444;
+}
+
+.slide {
+	width: 100vw;
+	height: 900px;
+	overflow: hidden;
+	position: relative;
+	padding-top: 0px;
+    background: #7B7261;
+}
+.slide > div {
+	width: 100%;
+	height: 900px;
+	background-size: cover;
+	background-position: center;
+	background-position: top;
+	position: absolute;
+	animation: slide 25s infinite;
+	opacity: 0;
+}
+
+
+.slide > div:nth-child(2) {
+	animation-delay: 5s;
+}
+.slide > div:nth-child(3) {
+	animation-delay: 10s;
+}
+.slide > div:nth-child(4) {
+	animation-delay: 15s;
+}
+.slide > div:nth-child(5) {
+	animation-delay: 20s;
+}
+
+
+@keyframes slide {
+	10% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	40% {
+		transform: scale(1);
+	}
+}	
+	
+</style>
+
+
+
+</head>
+<body>
+		
+
+
+
+
+<center>
+
+<!-- Start Fading Slidehow HTML -->
+	<div class="slide">
+		<div style="background-image:url(bg_images/full_bleed_001.jpg)"></div>
+		<div style="background-image:url(bg_images/full_bleed_003.jpg)"></div>
+		<div style="background-image:url(bg_images/full_bleed_007.jpg)"></div>
+		<div style="background-image:url(bg_images/full_bleed_005.jpg)"></div>
+		<div style="background-image:url(bg_images/full_bleed_006.jpg)"></div>
+	</div>
+<!-- End Fading Slideshow HTML -->
+	  
+</center>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!-- Pageo Lavender Farm -->
+
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Pageo Lavender Farm</title>
+<link rel="stylesheet" type="text/css" href="../../_css/styles.css">
+<link rel="stylesheet" type="text/css" href="../../_css/temp_nav.css">
+<link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css">
+
+
+
+<script type="text/javascript" src="../../_js/jquery-3.7.1.min.js"></script>
+
+<script>
+function openModal() {
+	document.getElementById("gallery_modal").style.display = "block";
+}
+
+function closeModal() {
+	document.getElementById("gallery_modal").style.display = "none";
+}
+
+var slide_index = 1;
+show_slides(slide_index);
+
+function plus_slides(n) {
+	show_slides(slide_index += n);
+}
+
+function current_slide(n) {
+	show_slides(slide_index = n);
+}
+
+function show_slides(n) {
+	var i;
+	var slides = document.getElementsByClassName("slides");
+	var dots = document.getElementsByClassName("gallery");
+	var gallery_caption_text = document.getElementById("gallery_caption");
+	if (n > slides.length) {slide_index = 1}
+	if (n < 1) {slide_index = slides.length}
+	for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+	}
+
+	slides[slide_index-1].style.display = "block";
+	gallery_caption_text.innerHTML = dots[slides-1].alt;
+
+	
+}
+</script>
+
+<style>
+body {
+	font-family: Acumin-Pro, Source Sans Pro, Sans-Serif;
+ 	 margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+@media screen and (min-width: 1400px) {
+	.gallery_grid {
+		border: border: 2px solid #fff;
+		margin: auto;
+		padding: 40px 0px 60px 0px;
+		max-width: 1400px
+	}
+}	
+
+@media screen and (max-width: 1400px) {
+	.gallery_grid {
+		margin: 4px;
+	}
+}	
+
+.gallery_row > .gallery_column {
+	padding: 2px 2px;
+	border: 2px solid #fff;
+}
+
+.gallery_row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+ /*
+@media screen and (min-width: 1200px) {
+	.gallery_column {
+		float: left;
+		width: 8.333%;
+	}
+}	
+
+@media screen and (max-width: 1200px) {
+	.gallery_column {
+		float: left;
+		width: 16.666666666666667%;
+	}
+}	
+*/
+
+@media screen and (min-width: 1200px) {
+	.gallery_column {
+		float: left;
+		width: 16.666666666666667%;
+	}
+}	
+
+@media screen and (max-width: 1200px) {
+	.gallery_column {
+		float: left;
+		width: 25%;
+	}
+}	
+
+@media screen and (max-width: 800px) {
+	.gallery_column {
+		float: left;
+		width: 25%;
+	}
+}	
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 0px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+/* Modal Content */
+.gallery_modal_content {
+	position: relative;
+	margin: 88px auto 20px auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+
+.gallery_slides_container {
+	position: relative;
+	margin: auto;
+	padding: 0px 0px 20px 0px;
+	width: 100%;
+	max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+	text-align: right;
+	width: auto;
+	float: right;
+	z-index: 2000;
+	padding-right: 32px;
+	padding-top: 24px;
+	visibility: visible;
+	max-height: 48px;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+	.close {
+		scale: .5;
+		padding-right: 20px;
+		padding-top: 40px;
+	}
+
+}
+
+.slides {
+	display: none;
+}
+
+.gallery_cursor {
+	cursor: pointer;
+}
+
+/* next_slide & prev_slideious buttons */
+.prev_slide,
+.next_slide {
+	background-color: rgba(255, 255, 255, 0.35);
+	cursor: pointer;
+	position: absolute;
+	top: 48%;
+	width: auto;
+	padding: 16px;
+	margin-top: -48px;
+	transition: 0.6s ease;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next_slide button" to the right */
+.next_slide {
+	right: -10px;
+}
+
+.prev_slide {
+	left: -10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev_slide:hover,
+.next_slide:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 1200px) {
+	.next_slide {
+		scale: .75;
+		right: -10px;
+	}
+
+	.prev_slide {
+		scale: .75;
+		left: -10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.next_slide {
+		scale: .50;
+		right: -22px;
+	}
+
+	.prev_slide {
+		scale: .50;
+		left: -22px;
+	}
+
+}
+
+.gallery_slide_number {
+	color: #222;
+	font-family: "space-mono", mono;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	padding: 0px 0px;
+	position: absolute;
+	bottom: 0;
+}
+
+.gallery_credit {
+	color: #222;
+	font-family: "space-mono", mono;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	padding: 0px 0px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.gallery_slide_number {
+		padding-left: 10px;
+	}
+
+	.gallery_credit {
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.gallery_slide_number, .gallery_credit {
+		font-size: 12px;
+	}
+
+}
+
+
+img {
+	margin-bottom: -5px;
+}
+
+.gallery_caption_container {
+	text-align: center;
+	background-color: #FFF;
+	padding: 2px 16px;
+	color: white;
+}
+
+.gallery {
+	opacity: 0.6;
+}
+
+.active,
+.gallery:hover {
+	opacity: 1;
+}
+
+img.gallery_hover {
+	transition: 0.4s;
+}
+
+.gallery_hover:hover {
+	opacity: .75;
+
+}
+
+</style>
+
+<body>
+
+<div class="gallery_grid">
+<div class="gallery_row">
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/001.jpg" style="width:100%" onclick="openModal();current_slide(1)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/002.jpg" style="width:100%" onclick="openModal();current_slide(2)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/003.jpg" style="width:100%" onclick="openModal();current_slide(3)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/004.jpg" style="width:100%" onclick="openModal();current_slide(4)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/005.jpg" style="width:100%" onclick="openModal();current_slide(5)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/006.jpg" style="width:100%" onclick="openModal();current_slide(6)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/007.jpg" style="width:100%" onclick="openModal();current_slide(7)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/008.jpg" style="width:100%" onclick="openModal();current_slide(8)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/009.jpg" style="width:100%" onclick="openModal();current_slide(9)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/010.jpg" style="width:100%" onclick="openModal();current_slide(10)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/011.jpg" style="width:100%" onclick="openModal();current_slide(11)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/012.jpg" style="width:100%" onclick="openModal();current_slide(12)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/013.jpg" style="width:100%" onclick="openModal();current_slide(13)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/014.jpg" style="width:100%" onclick="openModal();current_slide(14)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/015.jpg" style="width:100%" onclick="openModal();current_slide(15)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/016.jpg" style="width:100%" onclick="openModal();current_slide(16)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/017.jpg" style="width:100%" onclick="openModal();current_slide(17)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/018.jpg" style="width:100%" onclick="openModal();current_slide(18)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/019.jpg" style="width:100%" onclick="openModal();current_slide(19)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/020.jpg" style="width:100%" onclick="openModal();current_slide(20)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/021.jpg" style="width:100%" onclick="openModal();current_slide(21)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/022.jpg" style="width:100%" onclick="openModal();current_slide(22)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/023.jpg" style="width:100%" onclick="openModal();current_slide(23)" class="gallery_hover gallery_cursor">
+	</div>
+	<div class="gallery_column">
+		<img src="images/gallery_snapshots/_thumbs/024.jpg" style="width:100%" onclick="openModal();current_slide(24)" class="gallery_hover gallery_cursor">
+	</div>
+</div>
+
+
+</div>
+
+
+<div id="gallery_modal" class="modal">
+	<span class="close cursor" onclick="closeModal()"><img src="images/global/icon/close_large.svg"></span>
+	
+	<div class="gallery_modal_content">
+
+
+		<div class="gallery_slides_container">
+
+			<div class="slides">
+				<div class="gallery_slide_number">1 / 24</div>
+				<div class="gallery_credit">Briana Calderon Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_001.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">2 / 24</div>
+				<div class="gallery_credit">Briana Calderon Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_002.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">3 / 24</div>
+				<div class="gallery_credit">Julie Cahill Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_003.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">4 / 24</div>
+				<div class="gallery_credit">Olivia Marshall Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_004.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">5 / 24</div>
+				<div class="gallery_credit">Kaitlin Elliott Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_005.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">6 / 24</div>
+				<div class="gallery_credit">Bogdan Condor Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_006.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">7 / 24</div>
+				<div class="gallery_credit">Kelly Boitano Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_007.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">8 / 7224</div>
+				<div class="gallery_credit">Kaitlin Elliott Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_008.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">9 / 24</div>
+				<div class="gallery_credit">Kaitlin Elliott Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_009.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">10 / 24</div>
+				<div class="gallery_credit">Kaitlin Elliott Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_010.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">11 / 24</div>
+				<div class="gallery_credit">Kaitlin Elliott Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_011.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">12 / 24</div>
+				<div class="gallery_credit">Kaitlin Elliott Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_012.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">13 / 24</div>
+				<div class="gallery_credit">Kaitlin Elliott Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_013.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">14 / 24</div>
+				<div class="gallery_credit">Kaitlin Elliott Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_014.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">15 / 24</div>
+				<div class="gallery_credit">Karissa Wright Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_015.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">16 / 24</div>
+				<div class="gallery_credit">Kelly Boitano Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_016.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">17 / 24</div>
+				<div class="gallery_credit">Olivia Marshall  photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_017.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">18 / 24</div>
+				<div class="gallery_credit">Briana Calderon Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_018.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">19 / 24</div>
+				<div class="gallery_credit">Kelly Boitano Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_019.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">20 / 24</div>
+				<div class="gallery_credit">Kelly Boitano Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_020.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">21 / 24</div>
+				<div class="gallery_credit">Marilyn Days Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_021.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">22 / 24</div>
+				<div class="gallery_credit">Oliva Marshall Photography</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_022.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">23 / 24</div>
+				<div class="gallery_credit">Valley Images</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_023.jpg" style="width:100%">
+			</div>
+			<div class="slides">
+				<div class="gallery_slide_number">24 / 24</div>
+				<div class="gallery_credit">Valley Images</div>
+				<img src="images/gallery_snapshots/_large/gallery_large_024.jpg" style="width:100%">
+			</div>
+
+
+			<a class="prev_slide" onclick="plus_slides(-1)"><img src="images/global/prev_arrow.svg"></a>
+			<a class="next_slide" onclick="plus_slides(1)"><img src="images/global/next_arrow.svg"></a>
+
+
+			<div class="gallery_caption_container">
+				<p id="gallery_caption"></p>
+			</div>
+
+
+
+		</div>
+
+
+	</div>
+
+</div>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Add and Remove</title>
+	<style>
+		body {
+			font-family: helveticaneue, "Helvetica Neue", helvetica, sans-serif;
+			padding: 2em;
+		}
+		
+		input[type=text] {
+			padding: 0.5em;
+			border: 1px solid #999;
+			width: 20em;
+			display: block;
+		}
+		
+		label {
+			display: block;
+		}
+		
+		.group {
+			margin: 0 0 1em;
+		}
+	</style>
+</head>
+<body>
+
+<form id="my-form">
+	<div id="group-friends" class="group">
+	<label>Your friends:</label>
+	<input type="text" name="friends[]" value="Joe Schmoe" placeholder="Your friend's name">
+	</div>
+	
+	<div id="group-pets" class="group">
+	<label>Your pets:</label>
+	<input type="text" name="pets[]" value="" placeholder="Your pet's name">
+	<input type="text" name="pets[]" value="" placeholder="Your pet's name">
+	<input type="text" name="pets[]" value="" placeholder="Your pet's name">
+	</div>
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../jquery/jquery.min.js"><\/script>');</script>
+<script>
+'use strict';
+
+$(document).ready(function(){
+	var $copy = $('#group-friends').find('input:first').clone();
+	
+	$('body').prepend($copy);
+});
+</script>
+</body>
+</html>

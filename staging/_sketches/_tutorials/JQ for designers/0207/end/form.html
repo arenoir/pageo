@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Form Challenge</title>
+	<style>
+		body {
+			font-family: helveticaneue, "Helvetica Neue", helvetica, sans-serif;
+			padding: 2em;
+		}
+		
+		input[type=text] {
+			padding: 0.5em;
+			border: 1px solid #999;
+			width: 20em;
+			display: block;
+			font-family: helveticaneue, "Helvetica Neue", helvetica, sans-serif;
+			font-size: 100%;
+		}
+		
+		label {
+			display: block;
+			font-size: 85%;
+			margin-bottom: 0.2em;
+			color: #333;
+		}
+		
+		.group {
+			margin: 0 0 1em;
+		}
+		
+		.error {
+			background: #ecc;
+			border: 1px solid #933;
+			padding: 0.5em;
+		}
+		
+		.msg {
+			background: #cec;
+			border: 1px solid #393;
+			padding: 0.5em;
+		}
+		
+		.msg p {
+			padding-left: 0.2em;
+			margin-bottom: 0.2em;
+			font-size: 85%;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+
+<form id="my-form">
+	<div class="group">
+	<label>Your name (required):</label>
+	<input type="text" name="name" value="" placeholder="Your name">
+	</div>
+	
+	<div class="group">
+	<label>Your favorite color (required):</label>
+	<input type="text" name="color" value="green" placeholder="Personal choice, really!">
+	</div>
+	
+	<div class="group">
+	<label>Your phone number:</label>
+	<input type="text" name="phone" value="" placeholder="(xxx) xxx-xxxx">
+	</div>
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../jquery/jquery.min.js"><\/script>');</script>
+<script>
+'use strict';
+
+$(document).ready(function(){
+	var $form = $('#my-form');
+	
+	$form.find('.group:nth-child(1)')
+		.addClass('error');
+	
+	$form.find('.group:nth-child(2)')
+		.addClass('msg')
+		.append('<p>Good choice!</p>');
+});
+</script>
+</body>
+</html>
