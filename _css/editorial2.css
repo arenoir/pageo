@@ -1,0 +1,514 @@
+ /* pageo
+  v 2.0 - 08-2023
+*/
+
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	background-color: #222222:
+}
+
+.testimonials {
+	background-color: #FFFFF6;
+	height: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.quote_1 p, .quote_2 p, .quote_3 p, .quote_4 p, .quote_5 p, .quote_6 p {
+	padding-top: 10px;
+}
+
+
+.quote_p {
+	padding-top: 10px;
+	font-size: 22px;
+	line-height: 34px;
+	padding-bottom: 20px
+}
+
+.row p {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+}
+
+.quote_1, .quote_2, .quote_3, .quote_4, .quote_5, .quote_6 {
+	background-color: #FFFFFF;
+	border-radius: 0px;
+	outline: 2px dotted #fff;
+	outline-offset: 8px;
+}
+  	
+
+.services_container1 {
+	border-bottom: 12px solid #FFFFFF;
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+	margin: auto;
+    max-height: 800px;
+	max-width: 1400px;
+    background-position: center;
+    background-image: url('../images/_large/services/coordination_001.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.services_container2 {
+	border-bottom: 12px solid #FFFFFF;
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+	margin: auto;
+    max-height: 800px;
+	max-width: 1400px;
+    background-position: center;
+    background-image: url('../images/_large/services/dining_001.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.services_container3 {
+	border-bottom: 12px solid #FFFFFF;
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+	margin: auto;
+    max-height: 800px;
+	max-width: 1400px;
+    background-position: center;
+    background-image: url('../images/_large/services/design_001.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.services_container2 .photo_2 {
+	order: 1;
+}
+
+.services_container2 .quote_2 {
+	order: 2;
+}
+
+.photo_1 img, .photo_3 img {
+	border-radius: 50%;
+	border: 6px solid white;
+	display: block;
+	height: auto;
+	max-width: 450px;
+	min-width: 450px;
+}
+
+.row {
+	max-width: 1120px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	align-content: center;
+	margin: auto;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	margin: auto;
+}
+
+/* services_container 1 */
+
+.quote_1 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_1 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+/* services_container 2 */
+
+.quote_2 { 
+	float: right;
+	width: 50%;
+	padding: 40px;
+}
+
+
+.photo_2 {
+	float: left;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+
+/* services_container 3 */
+
+.quote_3 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_3 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+
+/* services_container 4 */
+
+.quote_4 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_4 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+
+/* services_container 5 */
+
+.quote_5 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_5 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+.photo_5 img {
+	display: block;
+	height: auto;
+	max-width: 450px;
+	min-width: 450px;
+}
+
+/* services_container 6 */
+
+.quote_6 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_6 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+
+
+.view_more {
+	display: block;
+	width: auto;
+	padding: 0px 30px 0px 30px;
+	color: #FFF;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 64px; /* 150% */
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 4px;
+	background: #DFB9A4;
+	text-align: center;
+}
+
+.button_logo_theknot {
+	display: block;
+	width: 240px;
+	height: 64px;
+    background-color: #DFB9A4;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 4px;
+
+}
+
+.button_logo_weddingwire {
+	display: block;
+	width: 240px;
+	height: 64px;
+    background-color: #DFB9A4;
+	text-align: center;
+	padding-top: 18px;
+	border-radius: 4px;
+
+}
+
+/*
+	<div class="caption">
+			<div>
+	 		<p>Emily & Anadjeet</p>
+	 		<p>Married on May 16th, 2021</p>
+	 		</div>
+		</div>
+
+*/
+
+.large-font {
+	font-size: 48px;
+}
+
+.xlarge-font {
+	font-size: 64px
+}
+
+.caption {
+	border-left: 3px solid #222222;
+	padding-top: 0px;
+	
+}
+
+.caption p {
+	margin-left: 16px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-family: Source Sans Pro, Sans-Serif;
+	font-variant: small-caps;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+	.quote_p {
+		padding-top: 10px;
+		font-size: 24px;
+		line-height: 34px;
+		padding-bottom: 20px;
+	}
+
+	.testimonials {
+		background-color: #FFFFF6;
+		height: 100%;
+		padding: 0px;
+		
+	}
+  
+	img {
+		margin: auto;
+	}
+	
+
+	.quote_1  {
+		width: auto;
+		margin: auto;
+		padding: 40px 40px 40px 40px;
+		max-height: 100%;
+   		position: absolute;
+ 		top: 0px;
+	}
+
+	.quote_3, .quote_5  {
+		width: auto;
+		margin: auto;
+		padding: 40px 40px 40px 40px;
+		max-height: 100%;
+   		position: absolute;
+ 		top: -40px;
+	}
+	
+	.quote_2, .quote_4, .quote_6 {
+		float: left;
+		width: auto;
+		margin: auto;
+		padding: 40px 40px 40px 40px;
+		max-height: 100%;
+		position: absolute;
+ 		top: -40px;
+	}
+
+	.photo_1, .photo_3, .photo_5 {
+		float: left;
+	}
+	
+	.photo_2, .photo_4, .photo_6 {
+		float: right;
+	}
+	
+	.photo_1 img, .photo_2 img, .photo_3 img, .photo_4 img, .photo_5 img, .photo_6 img {
+		display: flex;
+		height: auto;
+		position: relative;
+		max-width: 400px;
+		min-width: 350px;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.quote_p {
+		padding-top: 10px;
+		font-size: 20px;
+		line-height: 30px;
+		padding-bottom: 4px
+	}
+	
+	.services_container1 .quote_1 {
+		margin-top: 40px;
+	}
+
+	.services_container2 .photo_2 {
+		order: 2;
+	}
+	
+	.services_container2 .quote_2 {
+		order: 1;
+	}
+
+	.services_container4 .photo_4 {
+		order: 2;
+	}
+	
+	.services_container4 .quote_4 {
+		order: 1;
+	}
+
+	.services_container6 .photo_6 {
+		order: 2;
+	}
+	
+	.services_container6 .quote_6 {
+		order: 1;
+	}
+	
+  	.row {
+  		display: flex;
+  		flex-direction: column;
+  	}
+  	
+	.services_container1, .services_container2, .services_container3, .services_container4, .services_container5, .services_container6 {
+  		max-height: 100%;
+  	}
+  	
+	.services_container5 {
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.quote_1, .quote_3, .quote_5  {
+		width: auto;
+		margin: auto;
+		padding: 40px 40px 40px 40px;
+		max-height: 100%;
+   		position: absolute;
+ 		top: -40px;
+	}
+	
+	.quote_2, .quote_4, .quote_6 {
+		float: left;
+		width: auto;
+		margin: auto;
+		padding: 40px 40px 40px 40px;
+		max-height: 100%;
+		position: absolute;
+ 		top: -40px;
+	}
+	
+	.photo_1, .photo_3, .photo_5 {
+		width: auto;
+		margin: auto;
+		max-height: 400px;
+		
+	}
+
+	.photo_2, .photo_4, .photo_6 {
+		float: left;
+		width: auto;
+		margin: auto;
+		padding: 0px 40px 0px 40px;
+		max-height: 400px;
+	}
+	
+	.photo_1 img, .photo_2 img, .photo_3 img, .photo_4 img, .photo_5 img, .photo_6 img {
+		display: flex;
+		height: auto;
+		position: relative;
+		max-width: 350px;
+		min-width: 350px;
+	}
+	
+	.view_more {
+		min-width: 400px;
+	}
+
+	.button_logo_theknot {
+		min-width: 400px;
+
+	}
+
+	.button_logo_weddingwire {
+		min-width: 400px;
+	}	
+
+}	
