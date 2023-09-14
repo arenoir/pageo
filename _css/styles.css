@@ -222,7 +222,6 @@ h7
 
 @media screen and (max-width: 1000px) {
 
-
 	.divider {
 		height: 120px;
 		width: 100%;
@@ -239,10 +238,21 @@ h7
 		line-height: 120px;
 		
 	}
-	
-	
 }
 
+@media screen and (max-width: 800px) {
+	
+	.divider {
+		font-size: 28px; 
+		line-height: 120px;
+		
+	}
+}
+
+
+
+
+/* LUNCH MENU –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
 
@@ -1042,9 +1052,150 @@ input[type=text]:focus {
 
 
 
+/* LUNCH MENU –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#lunch_menu {
+	padding: 40px 20px 40px 20px;	
+	max-width: 800px;
+	margin: auto;
+}
+
+#lunch_menu h5 {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 40px;
+	text-align: center;
+	padding: 0px 0px 8px 0px;
+}
+
+#lunch_menu h2 {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 40px;
+	text-align: center;
+	padding: 40px 0px 0px 0px;
+}
+
+#lunch_menu h1 {
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-size: 40px;
+	font-weight: 100;
+	color: #222;
+	letter-spacing: 2px;
+	line-height: 40px;
+	text-align: center;
+	padding: 40px 0px 40px 0px;
+}
+
+#lunch_menu p {
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-size: 20px;
+	line-height: 28px;
+	color: #222;
+	text-align: center;
+	padding: 0px 0px 20px 0px;
+}
+
+#lunch_menu .horiz {
+	margin: auto;
+	padding: 0px 0px 40px 0px;
+	width: 120px;
+	border-bottom: 1px dashed #222;
+}
+
+#lunch_menu .asterik p {
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-size: 20px;
+	line-height: 22px;
+	color: #222;
+	text-align: center;
+	padding: 0px 0px 20px 0px;
+	font-style: italic;
+}
+
+#lunch_menu .asterik {
+	margin: auto;
+	padding: 40px 0px 20px 0px;
+}
+
+#lunch_menu .salad_sandwiches {
+	margin: auto;
+	padding: 0px 0px 0px 0px;
+}
+
+@media screen and (max-width: 800px) {
+
+	#lunch_menu {
+		padding: 20px 20px 40px 20px;	
+	}
 
 
+	#lunch_menu h5 {
+		font-family: Baskerville-URW, Source Serif Pro, Georgia;
+		font-size: 26px;
+		font-weight: 400;
+		line-height: 40px;
+	}
 
+	#lunch_menu h2 {
+		font-family: Baskerville-URW, Source Serif Pro, Georgia;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 40px;
+		text-align: center;
+		padding: 40px 0px 20px 0px;
+	}
+
+	#lunch_menu h1 {
+		font-family: urw-din, Source Sans Pro, Sans-Serif;
+		font-size: 36px;
+		font-weight: 100;
+		color: #222;
+		letter-spacing: 2px;
+		line-height: 40px;
+		text-align: center;
+		padding: 40px 0px 40px 0px;
+	}
+
+	#lunch_menu p {
+		font-family: urw-din, Source Sans Pro, Sans-Serif;
+		font-size: 18px;
+		line-height: 28px;
+		color: #222;
+		text-align: center;
+		padding: 0px 0px 20px 0px;
+	}
+
+	#lunch_menu .horiz {
+		margin: auto;
+		padding: 0px 0px 20px 0px;
+		width: 120px;
+		border-bottom: 1px dashed #222;
+	}
+
+	#lunch_menu .asterik p {
+		font-family: urw-din, Source Sans Pro, Sans-Serif;
+		font-size: 18px;
+		line-height: 22px;
+		color: #222;
+		text-align: center;
+		padding: 0px 0px 20px 0px;
+		font-style: italic;
+	}
+
+	#lunch_menu .asterik {
+		margin: auto;
+		padding: 40px 0px 20px 0px;
+	}
+
+	#lunch_menu .salad_sandwiches {
+		margin: auto;
+		padding: 0px 0px 10px 0px;
+	}
+
+}
 
 /* HERO –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1332,6 +1483,7 @@ div.hero_info {
 
 /* Home  */
 
+
 #button_group_home {
 	padding-top: 48px;
 	padding-bottom: 0px;
@@ -1350,7 +1502,7 @@ div.hero_info {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 64px;
-	color: #FFFFFF;
+	color: #222;
 	background: #DFB9A4;
 	letter-spacing: 1.6px;
 	text-transform: uppercase;
@@ -1522,6 +1674,7 @@ footer div {
 
 footer {
 	margin: auto;
+	border-top: 1px dashed #888;
 	background-color: #FFFFFF;
 	padding: 40px 40px 120px 40px;
 }
@@ -1550,7 +1703,7 @@ footer .info_1 div, footer .info_3 div {
 }
 
 footer .row p {
-	font-family: Source Serif Pro, Helvetica Neue;
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 400;
@@ -1721,11 +1874,13 @@ footer .row:after {
 }
 
 #parallax .parallax_01 {
-	padding-top: 400px; 
-	padding-bottom: 400px; 
+	padding-top: 200px; 
+	padding-bottom: 200px; 
 	overflow: hidden; 
 	position: relative; 
-	width: 100%; 
+	border-radius: 8px;
+	width: 94%; 
+	margin: auto;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/home_image_weddings.jpg");
 	background-attachment: fixed; 
 	background-size: cover; 
@@ -1736,11 +1891,12 @@ footer .row:after {
 }
 
 #parallax .parallax_02 {
-	padding-top: 400px; 
-	padding-bottom: 400px; 
+	padding-top: 200px; 
+	padding-bottom: 200px; 
 	overflow: hidden; 
 	position: relative; 
-	width: 100%; 
+	width: 94%; 
+	margin: auto;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/giftshop/inside/gspic.jpg");
 	background-attachment: fixed; 
 	background-size: cover; 
@@ -1751,11 +1907,12 @@ footer .row:after {
 }
 
 #parallax .parallax_03 {
-	padding-top: 400px; 
-	padding-bottom: 400px; 
+	padding-top: 200px; 
+	padding-bottom: 200px; 
 	overflow: hidden; 
 	position: relative; 
-	width: 100%; 
+	width: 94%; 
+	margin: auto;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/_large/services/coordination_001.jpg");
 	background-attachment: fixed; 
 	background-size: cover; 

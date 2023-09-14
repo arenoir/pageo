@@ -233,7 +233,7 @@
 }
 
 
-img {
+.gallery_grid img {
 	margin-bottom: -5px;
 }
 
@@ -253,7 +253,7 @@ img {
 	opacity: 1;
 }
 
-img.gallery_hover {
+.gallery_grid img.gallery_hover {
 	transition: 0.4s;
 }
 
