@@ -3,7 +3,7 @@
 */
 
 
-.testimonials {
+#testimonials {
 	background-color: #FFFFF6;
 	height: 100%;
 	padding-top: 80px;
@@ -96,7 +96,7 @@
 	min-width: 450px;
 }
 
-.testimonials .row {
+#testimonials .row {
 	max-width: 1120px;
 	display: flex;
   	align-items: center;
@@ -105,7 +105,7 @@
 	margin: auto;
 }
 
-.testimonials .row:after {
+#testimonials .row:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -313,14 +313,14 @@
 
 @media screen and (max-width: 1150px) {
 
-	.testimonials {
+	#testimonials {
 		background-color: #FFFFF6;
 		height: 100%;
 		padding: 40px 0px 80px 0px;
 		
 	}
   
-	.testimonials img {
+	#testimonials img {
 		margin: auto;
 	}
 	
@@ -360,7 +360,7 @@
 
 @media screen and (max-width: 800px) {
 
-	.testimonials {
+	#testimonials {
 		background-color: #FFFFF6;
 		height: 100%;
 		padding: 20px 0px 20px 0px;
@@ -391,7 +391,7 @@
 		order: 1;
 	}
 	
-  	.testimonials .row {
+  	#testimonials .row {
   		display: flex;
   		flex-direction: column;
   		

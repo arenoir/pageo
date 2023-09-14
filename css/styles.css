@@ -1215,7 +1215,7 @@ input[type=text]:focus {
 	margin: auto;
 }
 
-.hero_content p {
+#home_hero p, #hero_giftshop p, #hero_weddings p {
 		margin: auto;
 		max-width: 550px;
 	}
@@ -1231,7 +1231,7 @@ div.hero_info {
 	background-color: none;
 }
 
-.hero_content {
+#home_hero, #hero_giftshop, #hero_weddings {
 	display: block;
     width: 100%;
     height: auto;
@@ -1244,7 +1244,7 @@ div.hero_info {
     background-size: cover;
 }
 
-.hero_content h2 {
+#home_hero h2, #hero_giftshop h2, #hero_weddings h2 {
     max-width: 800px;
     margin: auto;
 
@@ -1256,66 +1256,50 @@ div.hero_info {
 	.logo_hero_home {
 		width: 100%;
 		height: 400px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	
 	.logo_hero_home img {
 		transform: scale(.90);
-		max-width: 400px;
-		max-height: 400px;
-		margin: auto;
 	}
 	
-	.hero_content h1, .hero_content h1 {
+	#home_hero h1, #hero_giftshop h1, #hero_weddings h1 {
 		max-width: 600px;
 		font-size: 64px;
 		line-height: 64px; 
 		margin: auto;
 	}
 	
-	.hero_content p {
+	#home_hero p, #hero_giftshop p, #hero_weddings p {
 		max-width: 600px;
 		margin: auto;
 	}
 	
-	.hero_content {
-		display: block;
-		width: 100%;
+	#home_hero, #hero_giftshop, #hero_weddings {
 		height: 100%;
-		text-align: center;
 		padding-top: 120px;
 		padding-bottom: 100px;
-		background-position: center;
-		background-position: top;
 		background-image: url('../images/weddings/hero_weddings.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	
-	.hero_content h5 {
+	#home_hero h5, #hero_giftshop h5, #hero_weddings h5 {
 		font-size: 40px;
 		line-height: 48px;
 	}
 	
 	
-	.hero_content h2 {
+	#home_hero h2, #hero_giftshop h2, #hero_weddings h2 {
 		padding: 0px 40px 0px 40px;
 	}
 	
-	.hero_content p {
+	#home_hero p, #hero_giftshop p, #hero_weddings p {
 		padding: 0px 40px 0px 40px;
 		max-width: 600px;
 		margin: auto;
 	}
 	
-	#hero h2 {
-		max-width: 600px;
-		margin: auto;
-		font-size: 40px;
-		line-height: 48px;
-	}
+
 	
 	article h2 {
 		max-width: 600px;
@@ -1324,17 +1308,6 @@ div.hero_info {
 		line-height: 48px;
 	}
 
-	#hero {
-		display: block;
-		width: 100%;
-		height: 700px;
-		text-align: center;
-		background-position: center;
-		background-position: top;
-		background-image: url('../images/home/main_hero_BG.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
 
 
 	div.hero_info {
@@ -1371,26 +1344,15 @@ div.hero_info {
 		margin: auto;
 	}
 	
-	#hero {
-		display: block;
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		background-position: center;
-		background-position: top;
-		background-image: url('../images/home/main_hero_BG.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
 
 	
-	.hero_content {
+	#home_hero, #hero_giftshop, #hero_weddings {
 		height: 100%;
 		padding-top: 120px;
 		padding-bottom: 50px;
 	}
 	
-	.hero_content h1, .hero_content h1 {
+	#home_hero h1, #hero_giftshop h1, #hero_weddings h1 {
 		max-width: 600px;
 		font-size: 50px;
 		line-height: 64px; 
@@ -1404,7 +1366,7 @@ div.hero_info {
 		margin: auto;
 	}
 	
-	.hero_content p {
+	#home_hero p, #hero_giftshop p, #hero_weddings p {
 		max-width: 600px;
 		margin: auto;
 		padding: 0px 40px 0px 40px;
@@ -1415,7 +1377,7 @@ div.hero_info {
 		margin: 0px 20px 0px 20px;
 	}
 
-	.hero_content h5 {
+	#home_hero h5, #hero_giftshop h5, #hero_weddings h5 {
 		font-size: 32px;
 		line-height: 40px;
 	}
@@ -1437,7 +1399,8 @@ div.hero_info {
 		margin: 0px 20px 0px 20px;
 	}
 
-	.hero_content h5 {
+
+	article h2 {
 		font-size: 32px;
 		line-height: 40px;
 	}
@@ -1676,7 +1639,7 @@ footer {
 	margin: auto;
 	border-top: 1px dashed #888;
 	background-color: #FFFFFF;
-	padding: 40px 40px 120px 40px;
+	padding: 40px 40px 200px 40px;
 }
 
 footer .info_1 {
@@ -1828,7 +1791,7 @@ footer .row:after {
 	font-family: Baskerville-URW, Source Serif Pro, Georgia;
 	font-weight: 400;
 	font-style: normal;
-	letter-spacing: 0px;
+	letter-spacing: 12px;
 	font-size: 72px;
 	line-height: 72px;
 }
@@ -1855,12 +1818,12 @@ footer .row:after {
 	line-height: 30px; /* 150% */
 }
 
-#parallax .block {
+#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
 	background: white; 
-	padding: 60px; 
-	width:820px; 
+	padding: 60px 60px 60px 60px; 
+	width: 800px;
 	margin:0 auto; 
-	ext-align:justify;
+	text-align:justify;
 }
 
 #parallax .section_overlay_mask {
@@ -1873,15 +1836,15 @@ footer .row:after {
 	opacity: 0.70;
 }
 
-#parallax .parallax_01 {
+#parallax #parallax_01 {
 	padding-top: 200px; 
 	padding-bottom: 200px; 
 	overflow: hidden; 
 	position: relative; 
-	border-radius: 8px;
+	border-radius: 4px;
 	width: 94%; 
 	margin: auto;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/home_image_weddings.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_04.jpg");
 	background-attachment: fixed; 
 	background-size: cover; 
 	-moz-background-size: cover; 
@@ -1890,14 +1853,14 @@ footer .row:after {
 	background-position: top center;
 }
 
-#parallax .parallax_02 {
+#parallax #parallax_02 {
 	padding-top: 200px; 
 	padding-bottom: 200px; 
 	overflow: hidden; 
 	position: relative; 
 	width: 94%; 
 	margin: auto;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/giftshop/inside/gspic.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_02.jpg");
 	background-attachment: fixed; 
 	background-size: cover; 
 	-moz-background-size: cover; 
@@ -1906,14 +1869,14 @@ footer .row:after {
 	background-position: center center;
 }
 
-#parallax .parallax_03 {
+#parallax #parallax_03 {
 	padding-top: 200px; 
 	padding-bottom: 200px; 
 	overflow: hidden; 
 	position: relative; 
 	width: 94%; 
 	margin: auto;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/large/services/coordination_001.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_03.jpg");
 	background-attachment: fixed; 
 	background-size: cover; 
 	-moz-background-size: cover; 
@@ -1928,62 +1891,36 @@ footer .row:after {
 	width: 120px;
 }
 
-@media screen and (max-width: 959px) and (min-width: 768px) {
-	#parallax .block {
-		padding: 40px; 
-		width:620px;
-	}
-}
 
-@media screen and (max-width: 767px) {
 
-	#parallax .block {
-		padding: 30px; 
-		width:420px;
+@media screen and (max-width: 800px) {
+
+	#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
+		padding: 40px 40px 40px 40px; 
+		margin: auto;
+		width: auto;
 	}
 
-	#parallax h2 {
-		font-size:30px;
+	#parallax h1 {
+		font-size: 60px;
+		padding-left: 10px;
 	}
-
-	#parallax .block {
-		padding: 30px;
-	}
-
-	#parallax .parallax_01, #parallax .parallax_02, #parallax .parallax_03 {
+	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
 		padding-top:100px; 
 		padding-bottom:100px;
 	}
 
-}
+	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
+		background-attachment: inherit; 
 
-@media screen and (max-width: 479px) {
-	#parallax .block {
-		padding: 30px 15px; 
-		width:290px;
 	}
+
+
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SCREEN SIZES SMALL (MOBILE) */
-
-
-	
 
 
 	
