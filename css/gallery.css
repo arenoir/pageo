@@ -1,7 +1,7 @@
 
 
 .gallery_grid {
-	padding: 40px 0px 60px 0px;
+	padding: 40px 10px 100px;
 	margin: auto;
 	max-width: 1200px
 }
@@ -61,6 +61,9 @@
 	.gallery_column {
 		float: left;
 		width: 25%;
+	}
+	.gallery_grid {
+		padding: 40px 8px 60px 8px;
 	}
 }	
 
