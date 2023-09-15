@@ -256,7 +256,8 @@ h7
 
 
 
-/* ABOUT US –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ABOUT US –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 
+
 
 .about_us {
 	background-color: #FFFFFF;
@@ -306,7 +307,7 @@ h7
 	margin: auto;
 }
 
-/* OUR STORY */
+/* OUR STORY 
 
 .about_left_copy { 
 	float: left;
@@ -325,7 +326,7 @@ h7
 	
 }
 
-/* THE FARM */
+/* THE FARM 
 
 .about_right_copy { 
 	float: right;
@@ -1758,6 +1759,11 @@ footer .row:after {
 
 /* HOME - PARALLAX –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
+#parallax {
+	max-width: 1280px;
+	margin: auto;
+}
 	
 #parallax h1 {
 	color: #FFFFFF;
@@ -1920,16 +1926,53 @@ footer .row:after {
 
 
 
-
-
-	
+/* WEDDINGS - PARALLAX –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 	
+#weddings_about_us h1 {
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
 	
+#weddings_about_us #parallax {
+	margin-top: 40px;
+}
 
+		
+#weddings_about_us #parallax_01_block, #weddings_about_us #parallax_02_block {
+	padding-bottom: 100px;
+}
 
+#weddings_about_us #parallax #parallax_01 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/our_story.jpg");
+	border-radius: 4px;
+}
 
+#weddings_about_us #parallax #parallax_02 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/the_farm.jpg");
+	border-radius: 4px;
+}
 
+@media screen and (max-width: 800px) {
+	
+	#weddings_about_us h1 {
+		font-size: 40px;
+	} 
+
+	#weddings_about_us p {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	#weddings_about_us #parallax_01_block, #weddings_about_us #parallax_02_block {
+		padding-bottom: 60px;
+	}
+
+	#weddings_about_us #parallax {
+		margin-top: 20px;
+	}
+
+}
 
 
 
