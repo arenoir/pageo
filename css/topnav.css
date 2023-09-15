@@ -43,6 +43,7 @@
 	
 }
 
+
 .topnav a:hover {
 	background-color: #FFFFFF;
 	color: #6219FF;
@@ -171,6 +172,8 @@ a.nav_pageo_logo  {
 		line-height: 24px; /* 171.429% */
 		letter-spacing: 0.7px;
 	}
+
+
 
 	.topnav a:hover {
 		background-color: #FFFFFF;
@@ -347,6 +350,21 @@ a.nav_pageo_logo  {
 	transition: .4s;
 }
 
+@media screen and (max-width: 800px) {
+
+	.topnav_mobile_subnav {
+		font-family: urw-din, Source Sans Pro, Sans-Serif;
+		line-height: 20px;
+		padding: 20px;
+		font-weight: 200;
+		text-decoration: none;
+		font-size: 28px;
+		color: #888888;
+		display: block;
+		transition: .4s;
+	}
+}
+
 .overlay_link:hover, .overlay_link:focus {
 	color: #f1f1f1;
 }
@@ -367,7 +385,7 @@ a.nav_pageo_logo  {
 	.overlay_menu {
 		overflow-y: auto;
 	}
-	.overlay_content a {
+	.overlay_content overlay_link {
 		font-size: 32px;
 		line-height: 40px;
 	}
