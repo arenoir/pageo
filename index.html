@@ -13,79 +13,12 @@
 <link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
 <style>
 
-	
 #home_hero {
 	background-image: url('images/home/main_hero_BG.jpg');
 }
-
-
 </style>
 
-<!-- Mobile Nav Overlay -->
-<script>
-
-function openNav() {
-	document.getElementById("topnav_menu").style.height = "100%";
-}
-
-function closeNav() {
-	document.getElementById("topnav_menu").style.height = "0%";
-}
-
-</script>
-
-<!-- Getintouch Nav Overlay -->
-<script>
-
-function openContact() {
-	document.getElementById("topnav_contact").style.height = "100%";
-}
-
-function closeContact() {
-	document.getElementById("topnav_contact").style.height = "0%";
-}
-
-</script>
- 
-<!-- Gallery Photo Modal -->
-<script>
-function openModal() {
-	document.getElementById("gallery_modal").style.display = "block";
-}
-
-function closeModal() {
-	document.getElementById("gallery_modal").style.display = "none";
-}
-
-var slide_index = 1;
-show_slides(slide_index);
-
-function plus_slides(n) {
-	show_slides(slide_index += n);
-}
-
-function current_slide(n) {
-	show_slides(slide_index = n);
-}
-
-function show_slides(n) {
-	var i;
-	var slides = document.getElementsByClassName("slides");
-	var dots = document.getElementsByClassName("gallery");
-	var gallery_caption_text = document.getElementById("gallery_caption");
-	if (n > slides.length) {slide_index = 1}
-	if (n < 1) {slide_index = slides.length}
-	for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-	}
-
-	slides[slide_index-1].style.display = "block";
-	gallery_caption_text.innerHTML = dots[slides-1].alt;
-
-	
-}
-</script>
-
+<script src="js/javascript.js"></script>
 
 
 </head>
@@ -105,6 +38,7 @@ function show_slides(n) {
 	<div class="overlay_content">
 		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
 		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
+		<a href="gallery.html" class="overlay_link">Photo Gallery</a>
 		<!-- ><a href="#" class="overlay_link">Gallery</a>
 		<a href="#" class="overlay_link">Contact</a> -->
 	</div>
@@ -268,7 +202,7 @@ function show_slides(n) {
 <section>
 	<div id="parallax_02_block">
 		<p>
-		With a wide array of handmade lavender products – everything from linen spray to beard oil – we provide everything you need to pamper yourself properly.
+		With a wide array of handmade lavender products – everything from pillows to beard oil – we provide anything you might need to pamper yourself properly.
 		</p>
 		<p><a href="giftshop.html"><button class="button_parallax" style="background-color:#EFDED4">SEE MORE</button></a></p>
 		<hr>

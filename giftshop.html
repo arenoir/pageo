@@ -13,78 +13,12 @@
 <link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css">
 <style>
 
-
 #hero_giftshop {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("images/giftshop/hero_giftshop_2.jpg");
 }
 
- 
 </style>
-    
-<!-- Mobile Nav Overlay -->
-<script>
-
-function openNav() {
-	document.getElementById("topnav_menu").style.height = "100%";
-}
-
-function closeNav() {
-	document.getElementById("topnav_menu").style.height = "0%";
-}
-
-</script>
-
-<!-- Getintouch Nav Overlay -->
-<script>
-
-function openContact() {
-	document.getElementById("topnav_contact").style.height = "100%";
-}
-
-function closeContact() {
-	document.getElementById("topnav_contact").style.height = "0%";
-}
-
-</script>
- 
-<!-- Gallery Photo Modal -->
-<script>
-function openModal() {
-	document.getElementById("gallery_modal").style.display = "block";
-}
-
-function closeModal() {
-	document.getElementById("gallery_modal").style.display = "none";
-}
-
-var slide_index = 1;
-show_slides(slide_index);
-
-function plus_slides(n) {
-	show_slides(slide_index += n);
-}
-
-function current_slide(n) {
-	show_slides(slide_index = n);
-}
-
-function show_slides(n) {
-	var i;
-	var slides = document.getElementsByClassName("slides");
-	var dots = document.getElementsByClassName("gallery");
-	var gallery_caption_text = document.getElementById("gallery_caption");
-	if (n > slides.length) {slide_index = 1}
-	if (n < 1) {slide_index = slides.length}
-	for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-	}
-
-	slides[slide_index-1].style.display = "block";
-	gallery_caption_text.innerHTML = dots[slides-1].alt;
-
-	
-}
-</script>
+<script src="js/javascript.js"></script>
 	
 </head>
 
@@ -102,6 +36,7 @@ function show_slides(n) {
 	<div class="overlay_content">
 		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
 		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
+		<a href="gallery.html" class="overlay_link">Photo Gallery</a>
 		<!-- ><a href="#" class="overlay_link">Gallery</a>
 		<a href="#" class="overlay_link">Contact</a> -->
 	</div>
@@ -154,8 +89,8 @@ function show_slides(n) {
 			<a class="nav_pageo_logo" href="index.html">PAGEO LAVENDER FARM</a>
 			<div class="topnav_vertical_divider"></div>
 			<div class="nav_link_left">
-			<a href="weddings.html">Weddings & Events</a>
-			<a href="giftshop.html">Gift Shop & Services</a>
+				<a href="weddings.html">Weddings & Events</a>
+				<a href="giftshop.html">Gift Shop & Services</a>
 			</div>
 			
 		</div>
