@@ -16,7 +16,35 @@
 <style>
 
 #hero_weddings {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("images/large/hero_weddings2.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("images/gallery/gallery_hero.jpg");
+}
+
+.gallery_row > .gallery_column {
+	padding: 4px 2px;
+}
+
+
+
+
+#hero_weddings h1 {
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	#hero_weddings h1 {
+		padding-top: 70px;
+		padding-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#hero_weddings h1 {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 	
 </style>
@@ -37,18 +65,26 @@
 	</a>
 	<div class="overlay_content">
 		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
+			<a href="weddings.html#services" class="topnav_mobile_subnav">Our Services</a>
+			<a href="weddings.html#about" class="topnav_mobile_subnav">About Us</a>
+			<a href="weddings.html#test" class="topnav_mobile_subnav">Testimonials</a>
+		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
 		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
-		<a href="gallery.html" class="overlay_link">Photo Gallery</a>
+			<a href="giftshop.html#lunch_anchor" class="topnav_mobile_subnav">Lunch Menu</a>
+		<!--<a href="giftshop.html#products" class="topnav_mobile_subnav">Products</a> -->
+		<a href="gallery.html" class="overlay_link">Photo Gallery</a> <!--
 			<a href="gallery.html#weddings" class="topnav_mobile_subnav">Weddings Photos</a>
 			<a href="gallery.html#giftshop" class="topnav_mobile_subnav">Gift Shop Photos</a>
 			<a href="gallery.html#harvest" class="topnav_mobile_subnav">Harvest Photos</a>
+			<a href="gallery.html#farm" class="topnav_mobile_subnav">Around the Farm</a> 
 		<!-- ><a href="#" class="overlay_link">Gallery</a>
 		<a href="#" class="overlay_link">Contact</a> -->
 	</div>
 	<div class="button_overlay" style='background-color:#FEF2DA'>
-		<a href="#">Book a consultation	</a>
+		<a href="#">Book a consultation</a>
 	</div>
 </div>
+
 
 <div id="topnav_contact" class="overlay_contact">
 		<div class="nav_form">
@@ -119,19 +155,10 @@
 
 <div id="hero_weddings">
 	
-	<div class="hero_info">
-	<header> <a class="logo" href="#"></a> </header>
-	
 	<article>
-		<br><br>
 		<h1 style='color:white'>
-		Photography
+		Pageo Gallery
 		</h1>
-		<hr style='background-color:white; width:280px; height:2px'>
-			<h2 style="color:#FFFFFF; text-align:center;">Moments in memory</h2>
-			<br><br>
-		<!--<p style='color:white; text-align:center'>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p> -->
-		 
 	</article> 
 	
 	<!-- <div id="button_group_weddings">
@@ -151,7 +178,6 @@
 
 
 <!--––––––– SNAPSHOTS GALLERY -->
-
 
 
 <div class="divider">
@@ -343,6 +369,9 @@
 		<div class="gallery_column">
 		<a href="images/gallery/giftshop_021.jpg" data-lightbox="giftshop"><img src="images/gallery/thumbs/giftshop_021.jpg" class="lightbox_thumb"></a>
 		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/giftshop_022.jpg" data-lightbox="giftshop"><img src="images/gallery/thumbs/giftshop_022.jpg" class="lightbox_thumb"></a>
+		</div>
 
 	</div>
 </div>
@@ -382,6 +411,51 @@
 		<a href="images/gallery/harvest_009.jpg" data-lightbox="giftshop"><img src="images/gallery/thumbs/harvest_009.jpg" class="lightbox_thumb"></a>
 		</div>
 
+	</div>
+</div>
+
+<div class="divider">
+	<div id="farm">AROUND THE FARM</div>
+</div>
+
+<div class="gallery_grid">
+	<div class="gallery_row">
+		<div class="gallery_column">
+		<a href="images/gallery/farm_001.jpg" data-title="caption_1" data-lightbox="farm"><img src="images/gallery/thumbs/farm_001.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_002.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_002.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_003.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_003.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_004.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_004.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_005.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_005.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_006.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_006.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_007.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_007.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_008.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_008.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_009.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_009.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_010.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_010.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_011.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_011.jpg" class="lightbox_thumb"></a>
+		</div>
+		<div class="gallery_column">
+		<a href="images/gallery/farm_012.jpg" data-lightbox="farm"><img src="images/gallery/thumbs/farm_012.jpg" class="lightbox_thumb"></a>
+		</div>
 	</div>
 </div>
 

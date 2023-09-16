@@ -350,23 +350,26 @@ a.nav_pageo_logo  {
 	transition: .4s;
 }
 
-@media screen and (max-width: 800px) {
 
-	.topnav_mobile_subnav {
-		font-family: urw-din, Source Sans Pro, Sans-Serif;
-		line-height: 20px;
-		padding: 20px;
-		font-weight: 200;
-		text-decoration: none;
-		font-size: 28px;
-		color: #888888;
-		display: block;
-		transition: .4s;
-	}
+.topnav_mobile_subnav {
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 16px;
+	font-weight: 200;
+	text-decoration: none;
+	color: #888888;
+	display: block;
+	transition: .4s;
 }
 
+
 .overlay_link:hover, .overlay_link:focus {
-	color: #f1f1f1;
+	color: #6219FF;
+}
+
+.topnav_mobile_subnav:hover, .topnav_mobile_subnav:focus {
+	color: #6219FF;
 }
 
 .overlay_menu .closebtn, .overlay_contact .closebtn {
