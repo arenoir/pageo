@@ -55,3 +55,4 @@ function show_slides(n) {
 	slides[slide_index-1].style.display = "block";
 	gallery_caption_text.innerHTML = dots[slides-1].alt;
 }
+
