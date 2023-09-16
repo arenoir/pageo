@@ -1222,7 +1222,7 @@ div.hero_info {
 	height: auto;
 	max-width: 800px;
 	margin: 0px auto 0px auto;
-	padding: 40px 0px 120px 0px;
+	padding: 40px 0px 80px 0px;
 	text-align: center;
 	position: relative;
 	background-color: none;
@@ -1273,7 +1273,7 @@ div.hero_info {
 	#home_hero, #hero_giftshop, #hero_weddings {
 		height: 100%;
 		padding-top: 120px;
-		padding-bottom: 100px;
+		padding-bottom: 70px;
 	}
 	
 	div.hero_info {

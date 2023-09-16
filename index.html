@@ -16,6 +16,63 @@
 #home_hero {
 	background-image: url('images/home/main_hero_BG.jpg');
 }
+
+.center {
+	width: 100%;
+	height: 100%;
+    background: #444444;
+}
+
+.slideshow_lide {
+	width: 100vw;
+	height: 900px;
+	overflow: hidden;
+	position: relative;
+	padding-top: 0px;
+    background: #7B7261;
+}
+.slideshow_slide > div {
+	width: 100%;
+	height: 900px;
+	background-size: cover;
+	background-position: center;
+	background-position: top;
+	position: absolute;
+	animation: slide 50s infinite;
+	opacity: 0;
+}
+
+
+.slideshow_slide > div:nth-child(2) {
+	animation-delay: 10s;
+}
+.slideshow_slide > div:nth-child(3) {
+	animation-delay: 20s;
+}
+.slideshow_slide > div:nth-child(4) {
+	animation-delay: 30s;
+}
+.slideshow_slide > div:nth-child(5) {
+	animation-delay: 40s;
+}
+
+
+@keyframes slide {
+	10% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	40% {
+		transform: scale(1);
+	}
+}	
+	
+
 </style>
 
 <script src="js/javascript.js"></script>
@@ -37,18 +94,26 @@
 	</a>
 	<div class="overlay_content">
 		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
+			<a href="weddings.html#services" class="topnav_mobile_subnav">Our Services</a>
+			<a href="weddings.html#about" class="topnav_mobile_subnav">About Us</a>
+			<a href="weddings.html#test" class="topnav_mobile_subnav">Testimonials</a>
+		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
 		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
-		<a href="gallery.html" class="overlay_link">Photo Gallery</a>
+			<a href="giftshop.html#lunch_anchor" class="topnav_mobile_subnav">Lunch Menu</a>
+		<!--<a href="giftshop.html#products" class="topnav_mobile_subnav">Products</a> -->
+		<a href="gallery.html" class="overlay_link">Galleries</a> <!--
 			<a href="gallery.html#weddings" class="topnav_mobile_subnav">Weddings Photos</a>
 			<a href="gallery.html#giftshop" class="topnav_mobile_subnav">Gift Shop Photos</a>
 			<a href="gallery.html#harvest" class="topnav_mobile_subnav">Harvest Photos</a>
+			<a href="gallery.html#farm" class="topnav_mobile_subnav">Around the Farm</a> 
 		<!-- ><a href="#" class="overlay_link">Gallery</a>
 		<a href="#" class="overlay_link">Contact</a> -->
 	</div>
 	<div class="button_overlay" style='background-color:#FEF2DA'>
-		<a href="#">Book a consultation	</a>
+		<a href="#">Book a consultation</a>
 	</div>
 </div>
+
 
 <div id="topnav_contact" class="overlay_contact">
 		<div class="nav_form">
@@ -91,7 +156,7 @@
 <div class="topnav_fixed">
 	<div class="topnav">
 		<div class="topnav_left">
-			<a class="nav_pageo_logo" href="#home">PAGEO LAVENDER FARM</a>
+			<a class="nav_pageo_logo" href="index.html">PAGEO LAVENDER FARM</a>
 			<div class="topnav_vertical_divider"></div>
 			<div class="nav_link_left">
 			<a href="weddings.html">Weddings & Events</a>
@@ -109,7 +174,7 @@
 			</div>		
 		</div>	
 		<div class="topnav_right">
-			<a href="gallery.html">Gallery</a>
+			<a href="gallery.html">Galleries</a>
 		</div>
 	</div>
 </div>
@@ -144,6 +209,11 @@
 			</a>
 		</div>
 	</div>
+<center>
+
+
+	  
+</center>
 </div>
 	
 <!-- ANNOUNCEMENT CONTAINER -->
