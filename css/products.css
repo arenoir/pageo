@@ -5,31 +5,49 @@
 	padding: 0;
 }
 
-
 .grid-row {
-  display: flex;
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	gap: 20px;
 }
+
 .grid-column-half {
-  border: 1px solid grey;
-  width: 33.33%;
-  padding: 10px;
+	border: 1px solid grey;
+	width: 33.33%;
+	padding: 10px;
+	float: left;
 	overflow: hidden;
+	background: #FFFFF6;
 }
 
 
 .tinted-container {
-  height: 100%;
-  background: pink;
+	height: 100%;
+	background: #FFFFF6;
 }
 
 .grid-column-half img {
 	width: 100%;
 }
 
+button {
+margin-bottom: 40px;
+}
 
+.prod_column_1 img {
+	padding: 12px 12px 0px 12px;
+	height: auto;
+}
 
-
-
+@media screen and (max-width: 800px) {
+	.grid-column-half {
+		width: 100%;
+	}
+	.grid-row {
+		flex-direction: column;
+	}
+}	
 
 
 
@@ -60,6 +78,7 @@
 
 .prod_column_1 p {
 	padding: 12px 12px 20px 12px;	
+	height: 200px;
 }
 
 .prod_container {
