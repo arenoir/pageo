@@ -1,5 +1,0 @@
-@mixin uppercased-text($size: $fontUppercasedSize, $spacing: $letterSpacing) {
-  text-transform: uppercase;
-  font-size: $size;
-  letter-spacing: $spacing;
-}
