@@ -93,7 +93,7 @@ h5 {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 24px;
-	line-height: 32px; 
+	line-height: 34px; 
 }
 
 h6 {
@@ -106,7 +106,15 @@ h6 {
 	line-height: 28px; 
 }
 
-h7
+a {
+	text-decoration: none;
+	color: #6219FF;
+}
+
+a:hover {
+	text-decoration: none;
+	background: #E4F4E9;
+}
 
 
 
@@ -597,6 +605,8 @@ h7
 	text-align: center;
 	line-height: 18pt;
 	color: #222;
+   	padding-right: 10px;
+   	padding-left: 10px;
 }
 
 .services1 h6 {
@@ -617,10 +627,6 @@ h7
 	max-width: 1184px;
 }
 
-.services1 p {
-   	padding-right: 20px;
-   	padding-left: 20px;
-}
 
 .services1_left, .services1_center, .services1_right {
 	background-color: #F8F4F1;
@@ -660,7 +666,7 @@ h7
 	}
 
 	.services1 p {
-		max-width: 400px;
+		max-width: 640px;
 		margin: auto;
 		padding-bottom: 10px;
 	}
@@ -685,26 +691,13 @@ h7
 		flex-direction: column;
 		padding: 20px 20px 60px 20px;
 	}
-		
-	}
 
 	.services1 p {
-		max-width: 400px;
+		max-width: 440px;
 		margin: auto;
 		padding-bottom: 10px;
 	}
-
-	.services1_left, .services1_center, .services1_right {
-		background-color: #F8F4F1;
-		flex: 33%;
-	}
-
-	.services1 {
-
-	
-	.our_services h5 {
-		padding: 0px 40px 0px 40px;
-	}
+		
 
 }
 
@@ -722,6 +715,17 @@ h7
 	padding: 1rem;
 	height: auto;
 	border-radius: 8px;
+	/*
+    background-position: center;
+    background-position: top;
+    background-image: url('../images/weddings/background_blur/bg_03_desktop.png'), url('../images/weddings/background_blur/bg_02_desktop.png');
+	background-attachment: fixed; 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	*/
+
 	
 }
 
@@ -737,6 +741,8 @@ h7
 
 .cards p {
    	padding-right: 20px;
+	max-width: 440px;
+	margin: auto;
    	padding-left: 20px;
    	padding-bottom: 20px;
    	color: #222222;
