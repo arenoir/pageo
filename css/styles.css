@@ -20,6 +20,7 @@ footer, header, hgroup, menu, nav, output, section, summary, audio, video {
 
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  height: fit-content;
 }
 
 p {
@@ -108,13 +109,10 @@ h6 {
 
 a {
 	text-decoration: none;
-	color: #6219FF;
+	color: #222;
 }
 
-.prod_intro a:hover {
-	text-decoration: none;
-	background: #E4F4E9;
-}
+
 
 
 

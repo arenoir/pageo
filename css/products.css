@@ -5,6 +5,7 @@
 	padding: 0;
 }
 
+
 .prod_button {
 	width: 100%;
 	height: 60px;
@@ -116,10 +117,20 @@
 }
 
 
+.prod_intro a {
+	text-decoration: none;
+	color: #6219FF;
+}
+
+.prod_intro a:hover {
+	background: #E4F4E9;
+}
+
 .prod_intro .outlink_icon {
 	vertical-align: middle;
 	display: inline-block;
 	padding: 0px;
+	background: none;
 }
 
 
