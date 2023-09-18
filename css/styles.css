@@ -111,10 +111,11 @@ a {
 	color: #6219FF;
 }
 
-a:hover {
+.prod_intro a:hover {
 	text-decoration: none;
 	background: #E4F4E9;
 }
+
 
 
 
@@ -1619,7 +1620,7 @@ footer div {
 }
 
 footer {
-	margin: auto;
+	margin: 80px auto auto auto;
 	border-top: 1px dashed #888;
 	background-color: #FFFFFF;
 	padding: 40px 40px 200px 40px;
@@ -1670,7 +1671,9 @@ footer .row:after {
 
 @media screen and (max-width: 1000px) {
 
-
+	footer {
+		margin: 40px auto auto auto;
+	}
 
 	footer .info_1 {
 		order: 1;
@@ -1721,6 +1724,8 @@ footer .row:after {
 }
 
 @media screen and (max-width: 640px) {
+
+
 
 	footer .info_1, footer .info_2, footer .info_3 { 
 		width: 100%;
