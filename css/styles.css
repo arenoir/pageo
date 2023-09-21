@@ -262,6 +262,7 @@ a {
 
 #awards {
 	width: 100%;
+	border-top: 1px dashed #888;
 	height: auto;
 	position: relative;
 	margin: auto;
@@ -273,6 +274,7 @@ a {
 }
 
 .award_row1 {
+	margin-top: 40px;
 	float: left;
 	display: flex;
 	justify-content: center;
@@ -321,6 +323,28 @@ a {
 	}
 
 	.award_filter {
+		scale: 1;
+	}
+
+	.award {
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 40px;
+	}
+
+}
+
+
+@media screen and (max-width: 400px) {
+	.award_row1 {
+		float: left;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.award_filter {
 		scale: .8;
 	}
 
@@ -333,6 +357,89 @@ a {
 
 }
 
+/* AWARDS-WEDDINGS –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+#hero_weddings #awards {
+	width: 100%;
+	border-top: none;
+	height: auto;
+	position: relative;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 0px;
+	padding-bottom: 0px;
+}
+
+#hero_weddings .award_row1 {
+	margin-top: 0px;
+	float: left;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#hero_weddings .award {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 30px;
+}
+
+#hero_weddings .award_filter {
+    filter: invert(89%) sepia(19%) saturate(128%) hue-rotate(9deg) brightness(107%) contrast(87%);
+}
+
+
+@media screen and (max-width: 800px) {
+	#hero_weddings .award_row1 {
+		float: left;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	#hero_weddings .award_filter {
+		scale: .8;
+	}
+
+	#hero_weddings .award {
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 10px;
+		padding-top: 10px;
+	}
+
+}
+
+
+@media screen and (max-width: 600px) {
+	#hero_weddings {
+		display: none;
+	}
+
+	#hero_weddings .award {
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+	#hero_weddings .award_filter {
+		scale: .8;
+	}
+
+	#hero_weddings .award {
+		margin: 20px;
+	}
+
+}
 
 
 /* SERVICES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1343,160 +1450,6 @@ a:hover .button_giftshop {
 
 
 
-/* FOOTER –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-footer div {
-	letter-spacing: 1px;
-}
-
-footer {
-	margin: 80px auto auto auto;
-	border-top: 1px dashed #888;
-	background-color: #FFFFFF;
-	padding: 40px 40px 200px 40px;
-}
-
-footer .info_1 {
-	order: 1;
-}
-
-footer .info_2 {
-	order: 2;
-}
-
-footer .info_3 {
-	order: 3;
-}
-
-footer .info_2, footer .info_1, footer .info_3 { 
-	float: left;
-	width: 33%;
-	padding: 40px 40px 0px 40px;
-	text-align: center;
-}
-
-footer .info_1 div, footer .info_3 div { 
-	padding-top: 20px;
-}
-
-footer .row p {
-	font-family: Baskerville-URW, Source Serif Pro, Georgia;
-	font-size: 16px;
-	line-height: 28px;
-	font-weight: 400;
-	color: #222;
-	text-align: center;
-}
-
-footer .row {
-	max-width: 1280px;
-	margin: auto;
-}
-
-footer .row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-@media screen and (max-width: 1000px) {
-
-	footer {
-		margin: 40px auto auto auto;
-	}
-
-	footer .info_1 {
-		order: 1;
-	}
-
-	footer .info_2 {
-		order: 3;
-	}
-
-	footer .info_3 {
-		order: 3;
-	}
-
-	footer .info_1, footer .info_2, footer .info_3 { 
-		width: 50%;
-		height: auto;
-	}
-	
-
-	
-	.info_3 {
-		text-align: right;
-		padding-top: 40px;
-		height: 100%;
-		overflow: hidden;
-	}
-
-	.info_3 showup {
-		height: 200px;
-		
-	}
-
-	footer .info_1 div, footer .info_2 div, footer .info_3 div { 
-		width: 100%;
-		margin: auto;
-	}
-
-	footer .row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	
-	footer .row p {
-		text-align: left;
-	}
-	
-}
-
-@media screen and (max-width: 640px) {
-
-
-
-	footer .info_1, footer .info_2, footer .info_3 { 
-		width: 100%;
-	}
-	
-	
-	footer .info_1 {
-		order: 1;
-	}
-
-	footer .info_2 {
-		order: 3;
-	}
-
-	footer .info_3 {
-		order: 2;
-	}
-
-	
-	footer .info_2 {
-		text-align: cneter;
-		padding-top: 80px;
-	}
-
-	footer .row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		padding-bottom: 40px;
-	}
-	
-	footer .row p {
-		text-align: center;
-	}
-}
-
-
-
-
-
 
 
 
@@ -1643,8 +1596,8 @@ footer .row:after {
 	}
 
 	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
-		padding-top: 120px; 
-		padding-bottom: 120px;
+		padding-top: 115px; 
+		padding-bottom: 115px;
 	}
 
 
@@ -1698,6 +1651,14 @@ footer .row:after {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/the_farm.jpg");
 }
 
+@media screen and (max-width: 1000px) {
+	
+#weddings_about_us #parallax {
+	margin-top: 0px;
+}
+
+}
+
 @media screen and (max-width: 800px) {
 	
 	#weddings_about_us h1 {
@@ -1711,10 +1672,164 @@ footer .row:after {
 
 	#weddings_about_us #parallax_01_block, #weddings_about_us #parallax_02_block {
 		padding-bottom: 60px;
+
 	}
 
 
 }
+
+
+
+/* FOOTER –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+footer div {
+	letter-spacing: 1px;
+}
+
+footer {
+	margin: 40px auto auto auto;
+	border-top: 1px dashed #888;
+	background-color: #FFFFFF;
+	padding: 40px 40px 200px 40px;
+}
+
+footer .info_1 {
+	order: 1;
+}
+
+footer .info_2 {
+	order: 2;
+}
+
+footer .info_3 {
+	order: 3;
+}
+
+footer .info_2, footer .info_1, footer .info_3 { 
+	float: left;
+	width: 33%;
+	padding: 40px 40px 0px 40px;
+	text-align: center;
+}
+
+footer .info_1 div, footer .info_3 div { 
+	padding-top: 20px;
+}
+
+footer .row p {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #222;
+	text-align: center;
+}
+
+footer .row {
+	max-width: 1280px;
+	margin: auto;
+}
+
+footer .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+
+	footer {
+		margin: 40px auto auto auto;
+	}
+
+	footer .info_1 {
+		order: 1;
+	}
+
+	footer .info_2 {
+		order: 3;
+	}
+
+	footer .info_3 {
+		order: 3;
+	}
+
+	footer .info_1, footer .info_2, footer .info_3 { 
+		width: 50%;
+		height: auto;
+	}
+	
+
+	
+	.info_3 {
+		text-align: right;
+		padding-top: 40px;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.info_3 showup {
+		height: 200px;
+		
+	}
+
+	footer .info_1 div, footer .info_2 div, footer .info_3 div { 
+		width: 100%;
+		margin: auto;
+	}
+
+	footer .row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	footer .row p {
+		text-align: left;
+	}
+	
+}
+
+@media screen and (max-width: 640px) {
+
+
+
+	footer .info_1, footer .info_2, footer .info_3 { 
+		width: 100%;
+	}
+	
+	
+	footer .info_1 {
+		order: 1;
+	}
+
+	footer .info_2 {
+		order: 3;
+	}
+
+	footer .info_3 {
+		order: 2;
+	}
+
+	
+	footer .info_2 {
+		text-align: cneter;
+		padding-top: 80px;
+	}
+
+	footer .row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-bottom: 40px;
+	}
+	
+	footer .row p {
+		text-align: center;
+	}
+}
+
 
 
 
