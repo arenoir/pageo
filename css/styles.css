@@ -1142,6 +1142,7 @@ div.hero_info {
 	.logo_hero_home {
 		width: 100%;
 		height: 400px;
+		margin-top: 40px;
 	}
 	
 	.logo_hero_home img {
@@ -1166,8 +1167,8 @@ div.hero_info {
 
 	#home_hero h2 {
 		max-width: 800px;
-		font-size: 48px;
-		line-height: 56px;
+		font-size: 40px;
+		line-height: 50px;
 	}
 
 	#hero_weddings h2, #hero_giftshop h2 {
@@ -1233,8 +1234,8 @@ div.hero_info {
 
 	#home_hero h2 {
 		max-width: 800px;
-		font-size: 40px;
-		line-height: 48px;
+		font-size: 32px;
+		line-height: 40px;
 	}
 
 	#hero_weddings h2, #hero_giftshop h2 {
@@ -1264,6 +1265,7 @@ div.hero_info {
 		padding: 40px 0px 0px 0px
 	}
 }
+
 
 
 
@@ -1337,6 +1339,15 @@ a:hover .button_home {
 	background: #DFB9A4;
 }
 
+
+@media screen and (max-width: 1000px) {
+	#button_group_home {
+		padding-top: 48px;
+	}
+
+}
+
+
 @media screen and (max-width: 800px) {
 
 
@@ -1360,7 +1371,7 @@ a:hover .button_home {
 	}
 
 	#button_group_home {
-		padding-top: 48px 0 64px 0;
+		padding-top: 40px;
 		gap: 40px;
 	}
 
@@ -1893,6 +1904,17 @@ a:hover .button_giftshop {
 }
 
 
+.sub_intro {
+	padding: 0px 20px 0px 20px;
+	margin: 0px auto 40px auto;
+	font-size: 20px;
+	line-height: 32px;
+	text-align: center;
+	max-width: 780px;
+	
+}
+
+
 @media screen and (max-width: 1200px) {
 
 	.prod_column_1 p, .prod_column_3 p {
@@ -1995,6 +2017,7 @@ a:hover .button_giftshop {
 		scale: .8;
 		height: 40px;
 	}
+
 
 }	
 
