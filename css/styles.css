@@ -390,7 +390,24 @@ a {
 }
 
 #hero_weddings .award_filter {
-    filter: invert(89%) sepia(19%) saturate(128%) hue-rotate(9deg) brightness(107%) contrast(87%);
+    filter: invert(100%) sepia(1%) saturate(3609%) hue-rotate(311deg) brightness(100%) contrast(84%);
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	#hero_weddings .award_filter {
+		scale: .8;
+	}
+
+	#hero_weddings .award {
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 10px;
+		padding-top: 10px;
+	}
+
 }
 
 
@@ -403,14 +420,14 @@ a {
 	}
 
 	#hero_weddings .award_filter {
-		scale: .8;
+		scale: .6;
 	}
 
 	#hero_weddings .award {
 		width: 100px;
 		height: 100px;
 		float: left;
-		margin: 10px;
+		margin: 4px;
 		padding-top: 10px;
 	}
 
@@ -1114,6 +1131,10 @@ div.hero_info {
 	margin-left: auto;
 }
 
+#hero_weddings .hero_info {
+	padding: 40px 0px 40px 0px
+}
+
 
 @media screen and (max-width: 1000px) {
 
@@ -1167,6 +1188,8 @@ div.hero_info {
 		font-size: 64px;
 		line-height: 72px;
 	}
+
+
 
 }
 
@@ -1235,6 +1258,10 @@ div.hero_info {
 		margin: auto;
 		letter-spacing: 1px;
 		line-height: 64px;
+	}
+
+	#hero_weddings .hero_info {
+		padding: 40px 0px 0px 0px
 	}
 }
 
@@ -1576,8 +1603,7 @@ a:hover .button_giftshop {
 }
 
 #parallax hr {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 40px auto 40px auto;
 	width: 120px;
 }
 
@@ -1648,7 +1674,7 @@ a:hover .button_giftshop {
 }
 
 #weddings_about_us #parallax #parallax_02 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/the_farm.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/the_farm2.jpg");
 }
 
 @media screen and (max-width: 1000px) {
@@ -1677,6 +1703,304 @@ a:hover .button_giftshop {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCTS –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+.prod_button {
+	width: 100%;
+	height: 60px;
+	background: #44F4B3;
+	border: none;
+	margin: 16px auto auto auto;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 14px;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	letter-spacing: 1.4px;
+	padding-bottom: 20px;
+	line-height: 60px;
+	vertical-align: middle;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #111;
+	cursor: pointer;
+}
+
+.prod_button img {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 14px 0px 21px 4px;
+}
+
+.prod_grid {
+	padding: 0px 20px 100px 20px;
+	margin: auto;
+	max-width: 1280px
+}
+
+.prod_row_1, .prod_row_2, .prod_row_3 {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.prod_row_3 {
+	padding-top: 20px;
+}
+
+
+.prod_column_0 {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+	overflow: hidden;
+	border: 2px solid #44F4B3;
+	background-color: #FFFFF6;
+}
+
+.prod_column_0 .prod_container {
+    display: block;
+	margin: 12px;
+	height: 450px;
+	overflow: hidden;
+    text-align: center;
+	background-image: url('../images/giftshop/products/prod_hero2.jpg');
+    background-position: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+	.prod_column_0 .prod_container {
+		height: 320px;
+	}
+}
+
+.prod_column_0 .prod_container img{
+	margin: 12px;
+	height: 100%;
+}
+
+.prod_column_1 {
+	width: 33.33%;
+	margin: auto;
+	border: 2px solid #44F4B3;
+	background-color: #FFFFF6;
+}
+
+.prod_column_2 {
+	width: 50%;
+	margin: 20px auto auto auto;
+	border: 2px solid #44F4B3;
+	background-color: #FFFFF6;
+}
+
+.prod_image_container {
+	height: auto;
+	overflow: hidden;
+}
+
+
+.prod_column_1 img {
+	height: auto;
+}
+
+.prod_column_1 p, .prod_column_2 p {
+	padding: 8px 12px 20px 12px;	
+	overflow: hidden;
+    color: #222222;
+    text-align: left;
+    font-family: urw-din, Source Sans Pro, Sans-Serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.prod_column_1 p {	
+	height: 88px;
+}
+
+.prod_column_2 p {	
+	height: 72px;
+}
+
+.prod_column_1 h5, .prod_column_2 h5 {
+	padding: 12px 12px 0px 12px;	
+}
+
+.prod_container {
+	height: 100%;
+	padding: 12px;
+}
+
+.prod_column_1 img, .prod_column_2 img {
+	width: 100%;
+}
+
+
+.intro {
+	text-align: center;
+	line-height: 34px;
+	max-width: 780px;
+	margin: 60px auto 20px auto;
+	padding: 0px 40px 60px 40px;
+	color: #444444;
+}
+
+
+
+.intro a {
+	text-decoration: none;
+	color: #6219FF;
+}
+
+.intro a:hover {
+	background: #E4F4E9;
+}
+
+.intro .outlink_icon {
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0px;
+	background: none;
+}
+
+.nowrap{
+	white-space: nowrap;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.prod_column_1 p, .prod_column_3 p {
+		height: 124px;
+	}
+
+	.prod_column_2 p {
+		height: 80px;
+	}
+
+}	
+
+@media screen and (max-width: 1000px) {
+	.prod_column_1 p, .prod_column_2 p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.prod_column_1 h5 {
+		font-size: 18px;
+	}
+
+	.prod_intro h5 {
+		padding: 0px 40px 0px 40px;
+	}
+}	
+
+@media screen and (max-width: 800px) {
+	.prod_column_1, .prod_column_2 {
+		float: left;
+		width: 100%;
+		margin: auto;
+	}
+
+	.intro {
+		padding: 0px 20px 40px 20px;
+	}
+
+	.prod_row_3 {
+		padding-top: 0px;
+	}
+
+	.prod_row_1, .prod_row_2, .prod_row_3 {
+		display: flex;
+		margin-top: 20px;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.prod_column_1 p {
+		height: 80px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.prod_column_2 p {
+		height: 80px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.prod_column_1 h5, .prod_column_2 h5 {
+		font-size: 24px;
+	}
+
+	.prod_image_container {
+		height: 260px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.prod_image_container img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translateY(-50%) translateX(-50%);
+	}
+
+}	
+
+@media screen and (max-width: 650px) {
+
+	.prod_column_1 p, .prod_column_2 p {
+		height: 100px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.intro {
+		font-size: 20px;
+		line-height: 32px;
+		text-align: center;
+		max-width: 780px;
+		margin: 60px auto 20px auto;
+		padding: 0px 40px 20px 40px;
+		color: #444444;
+	}
+
+	.intro .outlink_icon {
+		scale: .8;
+		height: 40px;
+	}
+
+}	
+
+
+
+
 
 
 
