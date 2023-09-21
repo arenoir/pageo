@@ -928,6 +928,9 @@ input[type=text]:focus {
 
 /* LUNCH MENU –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
+
+
 #lunch_menu {
 	padding: 40px 20px 40px 20px;	
 	max-width: 800px;
@@ -1876,7 +1879,7 @@ a:hover .button_giftshop {
 	text-align: center;
 	line-height: 34px;
 	max-width: 780px;
-	margin: 60px auto 20px auto;
+	margin: 60px auto 0px auto;
 	padding: 0px 40px 60px 40px;
 	color: #444444;
 }
@@ -1904,15 +1907,7 @@ a:hover .button_giftshop {
 }
 
 
-.sub_intro {
-	padding: 0px 20px 0px 20px;
-	margin: 0px auto 40px auto;
-	font-size: 20px;
-	line-height: 32px;
-	text-align: center;
-	max-width: 780px;
-	
-}
+
 
 
 @media screen and (max-width: 1200px) {
@@ -1947,10 +1942,6 @@ a:hover .button_giftshop {
 		float: left;
 		width: 100%;
 		margin: auto;
-	}
-
-	.intro {
-		padding: 0px 20px 40px 20px;
 	}
 
 	.prod_row_3 {
@@ -1993,6 +1984,11 @@ a:hover .button_giftshop {
 		-webkit-transform: translateY(-50%) translateX(-50%);
 	}
 
+	.intro {
+		padding: 0px 20px 40px 20px;
+	}
+
+
 }	
 
 @media screen and (max-width: 650px) {
@@ -2023,6 +2019,16 @@ a:hover .button_giftshop {
 
 
 
+
+
+
+/* PHOTOSHOOTS –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+#photoshoots {
+	background-color: #F8F4F1;
+	padding: auto;
+}
 
 
 
