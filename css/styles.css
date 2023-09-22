@@ -200,8 +200,6 @@ a {
 }
 
 
-
-
 /* DIVIDER  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .divider {
@@ -457,6 +455,8 @@ a {
 	}
 
 }
+
+
 
 
 /* SERVICES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1678,7 +1678,7 @@ a:hover .button_giftshop {
 
 @media screen and (max-width: 800px) {
 
-	#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
+	#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block, #parallax #parallax_04_block {
 		padding: 40px 40px 40px 40px; 
 		margin: auto;
 		width: auto;
