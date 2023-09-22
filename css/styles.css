@@ -1269,40 +1269,6 @@ div.hero_info {
 	}
 }
 
-/* PHM  –––––––– */
-
-.logo_hero_phm {
-	width: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	scale: 1.4;
-}
-
-@media screen and (max-width: 800px) {
-
-	.logo_hero_phm {
-		width: 100%;
-		scale: .8;
-		display: flex;
-		padding-top: 0px;
-		justify-content: center;
-		align-items: center;
-	}
-}
-
-#hero_phm {
-	display: flex;
-    width: 100%;
-    height: auto;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-    background-position: center;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 /* BUTTTON CTAS  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1587,11 +1553,11 @@ a:hover .button_giftshop {
 	line-height: 34px;
 }
 
-#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
+#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block, #parallax #parallax_04_block {
 	background: white; 
 	padding: 60px 60px 60px 60px; 
 	margin:0 auto; 
-	text-align:justify;
+	text-align: justify;
 }
 
 #parallax .section_overlay_mask {
@@ -1649,6 +1615,26 @@ a:hover .button_giftshop {
 	background-position: center center;
 }
 
+
+#parallax #parallax_04 {
+	height: 472px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; 
+	position: relative; 
+	border-radius: 4px;
+	margin: auto;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/phm/phm_hero_2.jpg");
+	background-attachment: fixed; 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
 #parallax hr {
 	margin: 40px auto 40px auto;
 	width: 120px;
@@ -1673,6 +1659,19 @@ a:hover .button_giftshop {
 		padding-bottom: 115px;
 	}
 
+	#parallax #parallax_04 {
+		height: 302px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/phm/phm_hero_2.jpg");
+	}
+
+	#parallax #parallax_04 img {
+		scale: .74;
+	}
+
+
 
 
 }
@@ -1695,6 +1694,20 @@ a:hover .button_giftshop {
 		padding-bottom: 100px;
 		background-attachment: inherit; 
 	}
+
+	#parallax #parallax_04 {
+		height: 272px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-attachment: inherit; 
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../images/phm/phm_hero_2.jpg");
+	}
+
+	#parallax #parallax_04 img {
+		scale: .74;
+	}
+
 
 
 }
