@@ -3,9 +3,10 @@
 @media screen and (max-width: 600px) {
 
 	.overlay_menu .overlay_link {
-		font-size: 32px;
-		line-height: 42px;
+		font-size: 22px;
+		line-height: 32px;
 		padding: 20px 20px 16px 20px;
+		letter-spacing: 1.5px;
 	}
 
 
@@ -365,10 +366,10 @@
 	}
 
 	#lunch_menu .asterik p {
-		font-family: urw-din, Source Sans Pro, Sans-Serif;
+		font-family: Baskerville-URW, Source Serif Pro, Georgia;
 		font-size: 16px;
 		line-height: 26px;
-		color: #222;
+		color: #666;
 		text-align: center;
 		padding: 0px 0px 20px 0px;
 		font-style: italic;
@@ -489,8 +490,8 @@
 
 
 	.topnav_mobile_subnav {
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 18px;
+		line-height: 18px;
 		padding: 16px;
 	}
 
