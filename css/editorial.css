@@ -88,8 +88,8 @@
 }
 
 .photo_1 img, .photo_2 img, .photo_3 img, .photo_4 img, .photo_5 img, .photo_6 img {
-	border-radius: 50%;
-	border: 6px solid white;
+	border-radius: 2%;
+	border: 2px solid white;
 	display: block;
 	height: auto;
 	max-width: 450px;
@@ -320,14 +320,57 @@
 	}
 }
 
+@media screen and (max-width: 900px) {
+
+	.quote_1, .quote_3, .quote_5 {
+		min-width: 400px;
+		text-align: left;
+		float: left;
+		margin: auto;
+		padding: 0px 10px 20px 40px;
+	}
+	
+	
+	.quote_2, .quote_4, .quote_6 {
+		min-width: 400px;
+		text-align: right;
+		float: right;
+		margin: auto;
+		padding: 0px 40px 20px 10px;
+	}
+
+
+	p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+
+	.photo_1, .photo_3, .photo_5 {
+		padding-left: 140px;
+		height: 560px;
+	}
+
+	.photo_2, .photo_4, .photo_6 {
+		padding-right: 140px;
+		height: 560px;
+	}
+
+}
+
+
 @media screen and (max-width: 800px) {
+
+	p {
+		font-size: 20px;
+		line-height: 30px;
+	}
 
 	#testimonials {
 		background-color: #FFFFF6;
 		height: 100%;
 		padding: 20px 0px 20px 0px;
 	}
-
 
 	.container2 .photo_2 {
 		order: 2;
@@ -356,16 +399,12 @@
   	#testimonials .row {
   		display: flex;
   		flex-direction: column;
-  		
-  	
   	}
   	
 	.container1, .container2, .container3, .container4, .container5, .container6 {
   		max-height: 100%;
   	}
-  	
 
-  	
 	.quote_1, .quote_3, .quote_5  {
 		width: auto;
 		margin: auto;
@@ -417,7 +456,6 @@
 		padding-right: 40px;
 	}
 
-
 	.quote_1, .quote_2, .quote_3, .quote_4, .quote_5, .quote_6 {
 		width: auto;
 		margin: auto;
@@ -429,9 +467,8 @@
 		background-image: none;
 	}
 
-
-
 }
+
 
 
 .more_reviews_intro {
