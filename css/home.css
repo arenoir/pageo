@@ -1,0 +1,419 @@
+/* HERO –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.logo_hero_home {
+	width: auto;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo_hero_home img {
+  	transform: scale(1);
+	max-width: 400px;
+	max-height: 400px;
+	margin: auto;
+}
+
+div.hero_info {
+	display: block;
+	height: auto;
+	max-width: 800px;
+	margin: 0px auto 0px auto;
+	padding: 40px 0px 80px 0px;
+	text-align: center;
+	position: relative;
+	background-color: none;
+}
+
+#home_hero, #hero_giftshop, #hero_weddings {
+	display: block;
+    width: 100%;
+    height: auto;
+	text-align: center;
+	padding-top: 180px;
+	padding-bottom: 60px;
+    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+#home_hero h3 {
+    max-width: 800px;
+    margin: auto;
+	padding-top: 0px;
+}
+
+#hero_weddings h3, #hero_giftshop h3 {
+    max-width: 800px;
+    margin: auto;
+	padding-top: 50px;
+}
+
+#hero_weddings hr, #hero_giftshop hr {
+	margin-top: 80px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#hero_weddings .hero_info {
+	padding: 40px 0px 40px 0px
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+	.logo_hero_home {
+		width: 100%;
+		height: 400px;
+		margin-top: 40px;
+	}
+	
+	.logo_hero_home img {
+		transform: scale(.90);
+	}
+
+	#home_hero, #hero_giftshop, #hero_weddings {
+		height: 100%;
+		padding-top: 120px;
+		padding-bottom: 70px;
+	}
+	
+	div.hero_info {
+		display: block;
+		max-width: 980px;
+		margin: 0px auto 0px auto;
+		padding: 0px 80px 0px 80px;
+		text-align: center;
+		position: relative;
+		background-color: none;
+	}
+
+	#home_hero h3 {
+		max-width: 800px;
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	#hero_weddings h3, #hero_giftshop h3 {
+		max-width: 600px;
+		margin: auto;
+		padding-top: 30px;
+		font-size: 40px;
+		line-height: 48px;
+	}
+
+	#hero_weddings hr, #hero_giftshop hr {
+		margin-top: 60px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	#hero_weddings h1, #hero_giftshop h1 {
+		font-size: 64px;
+		line-height: 72px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.logo_hero_home {
+		width: 100%;
+		height: 300px;
+		display: flex;
+		padding-top: 0px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo_hero_home img {
+		transform: scale(.8);
+		margin: auto;
+	}
+
+
+	#home_hero {
+		height: 100%;
+		padding-top: 120px;
+		padding-bottom: 50px;
+	}
+	
+	#hero_giftshop, #hero_weddings {
+		height: auto;
+		padding-top: 120px;
+		padding-bottom: 50px;
+	}
+
+	div.hero_info {
+		display: block;
+		padding: 0px 0px 0px 0px;
+		margin: 0px auto 0px auto;
+		text-align: center;
+		position: relative;
+		background-color: none;
+	}
+
+	#home_hero h3 {
+		max-width: 800px;
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	#hero_weddings h3, #hero_giftshop h3 {
+		max-width: 440px;
+		margin: auto;
+		padding-top: 30px;
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	#hero_weddings hr, #hero_giftshop hr {
+		margin-top: 40px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 160px;
+	}
+
+	#hero_weddings h1, #hero_giftshop h1 {
+		font-size: 48px;
+		max-width: 500px;
+		margin: auto;
+		letter-spacing: 1px;
+		line-height: 64px;
+	}
+
+	#hero_weddings .hero_info {
+		padding: 40px 0px 0px 0px
+	}
+}
+
+
+
+/* BUTTTON CTAS  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+#button_group_home a, #button_group_weddings a, #button_group_giftshop a, #button_group a {
+	text-decoration: none;
+}
+
+.button1 {
+	display: block;
+	padding-left: 24px;
+	padding-right: 24px;
+	color: #FFF;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 64px;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 2px;
+	text-align: center;
+}
+
+
+#button_group {
+	padding-top: 48px;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 32px;
+	justify-content: center;
+}
+
+
+/* Home  */
+
+
+#button_group_home {
+	padding-top: 48px;
+	padding-bottom: 0px;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 32px;
+	justify-content: center;
+}
+
+.button_home {
+	display: block;
+	width: 245px;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 64px;
+	color: #222;
+	background: #DFB9A4;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 2px;
+	text-align: center;
+}
+
+a:hover .button_home {
+	color: #FFFFFF;
+	background: #DFB9A4;
+}
+
+
+@media screen and (max-width: 1000px) {
+	#button_group_home {
+		padding-top: 48px;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+
+	.button_home, .button2, .button1 {
+		display: block;
+		font-family: urw-din, Source Sans Pro, Sans-Serif;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 64px; 
+		letter-spacing: 1.6px;
+		background: #DFB9A4;
+		padding: 0px 20px;
+	}
+	
+
+	#button_group_home a:hover .button1 {
+		color: #fff;
+		background: #DFB9A4;
+	}
+
+	#button_group_home {
+		padding-top: 40px;
+		gap: 40px;
+	}
+
+}
+
+
+
+/* Weddings  */
+
+#button_group_weddings {
+	padding-top: 48px;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 32px;
+	justify-content: center;
+}
+
+.button_weddings {
+	display: block;
+	width: 245px;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 64px;
+	color: #222222;
+	background: #FEF2DA;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 2px;
+	text-align: center;
+}
+
+a:hover .button_weddings {
+	color: #6219FF;
+	background: #FEF2DA;
+}
+
+@media screen and (max-width: 800px) {
+
+	.button_weddings {
+		font-size: 16px;
+		font-weight: 400;
+		min-width: 400px;
+		padding: 0px 20px;
+		margin: 0px 20px;
+	}
+
+	#button_group_weddings a {
+		text-decoration: none;
+		color: #222;
+	}
+
+}
+
+
+
+/* Gift Shop  */
+
+#button_group_giftshop {
+	padding-top: 48px;
+	padding-bottom: 0px;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 32px;
+	justify-content: center;
+}
+
+.button_giftshop {
+	display: block;
+	width: 245px;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 64px;
+	color: #7B7261;
+	background: #E4F4E9;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 2px;
+	text-align: center;
+}
+
+a:hover .button_giftshop {
+	color: #6219FF;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.button_giftshop {
+		font-size: 16px;
+		font-weight: 400;
+		min-width: 400px;
+		max-width: 100%;
+		padding: 0px 20px;
+		margin: 0px 0px;
+	}
+
+
+	#button_group_giftshop a {
+		text-decoration: none;
+		color: #222;
+	}
+
+
+}
+
+
+
+

@@ -29,14 +29,7 @@
     background: #444444;
 }
 
-.slideshow_lide {
-	width: 100vw;
-	height: 900px;
-	overflow: hidden;
-	position: relative;
-	padding-top: 0px;
-    background: #7B7261;
-}
+
 .slideshow_slide > div {
 	width: 100%;
 	height: 1084px;
@@ -45,22 +38,25 @@
 	background-position: center;
 	background-position: top;
 	position: absolute;
-	animation: slide 50s infinite;
+	animation: slide 30s infinite;
 	opacity: 0;
 }
 
 
+.slideshow_slide > div:nth-child(1) {
+	animation-delay: 5s;
+}
 .slideshow_slide > div:nth-child(2) {
 	animation-delay: 10s;
 }
 .slideshow_slide > div:nth-child(3) {
-	animation-delay: 20s;
+	animation-delay: 15s;
 }
 .slideshow_slide > div:nth-child(4) {
-	animation-delay: 30s;
+	animation-delay: 20s;
 }
 .slideshow_slide > div:nth-child(5) {
-	animation-delay: 40s;
+	animation-delay: 25s;
 }
 
 
@@ -243,9 +239,9 @@
 
 
 <section class="tout1">
-	<h3 style='text-align:center'>
+	<h4 style='text-align:center'>
 		Contact us for event inquiries, tour&nbsp;of&nbsp;the venue or to schedule &nbsp;a&nbsp;free&nbsp;consultation.
-	</h3>
+	</h4>
 	<h5 style='text-align:center'>
 		Gift Shop & Lunches:<br>
 		<b>209-262-0131</b>
