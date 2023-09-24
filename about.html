@@ -32,6 +32,63 @@ body {
 	background-color: #F8F4F1;
 }
 
+#our_team {
+	background-color: #F8F4F1;
+}
+
+.our_team_grid {
+	margin: auto;
+	margin-top: 40px;
+	border: 20px solid #F8F4F1;
+	padding: 180px auto 180px auto;
+	background-color: #F8F4F1;
+	max-width: 1280px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+}
+
+.item{ 
+  border: 10px solid #F8F4F1;
+  background-color: #F8F4F1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.item img{ 
+  width: 100%;
+}
+
+.item h3{
+  padding: 1% 5%;
+  color: grey;
+  width: 100%;
+  height: auto;
+}
+
+@media all and (min-width: 670px){
+  .container{
+    width: 100%;
+  }
+  .grid{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 10px;
+  }
+}
+
+@media all and (min-width: 900px){
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
 	
 </style>
 
@@ -165,49 +222,136 @@ body {
 <div class='about_us'>
 
 
-<div class="divider">
-	Activities
-</div>
+	<div class="divider">
+		Activities
+	</div>
 
+<!--------------- ABOUT US –––––––––––––––––––––––-->
 
-
-<div class="about_copy_image">
-  <div class="about_row">
+	<div class="about_copy_image">
+	  <div class="about_row">
   
-    <div class="about_left_copy">
-    	<h1 class=h1b>Guided Tours</h1>
-		<p>Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. Quietly weep, keep rubbing belly but no.
-		<br><br>
-		Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat. Fishy fish bury the poop bury it deep to pet a cat rub its belly. Endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. </p>
-    </div>
-
-    <div class="about_right_image">
-		<div>
-			<img src="images/weddings/about_us/our_story.jpg">
+		<div class="about_left_copy">
+			<h1 class=h1b>Guided Tours</h1>
+			<p>Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. Quietly weep, keep rubbing belly but no.
+			<br><br>
+			Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat. Fishy fish bury the poop bury it deep to pet a cat rub its belly. Endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. </p>
 		</div>
-    </div>
+
+		<div class="about_right_image">
+			<div>
+				<img src="images/weddings/about_us/our_story.jpg">
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+	<div class="about_image_copy">
+	  <div class="about_row">
+		<div class="about_left_image">
+			<div>
+				<img src="images/weddings/about_us/the_farm.jpg">
+			</div>
+		</div>
+		<div class="about_right_copy">
+			<h1 class=h1b>Photoshoots</h1>
+			<p>Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. Quietly weep, keep rubbing belly but no.
+			<br><br>
+			Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat. Fishy fish bury the poop bury it deep to pet a cat rub its belly. Endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. </p>
+		</div>
+		</div>
+	</div>
+
+
+</div>
+
+<!--------------- OUR TEAM –––––––––––––––––––––––-->
+
+<section id="our_team">
+
+
+<div class="divider">
+	OUR TEAM
+</div>
+
+<div class="our_team_grid my-4">
+	<div class="grid m-0 p-0">
+		<div class="item">
+			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		</div>
+		<div class="item">
+			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		</div>
+		<div class="item">
+			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		</div>
+		<div class="item">
+			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		</div>
+		<div class="item">
+			<h3>This issome text as part of the grid content</h3>
+		</div>
+		<div class="item">
+			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		</div>
+		<div class="item">
+			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		</div>
+		<div class="item">
+			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		</div>
+		<div class="item">
+			<h3>This issome text as part of the grid content</h3>
+		</div>
+
+		<div class="item">
+			<h3>This issome text as part of the grid content</h3>
+		</div>
+
+		<div class="item">
+			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		</div>
+		<div class="item">
+			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		</div>
 	</div>
 </div>
 
 
+</section>
 
 
 
-<div class="about_image_copy">
-  <div class="about_row">
-    <div class="about_left_image">
-		<div>
-			<img src="images/weddings/about_us/the_farm.jpg">
+
+<!--------------- FOOTER –––––––––––––––––––––––-->
+
+<footer>
+	<div class="row">
+		<div class="info_1">
+			<div>
+			<p>Pageo Lavender Farm</p>
+			<p>11573 Golf Road</p>
+			<p>Turlock, Ca, 95380</p>
+			</div>
 		</div>
-    </div>
-    <div class="about_right_copy">
-        <h1 class=h1b>Photoshoots</h1>
-		<p>Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. Quietly weep, keep rubbing belly but no.
-		<br><br>
-		Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat. Fishy fish bury the poop bury it deep to pet a cat rub its belly. Endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. </p>
-    </div>
+		
+		<div class="info_2" style="overflow: visible;">
+			<div class="showup">
+				<img src="images/global/logo_dark.svg" width="150" height="150">
+			</div>
+		</div> 
+		<div class="info_3">
+			<div>
+			<p>Info@pageolavenderfarm.com</p>
+			<p>Phone:  209.632.5052</p>
+			<p>Fax:  209.634.1379</p>
+			</div>
+		</div> 
+
 	</div>
-</div>
+</footer>
 
 
-</div>
+</body>
+</html>

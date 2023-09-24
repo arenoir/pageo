@@ -1284,7 +1284,7 @@ a:hover .button_giftshop {
 	border-radius: 4px;
 	margin: auto;
 	text-align: center;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/phm/phm_hero_2.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../images/phm/phm_hero_2.jpg");
 	background-attachment: fixed; 
 	background-size: cover; 
 	-moz-background-size: cover; 
