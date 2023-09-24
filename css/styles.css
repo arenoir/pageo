@@ -873,6 +873,8 @@ input[type=text]:focus {
 	color: #222;
 	text-align: center;
 	padding: 0px 0px 20px 0px;
+	margin: auto;
+	max-width: 600px;
 }
 
 #lunch_menu .horiz {
@@ -1797,6 +1799,7 @@ a:hover .button_giftshop {
 	font-weight: 100;
 	color: #6219FF;
 }
+
 
 
 @media screen and (max-width: 650px) {

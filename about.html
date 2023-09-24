@@ -32,11 +32,11 @@ body {
 	background-color: #F8F4F1;
 }
 
-#our_team {
+#team {
 	background-color: #F8F4F1;
 }
 
-.our_team_grid {
+.team_container {
 	margin: auto;
 	margin-top: 40px;
 	border: 20px solid #F8F4F1;
@@ -44,49 +44,63 @@ body {
 	background-color: #F8F4F1;
 	max-width: 1280px;
 }
-.grid{
+.team_grid {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto;
 	grid-gap: 20px;
 }
 
-.item{ 
-  border: 10px solid #F8F4F1;
-  background-color: #F8F4F1;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: auto;
+.team_member { 
+	border: 30px solid #F8F4F1;
+	background-color: #F8F4F1;
+	justify-content: top;
+	display: flex;
+	align-team_members: left;
+	height: auto;
+	flex-direction: column;
 }
 
-.item img{ 
-  width: 100%;
+.team_member img { 
+	width: 100%;
 }
 
-.item h3{
-  padding: 1% 5%;
-  color: grey;
-  width: 100%;
-  height: auto;
+.team_member .team_member_info {
+	padding-top: 20px;
+	float: left;
+	color: #222;
+	width: 100%;
 }
 
-@media all and (min-width: 670px){
-  .container{
-    width: 100%;
-  }
-  .grid{
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: min-content;
-    grid-gap: 10px;
-  }
+.team_member .team_member_info h6 {
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+
+
+
+@media all and (min-width: 670px) {
+
+	.team_container {
+		width: 100%;
+	}
+
+	.team_grid {
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: min-content;
+		grid-gap: 10px;
+	}
 }
 
 @media all and (min-width: 900px){
-  .grid{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-  }
+	.team_grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+	}
 }
 
 	
@@ -268,52 +282,98 @@ body {
 
 <!--------------- OUR TEAM –––––––––––––––––––––––-->
 
-<section id="our_team">
+<section id="team">
 
 
 <div class="divider">
 	OUR TEAM
 </div>
 
-<div class="our_team_grid my-4">
-	<div class="grid m-0 p-0">
-		<div class="item">
-			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+<div class="team_container my-4">
+	<div class="team_grid m-0 p-0">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-		<div class="item">
-			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-		<div class="item">
-			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-		<div class="item">
-			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-		<div class="item">
-			<h3>This issome text as part of the grid content</h3>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-		<div class="item">
-			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-		<div class="item">
-			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-		<div class="item">
-			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-		<div class="item">
-			<h3>This issome text as part of the grid content</h3>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-
-		<div class="item">
-			<h3>This issome text as part of the grid content</h3>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-
-		<div class="item">
-			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
-		<div class="item">
-			<img class="img-fluid" src="http://via.placeholder.com/350x350">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
 		</div>
 	</div>
 </div>
