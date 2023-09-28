@@ -24,6 +24,18 @@
 </style>
 
 <script src="js/javascript.js"></script>
+<script src="js/index.global.min.js"></script>
+<script>
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var calendarEl = document.getElementById('calendar');
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+		  initialView: 'dayGridMonth'
+		});
+		calendar.render();
+	});
+
+</script>
 
 
 
@@ -118,7 +130,7 @@
 		</div>
 		<div class="topnav_right_button_group">
 			<div class="button_nav_right">
-			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
+			<span style="cursor:pointer" onclick="openContact()"><a href="#">Calendar</a></span>
 				<div class="topnav_vertical_divider"></div>
 			</div>		
 		</div>	
@@ -199,8 +211,7 @@
 		PageoFarms@gmail.com
 	</h5>
 </section>
-	
-	
+
 	
 <!-- PARALLAX -->
 

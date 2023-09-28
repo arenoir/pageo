@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- GALLERY -->
+
+<html lang="en">
+
+<head>
+<meta charset='utf-8' />
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
+<link rel="stylesheet" href="css/admin-main.css">
+
+<script src='js/index.global.js'></script>
+
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+	var calendarEl = document.getElementById('calendar');
+	var calendar = new FullCalendar.Calendar(calendarEl, {
+	  initialView: 'dayGridMonth'
+	});
+	calendar.render();
+  });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,listYear'
+    },
+
+    displayEventTime: false, // don't show the time column in list view
+
+    // THIS KEY WON'T WORK IN PRODUCTION!!!
+    // To make your own Google API key, follow the directions here:
+    // https://fullcalendar.io/docs/google-calendar
+    googleCalendarApiKey: 'AIzaSyDa5K7qxFp-23iN0jb3RJLFnIU4dknFV3s',
+
+    // US Holidays
+    events: 'c_4fbe10e16b4acdbb5b7c49b12fa3a56d465e335ff3e36de61fc34b673194fce4@group.calendar.google.com',
+
+    eventClick: function(arg) {
+
+      // opens events in a popup window
+      window.open(arg.event.url, '_blank', 'width=700,height=600');
+
+      // prevents current tab from navigating
+      arg.jsEvent.preventDefault();
+    }
+
+  });
+
+  calendar.render();
+});
+</script>
+
+</head>
+
+
+<body>
+
+<div id='calendar'></div>
+
+
+
+</body>
+
+
+
+</html>

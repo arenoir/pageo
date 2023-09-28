@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- GALLERY -->
+
+<html lang="en">
+
+
+
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<title>Calendar</title>
+<link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
+<script src="js/index.global.min.js"></script>
+<script type='text/javascript' src='fullcalendar/gcal.js'></script>
+
+<script>
+...
+var calendar = new FullCalendar.Calendar(calendarEl, {
+  // no plugin config required!
+});
+...
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,listYear'
+    },
+
+    displayEventTime: false, // don't show the time column in list view
+
+    // THIS KEY WON'T WORK IN PRODUCTION!!!
+    // To make your own Google API key, follow the directions here:
+    // https://fullcalendar.io/docs/google-calendar
+    googleCalendarApiKey: 'AIzaSyDa5K7qxFp-23iN0jb3RJLFnIU4dknFV3s',
+
+    // US Holidays
+    events: 'c_4fbe10e16b4acdbb5b7c49b12fa3a56d465e335ff3e36de61fc34b673194fce4@group.calendar.google.com',
+
+    eventClick: function(arg) {
+
+      // opens events in a popup window
+      window.open(arg.event.url, '_blank', 'width=700,height=600');
+
+      // prevents current tab from navigating
+      arg.jsEvent.preventDefault();
+    }
+
+  });
+
+  calendar.render();
+});
+</script>
+<script type='text/javascript'>
+
+$(function() {
+  $('#calendar').fullCalendar({
+    events: {
+      googleCalendarApiKey: 'AIzaSyDa5K7qxFp-23iN0jb3RJLFnIU4dknFV3s',
+      googleCalendarId: 'c_4fbe10e16b4acdbb5b7c49b12fa3a56d465e335ff3e36de61fc34b673194fce4@group.calendar.google.com',
+    }
+  });
+});
+
+</script>
+
+<style>
+
+
+#calendar {
+	max-width: 1280px;
+	margin: auto;
+	padding-bottom: 40px;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+.fc .fc-button-primary {
+	text-transform: uppercase;
+	border-radius: 0px;
+    border: none;
+	color: #222;
+	background-color: #FFF;
+}
+
+
+.fc .fc-button-primary:disabled {
+	background-color: #FFF;
+	opacity: 1;
+    border-color: #FFF;
+    color: #888;
+}
+
+.fc-scrollgrid-liquid {
+	background-color: #fafafa;
+	text-transform: uppercase;
+}
+
+button {
+	font-family: urw-din, Helvetica Neue, Sans-Serif;
+	font-size: 14px;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.fc {
+	font-family: urw-din, Helvetica Neue, Sans-Serif;
+	font-size: 14px;
+	font-style: normal;
+    border: none;
+	text-transform: uppercase;
+}
+
+.fc-header-toolbar {
+	border-top: 1px dotted #222;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+.fc-header-toolbar h2 {
+	font-family: urw-din, Helvetica Neue, Sans-Serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+}
+
+
+:root {
+	--fc-small-font-size: .85em;
+	--fc-page-bg-color: #222;
+	--fc-neutral-bg-color: #222;
+	--fc-neutral-text-color: #808080;
+	--fc-border-color: #ddd;
+
+	--fc-today-bg-color: #EFDED4;
+}
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='calendar'></div>
+
+
+</body>
+</html>
