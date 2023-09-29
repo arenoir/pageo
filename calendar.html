@@ -9,8 +9,10 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
 <title>Calendar</title>
+<link rel="icon" type="image/x-icon" href="/images/fav.ico">
 <link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
-<script src="js/index.global.min.js"></script>
+<script src="js/dist/index.global.min.js"></script>
+<script src="js/dist/index.global.js"></script>
 <script type='text/javascript' src='fullcalendar/gcal.js'></script>
 
 <script>
@@ -42,32 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // US Holidays
     events: 'c_4fbe10e16b4acdbb5b7c49b12fa3a56d465e335ff3e36de61fc34b673194fce4@group.calendar.google.com',
 
-    eventClick: function(arg) {
-
-      // opens events in a popup window
-      window.open(arg.event.url, '_blank', 'width=700,height=600');
-
-      // prevents current tab from navigating
-      arg.jsEvent.preventDefault();
-    }
 
   });
 
   calendar.render();
 });
 </script>
-<script type='text/javascript'>
 
-$(function() {
-  $('#calendar').fullCalendar({
-    events: {
-      googleCalendarApiKey: 'AIzaSyDa5K7qxFp-23iN0jb3RJLFnIU4dknFV3s',
-      googleCalendarId: 'c_4fbe10e16b4acdbb5b7c49b12fa3a56d465e335ff3e36de61fc34b673194fce4@group.calendar.google.com',
-    }
-  });
-});
-
-</script>
 
 <style>
 
