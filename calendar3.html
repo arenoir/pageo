@@ -31,7 +31,7 @@
 
 
 
-	timeFormat: 'h(:mm)T',
+	timeFormat: 'h(:mm)t',
 
 
 
@@ -93,6 +93,7 @@
 
 .fc-day-grid-event .fc-time {
     font-weight: 600;
+	padding-right: 4px;
 }
 
 .fc-icon-left-single-arrow:after {
@@ -141,6 +142,7 @@ th span {
 .fc-event, .fc-event:hover {
     color: #222;
     text-decoration: none;
+    cursor: auto;
 }
 
 #calendar {
@@ -149,6 +151,11 @@ th span {
 	padding-bottom: 60px;
 	padding-top: 20px;
 	text-transform: uppercase;
+    cursor: auto;
+}
+
+.fc-event-container a {
+    cursor: none;
 }
 
 .fc .fc-button-primary {
@@ -166,6 +173,7 @@ fc-center {
 
 .fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
     border-color: #fff;
+    cursor: auto;
 }
 
 .fc-unthemed td {
@@ -302,12 +310,15 @@ th span {
 	font-family: urw-din, Helvetica Neue, Sans-Serif;
 	text-transform: none;
 	margin: 0px 10px 0px 10px;
+    cursor: none;
 }
 
 .fc td.fc-today {
     border-style: double;
     border: 4px solid #fff;
 }
+
+
 
 
 .fc-state-default.fc-corner-right, .fc-state-default.fc-corner-left {
