@@ -1,74 +1,161 @@
 <!DOCTYPE html>
-<!-- GALLERY -->
+<!-- saved from url=(0062)https://fullcalendar.io/releases/fullcalendar/3.9.0/demos/gcal -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<html lang="en">
-
-
-
-<head>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
-<title>Calendar</title>
-<link rel="icon" type="image/x-icon" href="/images/fav.ico">
+<link href="fullcalendar/files/fullcalendar.min.css" rel="stylesheet">
+<link href="fullcalendar/files/fullcalendar.print.min.css" rel="stylesheet" media="print">
 <link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
-<script src="js/dist/index.global.min.js"></script>
-<script src="js/dist/index.global.js"></script>
-<script type='text/javascript' src='fullcalendar/gcal.js'></script>
-
+<script src="fullcalendar/files/moment.min.js"></script><style>undefined</style>
+<script src="fullcalendar/files/jquery.min.js"></script>
+<script src="fullcalendar/files/fullcalendar.min.js"></script>
+<script src="fullcalendar/files/gcal.min.js"></script>
 <script>
-...
-var calendar = new FullCalendar.Calendar(calendarEl, {
-  // no plugin config required!
-});
-...
-</script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var calendarEl = document.getElementById('calendar');
+  $(document).ready(function() {
 
-  var calendar = new FullCalendar.Calendar(calendarEl, {
-    headerToolbar: {
-      left: 'prev,next today',
-      center: 'title',
-      right: 'dayGridMonth,listYear'
+    $('#calendar').fullCalendar({
+
+    eventClick: function(event) {
+        if (event.url) {
+            return false;
+        }
     },
 
-    displayEventTime: false, // don't show the time column in list view
+	header: {
+		left: 'title',
+		center: '',
+		right: 'today prev next'
+	},
 
-    // THIS KEY WON'T WORK IN PRODUCTION!!!
-    // To make your own Google API key, follow the directions here:
-    // https://fullcalendar.io/docs/google-calendar
-    googleCalendarApiKey: 'AIzaSyDa5K7qxFp-23iN0jb3RJLFnIU4dknFV3s',
+	displayEventTime: true, 
 
-    // US Holidays
-    events: 'c_4fbe10e16b4acdbb5b7c49b12fa3a56d465e335ff3e36de61fc34b673194fce4@group.calendar.google.com',
 
-    eventClick: function(arg) {
 
-      // opens events in a popup window
-      window.open(arg.event.url, '_blank', 'width=700,height=600');
+	timeFormat: 'h(:mm)t',
 
-      // prevents current tab from navigating
-      arg.jsEvent.preventDefault();
-    }
+
+
+	googleCalendarApiKey: 'AIzaSyDa5K7qxFp-23iN0jb3RJLFnIU4dknFV3s',
+
+	events: 'c_4fbe10e16b4acdbb5b7c49b12fa3a56d465e335ff3e36de61fc34b673194fce4@group.calendar.google.com',
+
+
+/*
+      eventClick: function(event) {
+        // opens events in a popup window
+        window.open(event.url, 'gcalevent', 'width=700,height=600');
+        return false;
+      },
+*/
+
+      loading: function(bool) {
+        $('#loading').toggle(bool);
+      }
+
+    });
+
 
   });
 
-  calendar.render();
-});
 </script>
-
-
 <style>
 
 
+.fc-right {
+
+}
+
+.fc-state-default.fc-corner-right, .fc-state-default.fc-corner-left {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.fc-icon-right-single-arrow:after {
+    content: "\203A";
+    font-weight: 200;
+    font-size: 120%;
+    top: -7%;
+	left: -22%;
+}
+
+
+.fc-header-toolbar h2 {
+	color: #222222;
+	text-align: center;
+	font-family: urw-din, Helvetica Neue, Sans-Serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 24px;
+	letter-spacing: .2px;
+	line-height: 40px; 
+}
+
+.fc-day-grid-event .fc-time {
+    font-weight: 600;
+	padding-right: 4px;
+}
+
+.fc-icon-left-single-arrow:after {
+    content: "\2039";
+    font-weight: 100;
+    font-size: 120%;
+    top: -7%;
+	right: -22%;
+}
+
+.fc-ltr .fc-list-heading-main {
+    float: left;
+	font-family: urw-din, Helvetica Neue, Sans-Serif;
+	font-size: 14px;
+	font-style: normal;
+    border: none;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+th {
+    display: table-cell;
+	font-family: urw-din, Helvetica Neue, Sans-Serif;
+	font-size: 14px;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+th span {
+	font-family: urw-din, Helvetica Neue, Sans-Serif;
+	font-size: 14px;
+	line-height: 28px;
+	letter-spacing: .2px;
+	font-weight: 400;
+}
+
+.fc-bg, .fc-bgevent-skeleton, .fc-helper-skeleton, .fc-highlight-skeleton {
+    position: absolute;
+	background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fc-event, .fc-event:hover {
+    color: #222;
+    text-decoration: none;
+    cursor: auto;
+}
+
 #calendar {
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: auto;
 	padding-bottom: 60px;
 	padding-top: 20px;
 	text-transform: uppercase;
+    cursor: auto;
+}
+
+.fc-event-container a {
+    cursor: none;
 }
 
 .fc .fc-button-primary {
@@ -79,6 +166,19 @@ document.addEventListener('DOMContentLoaded', function() {
 	background-color: #FFF;
 }
 
+fc-center {
+    display: inline-block;
+	line-height: 32px;
+}
+
+.fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+    border-color: #fff;
+    cursor: auto;
+}
+
+.fc-unthemed td {
+	background-color: #F8F4F1;
+}
 
 .fc .fc-button-primary:disabled {
 	background-color: #FFF;
@@ -87,19 +187,33 @@ document.addEventListener('DOMContentLoaded', function() {
     color: #888;
 }
 
-.fc-scrollgrid-liquid {
-	background-color: #fafafa;
+.fc td, .fc th {
+	border: 4px solid #fff;
+    padding: 0;
+    vertical-align: top;
+}
+
+.fc-basic-view .fc-day-number, .fc-basic-view .fc-week-number {
+    padding: 2px;
+    font-family: 'urw-din';
+}
+
+.fc-header-toolbar {
+	border-top: 1px dotted #222;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	text-transform: uppercase;
 }
 
-button {
-	font-family: urw-din, Helvetica Neue, Sans-Serif;
-	font-size: 14px;
-	font-style: normal;
-	text-transform: uppercase;
-}
-
-.fc {
+.fc button {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    height: auto;
+    padding: 0 0.6em;
+    white-space: nowrap;
+    cursor: pointer;
 	font-family: urw-din, Helvetica Neue, Sans-Serif;
 	font-size: 14px;
 	font-style: normal;
@@ -107,55 +221,138 @@ button {
 	text-transform: uppercase;
 }
 
-.fc-header-toolbar {
-	border-top: 1px dotted #222;
-	padding-top: 20px;
-	text-transform: uppercase;
-}
-
-.fc-header-toolbar h2 {
-	font-family: urw-din, Helvetica Neue, Sans-Serif;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 200;
-	text-transform: uppercase;
-	letter-spacing: 1.6px;
-}
-
-
 :root {
-	--fc-small-font-size: .85em;
+	--fc-small-font-size: 2px;
 	--fc-page-bg-color: #222;
 	--fc-neutral-bg-color: #222;
 	--fc-neutral-text-color: #808080;
 	--fc-border-color: #ddd;
-
 	--fc-today-bg-color: #EFDED4;
 }
 
+.fc-state-default {
+    border: none;
+    background-color: #f5f5f5;
+    background-image: none;
+    border-color: none;
+    border-color: none;
+    color: #222;
+    text-shadow: none;
+    box-shadow: none;
+	border-radius: 0px;
+}
+
+.fc-icon {
+}
+
+.fc-button-group, .fc-today-button {
+	font-size: 14px;
+}
+
+.fc-state-default {
+    border: none;
+    background-color: #f5f5f5;
+    background-image: none;
+    border-color: none;
+    border-color: none;
+    color: #222;
+    text-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+	font-size: 14px;
+	line-height: 30px;
+
+}
+
+.fc-day-header {
+	background-color: #fff;
+	font-family: urw-din, Helvetica Neue, Sans-Serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	color: #aaa;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+
+th span {
+    font-family: urw-din, Helvetica Neue, Sans-Serif;
+    font-size: 12px;
+    line-height: 32px;
+	padding-bottom: 10px;
+    letter-spacing: .2em;
+    font-weight: 400;
+}
+
+.fc-head, .fc-unthemed thead {
+    border-color: #fff;
+	height: auto;
+}
+
+.fc-unthemed th {
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+.fc-day-number {
+	font-size: 12px;
+	line-height: 30px;
+	padding: 0px 10px 10px 10px;
+	margin: 0px 12px 0px auto;
+	color: #888;
+}
+
+
+.fc-event, .fc-event-dot {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+	color: #222;
+	font-family: urw-din, Helvetica Neue, Sans-Serif;
+	text-transform: none;
+	margin: 0px 10px 0px 10px;
+    cursor: none;
+}
+
+.fc td.fc-today {
+    border-style: double;
+    border: 4px solid #fff;
+}
+
+
+
+
+.fc-state-default.fc-corner-right, .fc-state-default.fc-corner-left {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 5px;
+}
+
+.fc-unthemed td.fc-today {
+    background: #EFDED4;
+}
+
+.fc-event {
+    position: relative;
+    display: block;
+    font-size: 12px;
+	padding: 4px 10px 4px 10px;
+    border-radius: 0px;
+    border: none;
+}
+
+
+
+
 </style>
 
-
-
-
+<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="true">
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+<link rel="stylesheet" href="./fullcalendar.io_releases_fullcalendar_3.9.0_demos_gcal_files/css2">
 </head>
-
 <body>
 
-<div id='calendar'></div>
+  <!-- ><div id="loading" style="display: none;">loading...</div> -->
 
+  <div id="calendar"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+</body></html>

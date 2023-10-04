@@ -178,41 +178,6 @@
 		<dict>
 			<key>BookmarkData</key>
 			<data>
-			Ym9vawgDAAAAAAQQMAAAAG+sGprmq2/tAs41iBLf7wZ2n2v39Adv
-			3QDECJFk0U3FBAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
-			AAAKAAAAAQEAAGFhcm9ua2Fwb3IAAAUAAAABAQAAcmVwb3MAAAAF
-			AAAAAQEAAHBhZ2VvAAAAAwAAAAEBAABjc3MADAAAAAEBAABhYm91
-			dF91cy5jc3MYAAAAAQYAABAAAAAgAAAANAAAAEQAAABUAAAAYAAA
-			AAgAAAAEAwAAoFMAAAAAAAAIAAAABAMAAD92AAAAAAAACAAAAAQD
-			AAA7KVIAAAAAAAgAAAAEAwAAlyxSAAAAAAAIAAAABAMAAL23MgYA
-			AAAACAAAAAQDAACPIakGAAAAABgAAAABBgAAlAAAAKQAAAC0AAAA
-			xAAAANQAAADkAAAACAAAAAAEAABBxV8IbIY2rhgAAAABAgAAAQAA
-			AAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAEAAAAAAAAAAQA
-			AAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2lu
-			dG9zaCBIRAgAAAAEAwAAAOAB4+gAAAAIAAAAAAQAAEHFLqhbAAAA
-			JAAAAAEBAAAzMkQ0QjgyQS02NzY0LTQyRTMtQTdDNy02MTM2ODFF
-			QjFEQzMYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEA
-			AAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAE
-			EAAAdAAAAAAAAAAFEAAA9AAAAAAAAAAQEAAAJAEAAAAAAABAEAAA
-			FAEAAAAAAAACIAAA8AEAAAAAAAAFIAAAYAEAAAAAAAAQIAAAcAEA
-			AAAAAAARIAAApAEAAAAAAAASIAAAhAEAAAAAAAATIAAAlAEAAAAA
-			AAAgIAAA0AEAAAAAAAAwIAAA/AEAAAAAAAABwAAARAEAAAAAAAAR
-			wAAAIAAAAAAAAAASwAAAVAEAAAAAAAAQ0AAABAAAAAAAAAA=
-			</data>
-			<key>FileURL</key>
-			<string>file:///Users/aaronkapor/repos/pageo/css/about_us.css</string>
-			<key>HasSecurityScope</key>
-			<true/>
-			<key>RelativePath</key>
-			<string>./css/about_us.css</string>
-			<key>TypeID</key>
-			<string>_CFileLocator</string>
-			<key>Version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>BookmarkData</key>
-			<data>
 			Ym9va0QDAAAAAAQQMAAAAIyjNh5c8Em30KSXDKObrPTe2TPwEArP
 			xtHX0LDI/MuPNAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
 			AAAKAAAAAQEAAGFhcm9ua2Fwb3IAAAUAAAABAQAAcmVwb3MAAAAF
@@ -688,72 +653,24 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>BookmarkData</key>
-			<data>
-			Ym9vayQDAAAAAAQQMAAAAIMGMCGId9Gu0FBCA9EtK/7Sz7AVOC3x
-			xTZe71kB5Be1FAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
-			AAAKAAAAAQEAAGFhcm9ua2Fwb3IAAAUAAAABAQAAcmVwb3MAAAAF
-			AAAAAQEAAHBhZ2VvAAAADQAAAAEBAABjYWxlbmRhci5odG1sAAAA
-			FAAAAAEGAAAQAAAAIAAAADQAAABEAAAAVAAAAAgAAAAEAwAAoFMA
-			AAAAAAAIAAAABAMAAD92AAAAAAAACAAAAAQDAAA7KVIAAAAAAAgA
-			AAAEAwAAlyxSAAAAAAAIAAAABAMAAEju8gYAAAAAFAAAAAEGAACI
-			AAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAABAAAQcVizs1TON4YAAAA
-			AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
-			AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEB
-			AABNYWNpbnRvc2ggSEQIAAAABAMAAADgAePoAAAACAAAAAAEAABB
-			xS6oWwAAACQAAAABAQAAMzJENEI4MkEtNjc2NC00MkUzLUE3Qzct
-			NjEzNjgxRUIxREMzGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAA
-			AAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxE
-			b2N1bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAASusAANgAAAD+
-			////AQAAAAAAAAARAAAABBAAAGwAAAAAAAAABRAAANgAAAAAAAAA
-			EBAAAAQBAAAAAAAAQBAAAPQAAAAAAAAAAiAAANABAAAAAAAABSAA
-			AEABAAAAAAAAECAAAFABAAAAAAAAESAAAIQBAAAAAAAAEiAAAGQB
-			AAAAAAAAEyAAAHQBAAAAAAAAICAAALABAAAAAAAAMCAAANwBAAAA
-			AAAAAcAAACQBAAAAAAAAEcAAACAAAAAAAAAAEsAAADQBAAAAAAAA
-			ENAAAAQAAAAAAAAA5AEAgAgCAAAAAAAA
-			</data>
 			<key>FileURL</key>
-			<string>file:///Users/aaronkapor/repos/pageo/calendar.html</string>
+			<string>file:///Users/aaronkapor/.Trash/calendar.html</string>
 			<key>HasSecurityScope</key>
 			<true/>
 			<key>RelativePath</key>
-			<string>./calendar.html</string>
+			<string>../../.Trash/calendar.html</string>
 			<key>TypeID</key>
 			<string>_CFileLocator</string>
 			<key>Version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>BookmarkData</key>
-			<data>
-			Ym9vayQDAAAAAAQQMAAAAAKJR8iWjK9QxlWK4IuZ/osDHNXhovJn
-			7g9ElRvJnat2FAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
-			AAAKAAAAAQEAAGFhcm9ua2Fwb3IAAAUAAAABAQAAcmVwb3MAAAAF
-			AAAAAQEAAHBhZ2VvAAAADgAAAAEBAABjYWxlbmRhcjIuaHRtbAAA
-			FAAAAAEGAAAQAAAAIAAAADQAAABEAAAAVAAAAAgAAAAEAwAAoFMA
-			AAAAAAAIAAAABAMAAD92AAAAAAAACAAAAAQDAAA7KVIAAAAAAAgA
-			AAAEAwAAlyxSAAAAAAAIAAAABAMAABC+8wYAAAAAFAAAAAEGAACI
-			AAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAABAAAQcVi/MMIym8YAAAA
-			AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
-			AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEB
-			AABNYWNpbnRvc2ggSEQIAAAABAMAAADgAePoAAAACAAAAAAEAABB
-			xS6oWwAAACQAAAABAQAAMzJENEI4MkEtNjc2NC00MkUzLUE3Qzct
-			NjEzNjgxRUIxREMzGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAA
-			AAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxE
-			b2N1bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAAWOsAANgAAAD+
-			////AQAAAAAAAAARAAAABBAAAGwAAAAAAAAABRAAANgAAAAAAAAA
-			EBAAAAQBAAAAAAAAQBAAAPQAAAAAAAAAAiAAANABAAAAAAAABSAA
-			AEABAAAAAAAAECAAAFABAAAAAAAAESAAAIQBAAAAAAAAEiAAAGQB
-			AAAAAAAAEyAAAHQBAAAAAAAAICAAALABAAAAAAAAMCAAANwBAAAA
-			AAAAAcAAACQBAAAAAAAAEcAAACAAAAAAAAAAEsAAADQBAAAAAAAA
-			ENAAAAQAAAAAAAAA5AEAgAgCAAAAAAAA
-			</data>
 			<key>FileURL</key>
-			<string>file:///Users/aaronkapor/repos/pageo/calendar2.html</string>
+			<string>file:///Users/aaronkapor/.Trash/calendar2.html</string>
 			<key>HasSecurityScope</key>
 			<true/>
 			<key>RelativePath</key>
-			<string>./calendar2.html</string>
+			<string>../../.Trash/calendar2.html</string>
 			<key>TypeID</key>
 			<string>_CFileLocator</string>
 			<key>Version</key>
@@ -799,10 +716,10 @@
 		<dict>
 			<key>BookmarkData</key>
 			<data>
-			Ym9vayQDAAAAAAQQMAAAANGQ3ZgCs5Lnku+6p/GUx2PH5KqmrawR
-			q/MwXknOtrqlFAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
+			Ym9vayQDAAAAAAQQMAAAAMATG3kBx7Lg/pW9fX+ZTCgCwJvLaUwn
+			H3RyceQGZaMyFAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
 			AAAKAAAAAQEAAGFhcm9ua2Fwb3IAAAUAAAABAQAAcmVwb3MAAAAF
-			AAAAAQEAAHBhZ2VvAAAADgAAAAEBAABjYWxlbmRhcjMuaHRtbAAA
+			AAAAAQEAAHBhZ2VvAAAADQAAAAEBAABjYWxlbmRhci5odG1sAAAA
 			FAAAAAEGAAAQAAAAIAAAADQAAABEAAAAVAAAAAgAAAAEAwAAoFMA
 			AAAAAAAIAAAABAMAAD92AAAAAAAACAAAAAQDAAA7KVIAAAAAAAgA
 			AAAEAwAAlyxSAAAAAAAIAAAABAMAAFnHJAcAAAAAFAAAAAEGAACI
@@ -822,11 +739,46 @@
 			ENAAAAQAAAAAAAAA5AEAgAgCAAAAAAAA
 			</data>
 			<key>FileURL</key>
-			<string>file:///Users/aaronkapor/repos/pageo/calendar3.html</string>
+			<string>file:///Users/aaronkapor/repos/pageo/calendar.html</string>
 			<key>HasSecurityScope</key>
 			<true/>
 			<key>RelativePath</key>
-			<string>./calendar3.html</string>
+			<string>./calendar.html</string>
+			<key>TypeID</key>
+			<string>_CFileLocator</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>BookmarkData</key>
+			<data>
+			Ym9vawgDAAAAAAQQMAAAAG+sGprmq2/tAs41iBLf7wZ2n2v39Adv
+			3QDECJFk0U3FBAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
+			AAAKAAAAAQEAAGFhcm9ua2Fwb3IAAAUAAAABAQAAcmVwb3MAAAAF
+			AAAAAQEAAHBhZ2VvAAAAAwAAAAEBAABjc3MADAAAAAEBAABhYm91
+			dF91cy5jc3MYAAAAAQYAABAAAAAgAAAANAAAAEQAAABUAAAAYAAA
+			AAgAAAAEAwAAoFMAAAAAAAAIAAAABAMAAD92AAAAAAAACAAAAAQD
+			AAA7KVIAAAAAAAgAAAAEAwAAlyxSAAAAAAAIAAAABAMAAL23MgYA
+			AAAACAAAAAQDAACPIakGAAAAABgAAAABBgAAlAAAAKQAAAC0AAAA
+			xAAAANQAAADkAAAACAAAAAAEAABBxV8IbIY2rhgAAAABAgAAAQAA
+			AAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAEAAAAAAAAAAQA
+			AAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2lu
+			dG9zaCBIRAgAAAAEAwAAAOAB4+gAAAAIAAAAAAQAAEHFLqhbAAAA
+			JAAAAAEBAAAzMkQ0QjgyQS02NzY0LTQyRTMtQTdDNy02MTM2ODFF
+			QjFEQzMYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEA
+			AAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAE
+			EAAAdAAAAAAAAAAFEAAA9AAAAAAAAAAQEAAAJAEAAAAAAABAEAAA
+			FAEAAAAAAAACIAAA8AEAAAAAAAAFIAAAYAEAAAAAAAAQIAAAcAEA
+			AAAAAAARIAAApAEAAAAAAAASIAAAhAEAAAAAAAATIAAAlAEAAAAA
+			AAAgIAAA0AEAAAAAAAAwIAAA/AEAAAAAAAABwAAARAEAAAAAAAAR
+			wAAAIAAAAAAAAAASwAAAVAEAAAAAAAAQ0AAABAAAAAAAAAA=
+			</data>
+			<key>FileURL</key>
+			<string>file:///Users/aaronkapor/repos/pageo/css/about_us.css</string>
+			<key>HasSecurityScope</key>
+			<true/>
+			<key>RelativePath</key>
+			<string>./css/about_us.css</string>
 			<key>TypeID</key>
 			<string>_CFileLocator</string>
 			<key>Version</key>
@@ -845,7 +797,7 @@
 	<array>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -887,7 +839,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -933,7 +885,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -978,7 +930,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1023,7 +975,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1068,7 +1020,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1114,7 +1066,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1159,7 +1111,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1204,7 +1156,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1249,7 +1201,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1292,7 +1244,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1335,7 +1287,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1378,7 +1330,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1421,7 +1373,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -1464,7 +1416,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2023-10-02T21:39:22Z</date>
+			<date>2023-10-04T01:02:17Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
