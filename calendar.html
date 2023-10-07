@@ -3,12 +3,27 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <link href="fullcalendar/files/fullcalendar.min.css" rel="stylesheet">
+<link href='fullcalendar/files/list/index.global.js' rel='stylesheet' />
+<link href='fullcalendar/files/list/index.global.min.js' rel='stylesheet' />
 <link href="fullcalendar/files/fullcalendar.print.min.css" rel="stylesheet" media="print">
 <link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
 <script src="fullcalendar/files/moment.min.js"></script><style>undefined</style>
 <script src="fullcalendar/files/jquery.min.js"></script>
 <script src="fullcalendar/files/fullcalendar.min.js"></script>
 <script src="fullcalendar/files/gcal.min.js"></script>
+<script src="fullcalendar/files/list/index.global.js"></script>
+<script src="fullcalendar/files/list/index.global.min.js"></script>
+
+<script>
+// ...
+var calendar = new FullCalendar.Calendar(calendarEl, {
+  plugins: [ 'list' ],
+  defaultView: 'listMeek'
+});
+// ...
+</script>
+
+
 <script>
 
   $(document).ready(function() {
@@ -23,7 +38,7 @@
 
 	header: {
 		left: 'title',
-		center: '',
+		center: 'listMonth dayGridMonth',
 		right: 'today prev next'
 	},
 
@@ -58,6 +73,8 @@
   });
 
 </script>
+
+
 <style>
 
 
