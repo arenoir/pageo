@@ -9,7 +9,7 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
 <title>Pageo Lavender Farm</title>
-<link rel="icon" type="image/x-icon" href="/images/fav.ico">
+<link rel="icon" type="image/x-icon" href="images/fav.ico">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/topnav.css">
 <link rel="stylesheet" type="text/css" href="css/hero.css">
@@ -40,7 +40,6 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 </style>
 
 <script src="js/javascript.js"></script>
-<script src="js/index.global.min.js"></script>
 <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkooOhpTv5mboWn3rLQYeMQtc9ko4tqQQ&callback=initMap">
 </script>
@@ -107,10 +106,12 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 function initMap() {
   const myLatLng = { lat: 37.4744908, lng: -120.8307003 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
+    zoom: 10,
 	mapId: "63504995b6824c8f",
     center: myLatLng,
 	zoomControl: false,
+	panControl: false,
+	gestureHandling: false,
 	mapTypeControl: false,
 	scaleControl: false,
 	scrollwheel: false,
