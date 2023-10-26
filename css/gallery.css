@@ -91,12 +91,20 @@
 }
 
 
+
 .gallery_slides_container {
 	position: relative;
 	margin: auto;
 	padding: 0px 0px 20px 0px;
-	width: 100%;
+	width: 90%;
 	max-width: 1200px;
+}
+
+@media screen and (max-width: 800px) {
+	.gallery_slides_container {
+		width: 100%;
+	}
+
 }
 
 /* The Close Button */
