@@ -2,9 +2,22 @@
 
 @media screen and (max-width: 600px) {
 
+
+	.divider {
+		height: 120px;
+		width: 100%;
+		font-size: 24px;
+		text-align: center;
+		line-height: 112px;
+		margin-top: 0px;
+		border-top: 4px solid #CCCCCC;
+		border-bottom: 1px solid #CCCCCC;
+	}
+
+
 	.overlay_menu .overlay_link {
-		font-size: 22px;
-		line-height: 32px;
+		font-size: 32px;
+		line-height: 40px;
 		padding: 20px 20px 16px 20px;
 		letter-spacing: 1.5px;
 	}
@@ -320,6 +333,13 @@
 
 @media screen and (max-width: 414px) {
 
+	:target::before {
+		content: "";
+		display: block;
+		height: 80px; /* fixed header height*/
+		margin: -80px 0 0; /* negative fixed header height */
+	}
+
 /* GENERAL –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
@@ -336,6 +356,13 @@
 
 
 /* NAV –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+	.overlay_menu .overlay_link {
+		font-size: 22px;
+		line-height: 30px;
+		padding: 20px 20px 16px 20px;
+		letter-spacing: 1.5px;
+	}
 
 	.topnav_fixed {
 		max-height: 72px;

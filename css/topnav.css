@@ -8,7 +8,12 @@
 
 /* NAVIGATION  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-
+:target::before {
+	content: "";
+	display: block;
+	height: 80px; /* fixed header height*/
+	margin: -80px 0 0; /* negative fixed header height */
+}
 
 /* TOP NAV BAR */
 
@@ -340,7 +345,7 @@ a.nav_pageo_logo  {
 
 .overlay_content {
     position: absolute;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 	top: 25%;
 	width: 100%;
 	text-align: center;
@@ -349,10 +354,11 @@ a.nav_pageo_logo  {
 
 .overlay_menu .overlay_link {
 	font-family: Baskerville-URW, Source Serif Pro, Georgia;
-	line-height: 40px;
-	padding: 20px;
-	text-decoration: none;
 	font-size: 32px;
+	line-height: 40px;
+	padding: 20px 20px 16px 20px;
+	letter-spacing: 1.5px;
+	text-decoration: none;
 	color: #888888;
 	display: block;
 	transition: .4s;
@@ -361,7 +367,7 @@ a.nav_pageo_logo  {
 
 .topnav_mobile_subnav {
 	font-family: urw-din, Source Sans Pro, Sans-Serif;
-	line-height: 20px;
+	line-height: 32px;
 	font-size: 24px;
 	padding: 16px;
 	font-weight: 200;

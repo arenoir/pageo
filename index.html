@@ -9,12 +9,11 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
 <title>Pageo Lavender Farm</title>
-<link rel="icon" type="image/x-icon" href="/images/fav.ico">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="stylesheet" type="text/css" href="css/topnav.css">
-<link rel="stylesheet" type="text/css" href="css/hero.css">
-<link rel="stylesheet" type="text/css" href="css/mobile.css">
 <link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 <style>
 
 #home_hero {
@@ -125,7 +124,10 @@
 		</div>
 		<div class="topnav_right_button_group">
 			<div class="button_nav_right">
+			<span><a href="mailto:info@pageolavenderfarm.com">Contact</a></span>
+			<!--
 			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
+			-->
 				<div class="topnav_vertical_divider"></div>
 			</div>		
 		</div>	
@@ -302,8 +304,8 @@
 			<div class="award"><img src="images/awards/award_209b.svg" class="award_filter"/></div>
 		</div>
 		<div class="award_row1">
-			<div class="award"><img src="images/awards/award_knot2.svg" class="award_filter"/></div>
-			<div class="award"><img src="images/awards/award_ww.svg" class="award_filter"/></div>
+			<div class="award"><img src="images/awards/award_knot6.svg" class="award_filter"/></div>
+			<div class="award"><img src="images/awards/award_ww3.svg" class="award_filter"/></div>
 		</div>
 	</div>
 </section>
@@ -391,7 +393,16 @@ Get in Touch
 	$('body').css("overflow", "visible");
 });
 
+	$(".overlay_link").click(function(){
+	$('body').css("overflow", "visible");
+});
+
+	$(".topnav_mobile_subnav").click(function(){
+	$('body').css("overflow", "visible");
+});
+
 </script>
+
 
 
 </body>

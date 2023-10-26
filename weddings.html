@@ -11,11 +11,6 @@
 <title>Weddings & Events</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" type="text/css" href="css/styles.css"> 
-<link rel="stylesheet" type="text/css" href="css/topnav.css">
-<link rel="stylesheet" type="text/css" href="css/gallery.css">
-<link rel="stylesheet" type="text/css" href="css/editorial.css">
-<link rel="stylesheet" type="text/css" href="css/hero.css">
-<link rel="stylesheet" type="text/css" href="css/mobile.css">
 <link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
@@ -129,17 +124,17 @@
 	<div class="hero_info">
 	<header> <a class="logo" href="#"></a> </header>
 	
-	<article>
+	<div>
 		<br><br>
 		<h1 style='color:white'>
 		Weddings & Events
 		</h1>
 		<hr style='background-color:white; width:280px; height:2px'>
-			<h3 style="color:#FFFFFF; text-align:center;">Frame the most special day&nbsp;of&nbsp;your life with a setting&nbsp;that&nbsp;matches.</h3>
+			<h3 style="color:#FFFFFF; text-align:center;">Lavender Fields,<br>Timeless Celebrations.</h3>
 			<br><br>
 		<!--<p style='color:white; text-align:center'>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p> -->
 		 
-	</article> 
+	</div> 
 	
 	<!-- <div id="button_group_weddings">
 		<a href="#">
@@ -168,7 +163,6 @@
 
 
 <!--------------- OUR SERVICES –––––––––––––––––––––––-->
-
 <div class="divider">
 	<div id="services">Our Services</div>
 </div>
@@ -197,7 +191,6 @@
 
 
 <!--------------- ABOUT US –––––––––––––––––––––––-->
-
 <section id="weddings_about_us">
 
 <div class="divider">
@@ -788,7 +781,16 @@ $(document).keyup(function(e) {
 	$('body').css("overflow", "visible");
 });
 
+	$(".overlay_link").click(function(){
+	$('body').css("overflow", "visible");
+});
+
+	$(".topnav_mobile_subnav").click(function(){
+	$('body').css("overflow", "visible");
+});
+
 </script>
+
 
 
 </body>

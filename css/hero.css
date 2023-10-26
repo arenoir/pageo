@@ -292,6 +292,11 @@ a:hover .button_home {
 		line-height: 72px;
 	}
 	
+	#hero h1 {
+		font-size: 64px;
+		line-height: 72px;
+	}
+	
 
 	#hero_weddings .hero_info h3, #hero_giftshop .hero_info h3 {
 		max-width: 600px;
