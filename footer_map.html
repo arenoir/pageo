@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Pageo Lavender Farm -->
+
+<html lang="en">
+
+
+
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<title>Pageo Lavender Farm</title>
+<link rel="icon" type="image/x-icon" href="images/fav.ico">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/topnav.css">
+<link rel="stylesheet" type="text/css" href="css/hero.css">
+<link rel="stylesheet" type="text/css" href="css/mobile.css">
+<link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
+<style>
+
+#home_hero {
+	background-image: url("images/home/main_hero_BG.jpg");
+}
+
+#map {
+	width: 100vw;
+	height: 400px;
+	margin: 0;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+</style>
+
+<script src="js/javascript.js"></script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkooOhpTv5mboWn3rLQYeMQtc9ko4tqQQ&callback=initMap">
+</script>
+
+
+
+</head>
+
+
+<body>
+
+
+<div id="map"></div>
+
+
+
+
+
+<!--------------- FOOTER –––––––––––––––––––––––-->
+
+<footer>
+	<div class="row">
+		<div class="info_1">
+			<div>
+			<p>Pageo Lavender Farm</p>
+			<p>11573 Golf Road</p>
+			<p>Turlock, Ca, 95380</p>
+			</div>
+		</div>
+		
+		<div class="info_2" style="overflow: visible;">
+			<div class="showup">
+				<img src="images/global/logo_dark.svg" width="150" height="150">
+			</div>
+		</div> 
+		<div class="info_3">
+			<div>
+			<p>Info@pageolavenderfarm.com</p>
+			<p>Phone:  209.632.5052</p>
+			<p>Fax:  209.634.1379</p>
+			</div>
+		</div> 
+
+	</div>
+</footer>
+
+<script>
+'use strict';
+	var gMapAPIKey = 'AIzaSyAkooOhpTv5mboWn3rLQYeMQtc9ko4tqQQ';
+
+</script>
+
+<script>
+
+(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyAkooOhpTv5mboWn3rLQYeMQtc9ko4tqQQ", v: "weekly"});
+
+</script>
+
+
+
+<script>
+
+function initMap() {
+  const myLatLng = { lat: 37.4744908, lng: -120.8307003 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+	mapId: "63504995b6824c8f",
+    center: myLatLng,
+	zoomControl: false,
+	panControl: false,
+	gestureHandling: false,
+	mapTypeControl: false,
+	scaleControl: false,
+	scrollwheel: false,
+	streetViewControl: false,
+	rotateControl: false,
+	fullscreenControl: true,
+  });
+
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Pageo",
+  });
+}
+
+window.initMap = initMap;
+
+
+</script>
+
+
+</body>
+</html>
