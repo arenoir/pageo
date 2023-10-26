@@ -56,4 +56,10 @@ function show_slides(n) {
 	gallery_caption_text.innerHTML = dots[slides-1].alt;
 }
 
+document.addEventListener('keyup',function(e){
+    if (e.key === "Escape") { 
+        // hide modal code
+        closeModal()
+    }
+});
 
