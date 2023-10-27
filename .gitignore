@@ -4,5 +4,11 @@ _site
 .jekyll-metadata
 vendor
 .DS_Store
-_archive/
 _assets/
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+_archive/
