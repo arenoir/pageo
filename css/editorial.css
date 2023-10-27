@@ -1,0 +1,875 @@
+ /* pageo
+  v 2.0 - 08-2023
+*/
+
+
+#testimonials {
+	background-color: #FFFFF6;
+	height: 100%;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.quote_1 p, .quote_3 p, .quote_5 p, .quote_2 p, .quote_4 p, .quote_6 p {
+	padding-top: 10px;
+}
+
+.row p {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+}
+
+.container1 {
+	max-height: 600px;
+    background-position: center;
+    background-position: top;
+    background-image: url('../images/weddings/background_blur/bg_01_desktop.png');
+    background-color: #FFFFF6;
+    background-repeat: no-repeat;
+    background-size: 1280px auto;
+}
+
+.container2 {
+	max-height: 600px;
+    background-position: center;
+    background-position: top;
+    background-image: url('../images/weddings/background_blur/bg_02_desktop.png');
+    background-color: #FFFFF6;
+    background-repeat: no-repeat;
+    background-size: 1280px 600px;
+}
+
+.container3 {
+	max-height: 600px;
+    background-position: center;
+    background-position: top;
+    background-image: url('../images/weddings/background_blur/bg_03_desktop.png');
+    background-color: #FFFFF6;
+    background-repeat: no-repeat;
+    background-size: 1280px 600px;
+}
+
+.container4 {
+	max-height: 600px;
+    background-position: center;
+    background-position: top;
+    background-image: url('../images/weddings/background_blur/bg_04_desktop.png');
+    background-color: #FFFFF6;
+    background-repeat: no-repeat;
+    background-size: 1280px 600px;
+}
+
+.container5 {
+	max-height: 600px;
+    background-position: center;
+    background-position: top;
+    background-image: url('../images/weddings/background_blur/bg_05_desktop.png');
+    background-color: #FFFFF6;
+    background-repeat: no-repeat;
+    background-size: 1280px 600px;
+}
+
+.container6 {
+	max-height: 600px;
+    background-position: center;
+    background-position: top;
+    background-image: url('../images/weddings/background_blur/bg_06_desktop.png');
+    background-color: #FFFFF6;
+    background-repeat: no-repeat;
+    background-size: 1280px 600px;
+    margin-bottom: 80px;
+}
+
+.container2 .photo_2, .container4 .photo_4, .container6 .photo_6 {
+	order: 1;
+}
+
+.container2 .quote_2, .container4 .quote_4, .container6 .quote_6 {
+	order: 2;
+}
+
+.photo_1 img, .photo_2 img, .photo_3 img, .photo_4 img, .photo_5 img, .photo_6 img {
+	border-radius: 1%;
+	/* border: 2px solid white; */
+	display: block;
+	height: auto;
+	max-width: 450px;
+	min-width: 450px;
+}
+
+#testimonials .row {
+	max-width: 1120px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	align-content: center;
+	margin: auto;
+}
+
+#testimonials .row:after {
+	content: "";
+	display: table;
+	clear: both;
+	margin: auto;
+}
+
+/* CONTAINER 1 */
+
+.quote_1 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_1 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+/* CONTAINER 2 */
+
+.quote_2 { 
+	float: right;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_2 {
+	float: left;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+/* CONTAINER 3 */
+
+.quote_3 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_3 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+/* CONTAINER 4 */
+
+.quote_4 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_4 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+
+/* CONTAINER 5 */
+
+.quote_5 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_5 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+.photo_5 img {
+	display: block;
+	height: auto;
+	max-width: 450px;
+	min-width: 450px;
+}
+
+/* CONTAINER 6 */
+
+.quote_6 { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.photo_6 { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	
+}
+
+
+
+
+/*
+	<div class="caption">
+			<div>
+	 		<p>Emily & Anadjeet</p>
+	 		<p>Married on May 16th, 2021</p>
+	 		</div>
+		</div>
+
+*/
+
+.large-font {
+	font-size: 48px;
+}
+
+.xlarge-font {
+	font-size: 64px
+}
+
+.caption {
+	border-left: 3px solid #222222;
+	padding-top: 0px;
+	
+}
+
+.caption p {
+	margin-left: 16px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-family: Source Sans Pro, Sans-Serif;
+	font-variant: small-caps;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+	#testimonials {
+		background-color: #FFFFF6;
+		height: 100%;
+		padding: 40px 0px 80px 0px;
+		
+	}
+  
+	#testimonials img {
+		margin: auto;
+	}
+	
+	.quote_1, .quote_3, .quote_5 {
+		min-width: 400px;
+		text-align: left;
+		float: left;
+		margin: auto;
+		padding: 0px 40px 40px 40px;
+	}
+	
+	
+	.quote_2, .quote_4, .quote_6 {
+		min-width: 400px;
+		text-align: right;
+		float: right;
+		margin: auto;
+		padding: 0px 40px 40px 40px;
+	}
+
+	.photo_1, .photo_3, .photo_5 {
+		float: left;
+	}
+	
+	.photo_2, .photo_4, .photo_6 {
+		float: right;
+	}
+	
+	.photo_1 img, .photo_2 img, .photo_3 img, .photo_4 img, .photo_5 img, .photo_6 img {
+		display: flex;
+		height: auto;
+		position: relative;
+		max-width: 450px;
+		min-width: 450px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.quote_1, .quote_3, .quote_5 {
+		min-width: 400px;
+		text-align: left;
+		float: left;
+		margin: auto;
+		padding: 0px 10px 20px 40px;
+	}
+	
+	
+	.quote_2, .quote_4, .quote_6 {
+		min-width: 400px;
+		text-align: right;
+		float: right;
+		margin: auto;
+		padding: 0px 40px 20px 10px;
+	}
+
+
+	p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+
+	.photo_1, .photo_3, .photo_5 {
+		padding-left: 140px;
+		height: 560px;
+	}
+
+	.photo_2, .photo_4, .photo_6 {
+		padding-right: 140px;
+		height: 560px;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+	p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	#testimonials {
+		background-color: #FFFFF6;
+		height: 100%;
+		padding: 20px 0px 20px 0px;
+	}
+
+	.container2 .photo_2 {
+		order: 2;
+	}
+	
+	.container2 .quote_2 {
+		order: 1;
+	}
+
+	.container4 .photo_4 {
+		order: 2;
+	}
+	
+	.container4 .quote_4 {
+		order: 1;
+	}
+
+	.container6 .photo_6 {
+		order: 2;
+	}
+	
+	.container6 .quote_6 {
+		order: 1;
+	}
+	
+  	#testimonials .row {
+  		display: flex;
+  		flex-direction: column;
+  	}
+  	
+	.container1, .container2, .container3, .container4, .container5, .container6 {
+  		max-height: 100%;
+  	}
+
+	.quote_1, .quote_3, .quote_5  {
+		width: auto;
+		margin: auto;
+		padding: 40px 40px 0px 40px;
+		max-height: 100%;
+	}
+	
+	.quote_2, .quote_4, .quote_6 {
+		float: left;
+		width: auto;
+		margin: auto;
+		padding: 40px 40px 0px 40px;
+		max-height: 100%;
+	}
+	
+	.photo_1 img, .photo_2 img, .photo_3 img, .photo_4 img, .photo_5 img, .photo_6 img {
+		display: flex;
+		height: auto;
+		position: relative;
+		max-width: 100vw;
+		min-width: auto;
+	}
+
+
+	.photo_1, .photo_3, .photo_5 {
+		width: auto;
+		margin: auto;
+		max-height: 300px;
+		overflow: hidden;
+		padding: 0px;
+	}
+
+	.photo_2, .photo_4, .photo_6 {
+		width: auto;
+		margin: auto;
+		max-height: 300px;
+		overflow: hidden;
+		padding: 0px;
+	}
+
+	.photo_1 img, .photo_2 img, .photo_3 img, .photo_4 img, .photo_5 img, .photo_6 img {
+		border-radius: 0;
+		border: none;
+		display: block;
+		height: auto;
+		max-width: 100vw;
+		min-width: 100vw;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.quote_1, .quote_2, .quote_3, .quote_4, .quote_5, .quote_6 {
+		width: auto;
+		margin: auto;
+		padding: 40px 40px 40px 40px;
+		max-height: 100%;
+	}
+
+	.container1, .container2, .container3, .container4, .container5, .container6 {
+		background-image: none;
+	}
+
+}
+
+
+
+.more_reviews_intro {
+    padding-top: 32px;
+	width: auto;
+	margin: auto;
+    font-family: urw-din, Source Sans Pro, Sans-Serif;
+    font-size: 16px;
+    font-style: normal;
+	text-align: center;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+	text-transform: uppercase;
+}
+
+.more_reviews {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 40px;
+	width: 100vw;
+	margin: auto;
+	max-width: 740px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.more_reviews .more_reviews_btn {
+	display: block;
+	width: 40%;
+    font-family: urw-din, Source Sans Pro, Sans-Serif;
+    font-size: 16px;
+    font-style: normal;
+	border-radius: 4px;
+	text-align: center;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 1.6px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+    background: #7B7261;
+}
+
+.more_reviews .more_reviews_btn img {
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+	.more_reviews {
+		flex-direction: column;
+		padding: 40px;
+		gap: 20px;
+		overflow: hidden;
+	}
+
+	.more_reviews .more_reviews_btn {
+		width: 100%;
+		height: 64px;
+	}
+
+	.more_reviews .more_reviews_btn img {
+		vertical-align: middle;
+	}
+}
+
+
+
+
+/* ------------------ ABOUT US –––––––––––––––––––– */
+
+/* ABOUT US –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.about_us {
+	background-color: #FFFFFF;
+	height: 100%;
+	padding-bottom: 80px;
+}
+
+.about_copy_image {
+	max-height: 600px;
+    background-position: center;
+    background-position: top;
+    background-image: url('../images/weddings/background_blur/bg_01_desktop.png');
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: 1280px auto;
+}
+
+.about_image_copy {
+	max-height: 600px;
+    background-position: center;
+    background-position: top;
+    background-image: url('../images/weddings/background_blur/bg_02_desktop.png');
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: 1280px 600px;
+}
+
+.about_image_copy .about_left_image, {
+	order: 1;
+}
+
+.about_image_copy .about_right_copy, {
+	order: 2;
+}
+
+.about_left_copy .h1b, .about_right_copy .h1b {
+	padding-bottom: 32px;
+}
+
+.about_row {
+	max-width: 1220px;
+	display: flex;
+	height: 700px;
+  	align-items: center;
+  	justify-content: center;
+	align-content: center;
+	margin: auto;
+}
+
+/* OUR STORY */
+
+.about_left_copy { 
+	float: left;
+	width: 50%;
+	padding: 40px;
+}
+
+.about_right_image { 
+	float: right;
+	height: 600px;
+	width: 50%;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding-left: 100px;
+	
+}
+
+/* THE FARM */
+
+.about_right_copy { 
+	float: right;
+	width: 50%;
+	padding: 40px;
+}
+
+.about_left_image {
+	float: left;
+	height: 600px;
+	width: 50%;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding-right: 100px;
+}
+
+.about_left_image img, .about_right_image img {
+	width: 800px;
+	border-radius: 8px;
+}
+
+.about_right_image img {
+	float: left;
+	width: 800px;
+	padding-left: 80px;
+}
+
+.about_left_image img {
+	float: left;
+	padding-right: 80px;
+	width: 800px;
+}
+	
+@media screen and (max-width: 1150px) {
+
+	.about_us {
+		background-color: #FFFFFF;
+		height: 100%;
+		padding: 0px 0px 80px 0px;
+	}
+	
+	.about_left_copy {
+		min-width: 400px;
+		text-align: left;
+		float: left;
+		margin: auto;
+		padding: 40px 60px 40px 20px;
+	}
+	
+	.about_right_copy {
+		min-width: 400px;
+		text-align: right;
+		float: right;
+		margin: auto;
+		padding: 40px 20px 40px 60px;
+	}
+
+	.about_right_image {
+		float: left;
+		display: flex;
+		height: auto;
+		position: relative;
+		max-width: 400px;
+		min-width: 350px;
+	}
+	
+	.about_right_image img {
+		float: left;
+		width: 700px;
+		padding-left: 60px;
+	}
+
+	
+	.about_left_image img {
+		float: left;
+		padding-right: 60px;
+		width: 700px;
+	}
+	
+	
+	.about_left_image {
+		float: right;
+		display: flex;
+		height: auto;
+		position: relative;
+		max-width: 400px;
+		min-width: 350px;
+	}
+	
+	.about_right_copy .h1b {
+		text-align: left;
+	}
+	
+  
+}
+
+@media screen and (max-width: 800px) {
+
+
+	.about_us {
+		background-color: #FFFFFF;
+  		height: 100%;
+		padding: 80px 0px 80px 0px;
+		
+	}
+	
+	p {
+		font-size: 20px;
+		line-height: 30px;
+		
+	}
+	
+
+	.about_image_copy .about_left_image {
+		order: 2;
+	}
+	
+	.about_image_copy .about_right_copy {
+		order: 1;
+	}
+
+  	.about_row {
+  		display: flex;
+  		flex-direction: column;
+  		height: auto;
+  	
+  	}
+  	
+	.about_copy_image {
+  		max-height: 100%;
+  	}
+	
+	.about_image_copy {
+  		max-height: 100%;
+  		padding-top: 80px;
+  	}
+  	
+
+  	
+	.about_left_copy {
+		width: auto;
+		margin: auto;
+		padding: 0px 20px 60px 20px;
+		height: 100%;
+	}
+	
+	.about_right_copy {
+		float: left;
+		width: auto;
+		margin: auto;
+		padding: 0px 20px 60px 20px;
+		height: 100%;
+	}
+
+	.about_right_copy .h1b, .about_left_copy .h1b {
+		text-align: left;
+		font-size: 48px;
+		line-height: 48px;
+		padding-bottom: 20px;
+		padding-left: 60px;
+		
+	}
+	
+	.about_right_copy p, .about_left_copy p {
+		text-align: left;
+		padding-right: 60px;
+		padding-left: 60px;
+		font-size: 20px;
+		line-height: 30px;
+		
+	}
+	
+
+	.about_right_image, .about_left_image {
+		max-width: 100%;
+		height: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+		
+	}
+
+
+	.about_right_image img, .about_left_image img {
+		float: left;
+		padding: 0;
+		height: auto;
+		width: 100vw;
+		overflow: hidden;
+		text-align: center;
+		border-radius: 0;
+	}
+
+	
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+	.about_us {
+		background-color: #FFFFFF;
+  		height: 100%;
+		padding: 60px 0px 0px 0px;
+		
+	}
+
+	.about_right_copy p, .about_left_copy p {
+		text-align: center;
+		padding: 0px 20px 0px 20px;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: .5px;
+		
+	}
+	
+	.about_right_copy .h1b, .about_left_copy .h1b {
+		text-align: center;
+		font-size: 48px;
+		line-height: 48px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		
+	}
+	
+	.about_right_image, .about_left_image {
+		float: left;
+		padding-left: 0px;
+		padding-right: 0px;
+		height: 300px;
+		width: 100vw;
+		overflow: hidden;
+		text-align: left;
+	}
+	
+	.about_right_image img, .about_left_image img {
+		float: left;
+		padding: 0;
+		height: auto;
+		overflow: hidden;
+		text-align: left;
+		position: left;
+		border-radius: 0;
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

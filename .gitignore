@@ -1,6 +1,10 @@
-# OS generated files #
-######################
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 .DS_Store
+_assets/
 .DS_Store?
 ._*
 .Spotlight-V100
