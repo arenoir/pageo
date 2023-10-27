@@ -117,24 +117,19 @@ body {
 
 <div id="topnav_menu" class="overlay_menu">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-		<span style="cursor:pointer" onclick="openNav()"><img src="images/global/icon/24x24_close.svg"></span>	
+		<span style="cursor:pointer" onclick="openNav()" class="openNav"><img src="images/global/icon/24x24_close.svg"></span>	
 	</a>
 	<div class="overlay_content">
 		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
-			<a href="weddings.html#services" class="topnav_mobile_subnav">Our Services</a>
-			<a href="weddings.html#about" class="topnav_mobile_subnav">About Us</a>
-			<a href="weddings.html#test" class="topnav_mobile_subnav">Testimonials</a>
+			<a href="weddings.html#services" class="topnav_mobile_subnav" onclick="closeNav()">Our Services</a>
+			<a href="weddings.html#about" class="topnav_mobile_subnav" onclick="closeNav()">About Us</a>
+			<a href="weddings.html#test" class="topnav_mobile_subnav" onclick="closeNav()">Testimonials</a>
 		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
 		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
-			<a href="giftshop.html#lunch_anchor" class="topnav_mobile_subnav">Lunch Menu</a>
-			<a href="giftshop.html#products" class="topnav_mobile_subnav">Products</a>
-		<a href="gallery.html" class="overlay_link">Galleries</a> <!--
-			<a href="gallery.html#weddings" class="topnav_mobile_subnav">Weddings Photos</a>
-			<a href="gallery.html#giftshop" class="topnav_mobile_subnav">Gift Shop Photos</a>
-			<a href="gallery.html#harvest" class="topnav_mobile_subnav">Harvest Photos</a>
-			<a href="gallery.html#farm" class="topnav_mobile_subnav">Around the Farm</a> 
-		 ><a href="#" class="overlay_link">Gallery</a>
-		<a href="#" class="overlay_link">Contact</a> -->
+			<a href="giftshop.html#lumch" class="topnav_mobile_subnav" onclick="closeNav()">Lunch Menu</a>
+			<a href="giftshop.html#photoshoots" class="topnav_mobile_subnav" onclick="closeNav()">Photoshoots</a>
+			<a href="giftshop.html#products" class="topnav_mobile_subnav" onclick="closeNav()">Products</a>
+		<a href="gallery.html" class="overlay_link" onclick="closeNav()">Galleries</a>
 	</div>
 	<div class="button_overlay" style='background-color:#FEF2DA'>
 		<a href="#">Book a consultation</a>
@@ -208,6 +203,7 @@ body {
 		</div>
 	</div>
 </div>
+
 
 <!--------------- HERO –––––––––––––––––––––––-->
 
