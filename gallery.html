@@ -9,47 +9,93 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
 <title>Pageo Gallery</title>
-<link rel="icon" type="image/x-icon" href="/images/fav.ico">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" type="text/css" href="css/styles.css"> 
 <link rel="stylesheet" type="text/css" href="css/topnav.css">
 <link rel="stylesheet" type="text/css" href="css/gallery.css">
 <link rel="stylesheet" type="text/css" href="css/lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/hero.css">
 <link rel="stylesheet" type="text/css" href="css/mobile.css">
 <link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/lightbox.css"> 
 <style>
 
-#hero_weddings {
+#hero {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("images/gallery/gallery_hero.jpg");
+	height: ;
 }
 
 .gallery_row > .gallery_column {
 	padding: 4px 2px;
 }
 
-
-
-
-#hero_weddings h1 {
-	padding-top: 60px;
-	padding-bottom: 100px;
+#hero h1 {
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	font-size: 72px;
+    line-height: 72px;
 }
 
-
+#hero {
+	display: block;
+    width: 100%;
+    height: auto;
+	text-align: center;
+	padding-top: 20%;
+	padding-bottom: 14%;
+    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @media screen and (max-width: 1000px) {
-	#hero_weddings h1 {
-		padding-top: 70px;
-		padding-bottom: 40px;
+
+	#hero h1 {
+		font-size: 64px;
+	    line-height: 72px;
 	}
 }
 
+
 @media screen and (max-width: 800px) {
-	#hero_weddings h1 {
-		padding-top: 40px;
-		padding-bottom: 40px;
+
+	#hero {
+		padding-top: 160px;
+		padding-bottom: 100px;
+	}
+
+	#hero h1 {
+	    font-size: 48px;
+	    line-height: 64px;
+	    max-width: 500px;
+	    margin: auto;
+	    letter-spacing: 1px;
 	}
 }
+
+
+@media screen and (max-width: 415px) {
+
+	#hero {
+		padding-top: 148px;
+		padding-bottom: 100px;
+	}
+
+	#hero .hero_gallery {
+	}
+
+	#hero h1 {
+	    font-size: 48px;
+	    line-height: 64px;
+	    margin: auto;
+	    letter-spacing: 1px;
+	    padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
 	
 </style>
 
@@ -65,24 +111,19 @@
 
 <div id="topnav_menu" class="overlay_menu">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-		<span style="cursor:pointer" onclick="openNav()"><img src="images/global/icon/24x24_close.svg"></span>	
+		<span style="cursor:pointer" onclick="openNav()" class="openNav"><img src="images/global/icon/24x24_close.svg"></span>	
 	</a>
 	<div class="overlay_content">
 		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
-			<a href="weddings.html#services" class="topnav_mobile_subnav">Our Services</a>
-			<a href="weddings.html#about" class="topnav_mobile_subnav">About Us</a>
-			<a href="weddings.html#test" class="topnav_mobile_subnav">Testimonials</a>
+			<a href="weddings.html#services" class="topnav_mobile_subnav" onclick="closeNav()">Our Services</a>
+			<a href="weddings.html#about" class="topnav_mobile_subnav" onclick="closeNav()">About Us</a>
+			<a href="weddings.html#test" class="topnav_mobile_subnav" onclick="closeNav()">Testimonials</a>
 		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
 		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
-			<a href="giftshop.html#lunch_anchor" class="topnav_mobile_subnav">Lunch Menu</a>
-			<a href="giftshop.html#products" class="topnav_mobile_subnav">Products</a>
-		<a href="gallery.html" class="overlay_link">Galleries</a> <!--
-			<a href="gallery.html#weddings" class="topnav_mobile_subnav">Weddings Photos</a>
-			<a href="gallery.html#giftshop" class="topnav_mobile_subnav">Gift Shop Photos</a>
-			<a href="gallery.html#harvest" class="topnav_mobile_subnav">Harvest Photos</a>
-			<a href="gallery.html#farm" class="topnav_mobile_subnav">Around the Farm</a> 
-		<!-- ><a href="#" class="overlay_link">Gallery</a>
-		<a href="#" class="overlay_link">Contact</a> -->
+			<a href="giftshop.html#lunch" class="topnav_mobile_subnav" onclick="closeNav()">Lunch Menu</a>
+			<a href="giftshop.html#photo" class="topnav_mobile_subnav" onclick="closeNav()">Photoshoots</a>
+			<a href="giftshop.html#products" class="topnav_mobile_subnav" onclick="closeNav()">Products</a>
+		<a href="gallery.html" class="overlay_link" onclick="closeNav()">Galleries</a>
 	</div>
 	<div class="button_overlay" style='background-color:#FEF2DA'>
 		<a href="#">Book a consultation</a>
@@ -140,16 +181,19 @@
 			
 		</div>
 		<div id="menu">
-			<span style="cursor:pointer" onclick="openNav()"><img src="images/global/icon/24x24_ham.svg"></span>
+			<span style="cursor:pointer" onclick="openNav()" class="openNav"><img src="images/global/icon/24x24_ham.svg"></span>
 		</div>
 		<div class="topnav_right_button_group">
 			<div class="button_nav_right">
+			<span><a href="mailto:info@pageolavenderfarm.com">Contact</a></span>
+			<!--
 			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
+			-->
 				<div class="topnav_vertical_divider"></div>
 			</div>		
 		</div>	
 		<div class="topnav_right">
-			<a href="#Gallery">Galleries</a>
+			<a href="gallery.html">Galleries</a>
 		</div>
 	</div>
 </div>
@@ -157,13 +201,13 @@
 
 <!--------------- HERO –––––––––––––––––––––––-->
 
-<div id="hero_weddings">
+<div id="hero">
 	
-	<article>
+	<div class="hero_gallery">
 		<h1 style='color:white'>
 		Pageo Galleries
 		</h1>
-	</article> 
+	</div> 
 	
 	<!-- <div id="button_group_weddings">
 		<a href="#">
@@ -604,5 +648,31 @@
 </footer>
 
 <script src="js/lightbox-plus-jquery.js"></script>
+
+<!-- ++++++++++ DISABLE SCROLLBAR ++++++++++ -->
+
+
+
+<script>
+	$(".openNav").click(function(){
+	$('body').css("overflow", "hidden");
+});
+
+	$(".closebtn").click(function(){
+	$('body').css("overflow", "visible");
+});
+
+	$(".overlay_link").click(function(){
+	$('body').css("overflow", "visible");
+});
+
+	$(".topnav_mobile_subnav").click(function(){
+	$('body').css("overflow", "visible");
+});
+
+</script>
+
+
+
 </body>
 </html>

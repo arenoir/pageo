@@ -9,12 +9,13 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
 <title>Pageo Lavender Farm</title>
-<link rel="icon" type="image/x-icon" href="/images/fav.ico">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="stylesheet" type="text/css" href="css/topnav.css">
-<link rel="stylesheet" type="text/css" href="css/hero.css">
-<link rel="stylesheet" type="text/css" href="css/mobile.css">
+<link rel="stylesheet" type="text/css" href="css/mobile.css"> 
+<link rel="stylesheet" type="text/css" href="css/hero.css"> 
 <link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 <style>
 
 #home_hero {
@@ -61,7 +62,8 @@
 			<a href="weddings.html#test" class="topnav_mobile_subnav" onclick="closeNav()">Testimonials</a>
 		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
 		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
-			<a href="giftshop.html#lunch_anchor" class="topnav_mobile_subnav" onclick="closeNav()">Lunch Menu</a>
+			<a href="giftshop.html#lunch" class="topnav_mobile_subnav" onclick="closeNav()">Lunch Menu</a>
+			<a href="giftshop.html#photo" class="topnav_mobile_subnav" onclick="closeNav()">Photoshoots</a>
 			<a href="giftshop.html#products" class="topnav_mobile_subnav" onclick="closeNav()">Products</a>
 		<a href="gallery.html" class="overlay_link" onclick="closeNav()">Galleries</a>
 	</div>
@@ -125,7 +127,10 @@
 		</div>
 		<div class="topnav_right_button_group">
 			<div class="button_nav_right">
+			<span><a href="mailto:info@pageolavenderfarm.com">Contact</a></span>
+			<!--
 			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
+			-->
 				<div class="topnav_vertical_divider"></div>
 			</div>		
 		</div>	
@@ -186,7 +191,7 @@
 
 <section class="tout1">
 	<h3 style='text-align:center'>
-		Contact us for event inquiries, tour&nbsp;of&nbsp;the venue or to schedule &nbsp;a&nbsp;free&nbsp;consultation.
+		Contact us for event inquiries, tour&nbsp;of&nbsp;the venue or to schedule&nbsp;a&nbsp;free&nbsp;consultation.
 	</h3>
 	<h5 style='text-align:center'>
 		Gift Shop & Lunches:<br>
@@ -242,7 +247,7 @@
 		With a wide array of handmade lavender products – everything from pillows to beard oil – we provide anything you might need to pamper yourself&nbsp;properly.
 		</p>
 		<p>
-		<a href="giftshop.html#products""><button class="button_parallax" style="background-color:#EFDED4">VIEW PRODUCTS</button></a>
+		<a href="giftshop.html#products"><button class="button_parallax" style="background-color:#EFDED4">VIEW PRODUCTS</button></a>
 		</p>
 		<hr>
 	</div>
@@ -261,7 +266,7 @@
 		<p>
 		Spend your afternoon dining with us. Our seasonal menus are complete with a selection of dishes prepared on-site by our catering&nbsp;team.
 		</p>
-		<p><a href="giftshop.html#lunch_anchor"><button class="button_parallax">VIEW MENU</button></a>
+		<p><a href="giftshop.html#lunch"><button class="button_parallax">VIEW MENU</button></a>
 		</p>
 	</div>
 </section>
@@ -302,8 +307,8 @@
 			<div class="award"><img src="images/awards/award_209b.svg" class="award_filter"/></div>
 		</div>
 		<div class="award_row1">
-			<div class="award"><img src="images/awards/award_knot2.svg" class="award_filter"/></div>
-			<div class="award"><img src="images/awards/award_ww.svg" class="award_filter"/></div>
+			<div class="award"><img src="images/awards/award_knot6.svg" class="award_filter"/></div>
+			<div class="award"><img src="images/awards/award_ww3.svg" class="award_filter"/></div>
 		</div>
 	</div>
 </section>
@@ -391,7 +396,16 @@ Get in Touch
 	$('body').css("overflow", "visible");
 });
 
+	$(".overlay_link").click(function(){
+	$('body').css("overflow", "visible");
+});
+
+	$(".topnav_mobile_subnav").click(function(){
+	$('body').css("overflow", "visible");
+});
+
 </script>
+
 
 
 </body>
