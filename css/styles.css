@@ -1788,12 +1788,12 @@ a:hover .button_giftshop {
 
 .photo_table2, .photo_table3 {
 	border: 4px solid #fff;
-	border-bottom: 4px dashed #F8F4F1;
+	border-bottom: 4px solid #F8F4F1;
 }
 
 .photo_table3 {
 	border-bottom: none;
-	border-top: 2px dashed #F8F4F1;
+	border-top: none;
 }
 
 .intro_note {
