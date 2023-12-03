@@ -40,6 +40,17 @@
 		calendar.render();
 	});
 
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var contact = document.getElementById('calendar');
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+		  initialView: 'dayGridMonth'
+		});
+		calendar.render();
+	});
+
+
+
 </script>
 
 
@@ -93,21 +104,21 @@
 				</h4>
 			</div>
 			<div class="nav_getintouch_bottom">
-				<form action="/action_page.php">
+				<form action="php/public/create_entry.php">
 					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="fname" name="firstname" placeholder="Full Name">
+					<input type="text" id="fname" name="full_name" placeholder="Full Name">
 					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="lname" name="lastname" placeholder="Email Address">
+					<input type="text" id="lname" name="email" placeholder="Email Address">
 					<!-- ><label for="fname">First Name</label> -->
 					<input type="text" id="pnumber" name="phone" placeholder="Phone Number">
 					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="etype" name="type" placeholder="Event Type (Wedding, Shower, etc.)">
+					<input type="text" id="etype" name="event_type" placeholder="Event Type (Wedding, Shower, etc.)">
 					<!-- ><label for="fname">First Name</label> -->
 					<input type="text" id="datesofinterest" name="dates" placeholder="Date(s) of Interest)">
 					<!-- ><label for="fname">First Name</label> -->
 					<input type="text" id="numberofguests" name="guests" placeholder="Approx. Number of Guests">
 					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="daysofweek" name="days" placeholder="Preferred Day(s) of the Week">
+					<input type="text" id="daysofweek" name="days_off_wk" placeholder="Preferred Day(s) of the Week">
 					<input type="submit" value="Submit">
 				</form>
 			</div>
@@ -130,10 +141,8 @@
 		</div>
 		<div class="topnav_right_button_group">
 			<div class="button_nav_right">
-			<span><a href="mailto:info@pageolavenderfarm.com">Contact</a></span>
-			<!--
+		<!-- 	<span><a href="mailto:info@pageolavenderfarm.com">Contact</a></span> -->
 			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
-			-->
 				<div class="topnav_vertical_divider"></div>
 			</div>		
 		</div>	

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- Pageo Lavender Farm -->
+
+<html lang="en">
+
+
+
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<title>Pageo Lavender Farm</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/topnav.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<style>
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+<!--------------- NAVIGATION –––––––––––––––––––––––-->
+
+<div id="topnav_menu" class="overlay_menu">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+		<span style="cursor:pointer" onclick="openNav()" class="openNav"><img src="images/global/icon/24x24_close.svg"></span>	
+	</a>
+	<div class="overlay_content">
+		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
+			<a href="weddings.html#services" class="topnav_mobile_subnav" onclick="closeNav()">Our Services</a>
+			<a href="weddings.html#about" class="topnav_mobile_subnav" onclick="closeNav()">About Us</a>
+			<a href="weddings.html#test" class="topnav_mobile_subnav" onclick="closeNav()">Testimonials</a>
+		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
+		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
+			<a href="giftshop.html#lunch" class="topnav_mobile_subnav" onclick="closeNav()">Lunch Menu</a>
+			<a href="giftshop.html#photo" class="topnav_mobile_subnav" onclick="closeNav()">Photoshoots</a>
+			<a href="giftshop.html#products" class="topnav_mobile_subnav" onclick="closeNav()">Products</a>
+		<a href="gallery.html" class="overlay_link" onclick="closeNav()">Galleries</a>
+	</div>
+	<div class="button_overlay" style='background-color:#FEF2DA'>
+		<a href="#">Book a consultation</a>
+	</div>
+</div>
+
+
+<div id="topnav_contact" class="overlay_contact">
+		<div class="nav_form">
+			<div class="nav_getintouch_closex">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeContact()">
+				<span style="cursor:pointer" onclick="openContact()"><img src="images/global/icon/24x24_close.svg">
+				</span>	
+			</a>
+			</div>
+			<div class="nav_getintouch_top">
+				<h4>
+				<ol>
+					<li> Fill out the inquiry form and submit.</li>
+					<li> Receive pricing information and availability dates.</li>
+					<li> Book a tour of the venue for a free consultation.</li>
+				</ol>
+				</h4>
+			</div>
+			<div class="nav_getintouch_bottom">
+
+				<form action="create_entry.php" method="post">
+					
+			        <label class="form_label">id:</label> <br> 
+			          <input class="form_element" type="text" name="id" value="" />
+
+			        <label class="form_label">full_name:</label> <br> 
+			          <input class="form_element" type="text" name="full_name" value="" />
+			  
+			        <label class="form_label">email:</label> <br> 
+			          <input class="form_element" type="text" name="email" value="" />
+
+			        <label class="form_label">phone:</label> <br> 
+			          <input class="form_element" type="text" name="phone" value="" />
+
+							<label class="form_label">event_type:</label> <br> 
+			          <input class="form_element" type="text" name="event_type" value="" />
+
+			        <label class="form_label">dates:</label> <br> 
+			          <input class="form_element" type="text" name="dates" value="" />
+			  
+			        <label class="form_label">guests:</label> <br> 
+			          <input class="form_element" type="text" name="guests" value="" />
+
+			        <label class="form_label">days_off_wk:</label> <br> 
+			          <input class="form_element" type="text" name="days_off_wk" value="" />
+
+			        <label class="form_label">timestamp:</label> <br> 
+			          <input class="form_element" type="text" name="timestamp" value="" />
+
+				</form>
+			</div>
+		</div>
+</div>
+
+<div class="topnav_fixed">
+	<div class="topnav">
+		<div class="topnav_left">
+			<a class="nav_pageo_logo" href="https://www.pageolavenderfarm.com">PAGEO LAVENDER FARM</a>
+			<div class="topnav_vertical_divider"></div>
+			<div class="nav_link_left">
+			<a href="weddings.html">Weddings & Events</a>
+			<a href="giftshop.html">Gift Shop & Services</a>
+			</div>
+			
+		</div>
+		<div id="menu">
+			<span style="cursor:pointer" onclick="openNav()" class="openNav"><img src="images/global/icon/24x24_ham.svg"></span>
+		</div>
+		<div class="topnav_right_button_group">
+			<div class="button_nav_right">
+		<!-- 	<span><a href="mailto:info@pageolavenderfarm.com">Contact</a></span> -->
+			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
+				<div class="topnav_vertical_divider"></div>
+			</div>		
+		</div>	
+		<div class="topnav_right">
+			<a href="gallery.html">Galleries</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+	$(".openNav").click(function(){
+	$('body').css("overflow", "hidden");
+});
+
+	$(".closebtn").click(function(){
+	$('body').css("overflow", "visible");
+});
+
+	$(".overlay_link").click(function(){
+	$('body').css("overflow", "visible");
+});
+
+	$(".topnav_mobile_subnav").click(function(){
+	$('body').css("overflow", "visible");
+});
+
+</script>
+
+
+
+</body>
+</html>

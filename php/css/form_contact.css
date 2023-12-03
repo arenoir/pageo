@@ -1,0 +1,175 @@
+
+/* reset margins */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, nav, output, section, summary, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+    text-overflow: ellipsis;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  background-color: #F8F4F1;
+}
+
+#book_list {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 14px;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  top: 0; 
+}
+
+.first_table {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+
+.no_results {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+  transform: translate(0, +50%);
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  color: red;
+  position: absolute;
+  top: 100px;
+  height: 50vh;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+#book_list td {
+/*  border: 1px solid #fff;*/
+  padding: 12px 12px 16px 12px;
+}
+
+#book_list tr:nth-child(even){
+  background-color: #F8F4F1;
+}
+
+#book_list tr:nth-child(odd){
+  background-color: #FFFFFF;
+}
+
+
+#book_list tr:hover {
+  background-color: #E4E4DC;
+  color: #222;
+}
+
+
+.column_headers {
+  padding: 24px 12px;
+  line-height: 22px;
+
+}
+
+.col_header {
+  line-height: inherit;
+  height: inherit;
+  padding: 24px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .5px;
+  background-color: #F1FE57;
+  color: #453C36;
+}
+
+
+.scroll-down {
+  padding: 12px 12px;
+}
+
+
+
+.top_bar th {
+  background-color: #555555;
+  color: white;
+  padding: 22px 12px 22px 12px;
+  font-size: 20px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 200;
+
+}
+
+
+thead {
+  width: 100%;
+  position: sticky;
+  top: 0; 
+  border-top: 1px solid #ffffff;
+  box-shadow: 0px 2px 6px #efefef;
+  border-collapse: collapse;
+  transform: translate(0, -1px);
+}
+
+
+
+thead td:hover {
+  background-color: white;
+  color: #222;
+}
+
+
+
+thead th {
+	width: auto;
+  text-align: left;
+  transform: translate(0, -2px);
+}
+
+.col_id {
+  width: 40px;
+  text-align: left;
+}
+
+.col_title {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-style: normal;
+}
+
+#col_title #col_author {
+  text-align: left;
+}
+
+.col_author {
+}
+
+#col_year .col_price .col_year {
+  text-align: right;
+}
+
+.col_type {
+}
+
+.col_publisher {
+}
+
+.col_artist {
+}
+
+.col_quality {
+}
+
+.col_loc {
+}
+
+.col_genre {
+}
