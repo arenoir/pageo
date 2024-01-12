@@ -612,9 +612,13 @@ input[type=text]:focus {
 	float: left;
 	width: 100vw;
 	margin: auto;
-	background: #FEF2DA;
+	background: #e26057;
 	text-align: center;
-	color: #222;
+}
+
+.top_nav_special a {
+	text-decoration: none;
+	color: #FFFFFF;
 	font-family: urw-din, Source Sans Pro, Sans-Serif;
 	line-height: 40px;
 	height: 40px;
